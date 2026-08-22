@@ -62,7 +62,7 @@ params:
   # Analytics — create GA4 + AdSense properties once the site is live.
   # (Leave empty until then; scripts auto-skip while empty.)
   analytics:
-    ga4ID: ""
+    ga4ID: "G-ZB8DJRZJ3X"                       # Builder Decade GA4 property
     adsensePublisherID: ""
     googleSiteVerification: ""
 
