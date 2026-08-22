@@ -27,3 +27,4 @@ node_modules/
 __pycache__/
 *.pyc
 .hugo_build.lock
+github-pages/

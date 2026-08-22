@@ -1,9 +1,0 @@
-# Builder Decade
-
-> Builder Decade is a resource for solo builders making real things in the AI era — software, hardware, and projects for the long game. Field notes on shipping products with AI agents, explained clearly and tested against the evidence, with bilingual English/Chinese content.
-
-- [Welcome — what this site is](https://builderdecade.com/posts/welcome/): what "building for a decade" means and who this is for.
-- [中文版 — 歡迎](https://builderdecade.com/zh/posts/welcome/): 這是一個怎樣的網站（繁體中文）。
-
-## About
-Builder Decade is published in English and Chinese (繁體中文 at /zh/). All claims are sourced where possible, listed in each article's Sources section. No hype, no quick-fix noise.
