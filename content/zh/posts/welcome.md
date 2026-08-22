@@ -6,7 +6,6 @@ tags: ["建造", "AI", "創客"]
 description: "在 AI 時代以十年為單位建造，是什麼意思——以及這個網站為誰而寫。"
 cover:
   image: "cover-welcome.png"
-  relative: true
   alt: "歡迎 — 這是怎樣一個網站"
 ---
 

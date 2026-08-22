@@ -6,7 +6,6 @@ tags: ["building", "AI", "maker"]
 description: "What it means to build for a decade in the AI era — and who this site is for."
 cover:
   image: "cover-welcome.png"
-  relative: true
   alt: "Welcome — what Builder Decade is"
 ---
 
