@@ -1,5 +1,6 @@
 ---
 title: "歡迎 — 這是怎樣一個網站"
+translationKey: "welcome"
 date: 2026-08-22T00:00:00+08:00
 draft: false
 tags: ["建造", "AI", "創客"]
