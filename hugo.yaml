@@ -1,0 +1,80 @@
+baseURL: https://builderdecade.com/
+theme: PaperMod
+
+enableRobotsTXT: true
+
+# Multilingual: EN is the default (lands at /), ZH at /zh/
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+
+languages:
+  en:
+    label: English
+    weight: 1
+    title: Builder Decade
+    params:
+      homeInfoParams:
+        Title: Builder Decade
+        Content: >-
+          Building things in the AI era — software, hardware, and projects for
+          the long game, one decade at a time.
+
+          Field notes from a solo builder shipping real products with AI agents.
+          No hype, no tutorial-farm noise. Just what actually works, explained
+          clearly and tested against the evidence.
+  zh:
+    label: 中文
+    weight: 2
+    title: 建造十年
+    contentDir: content/zh
+    params:
+      homeInfoParams:
+        Title: 建造十年
+        Content: >-
+          在 AI 時代動手建造——軟件、硬件與各類專案，以十年為單位的長期遊戲。
+
+          這是一位獨立建造者用 AI 代理打造真實產品的實戰筆記。
+          沒有炒作，沒有教學農場的雜音。只有真正有效的方法，
+          講解清晰，並經得起證據檢驗。
+
+params:
+  defaultTheme: light
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  displayFullLangName: true
+
+  # Organization author — fixes JSON-LD "author: null" schema failure.
+  # (Neutral brand voice: the site is "Builder Decade", a generic publisher.)
+  author: Builder Decade
+
+  # Favicons (brand mark) — placeholder until generated
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+
+  # Home hero image (placeholder — replace with a real stock photo later)
+  homeHeroImage: "/images/hero.png"
+
+  # Analytics — create GA4 + AdSense properties once the site is live.
+  # (Leave empty until then; scripts auto-skip while empty.)
+  analytics:
+    ga4ID: ""
+    adsensePublisherID: ""
+    googleSiteVerification: ""
+
+  env: production
+
+menus:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20

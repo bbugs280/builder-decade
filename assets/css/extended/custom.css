@@ -1,0 +1,161 @@
+/* Builder Decade — warm editorial theme
+   Cream paper background + warm charcoal text + amber/copper accent (light mode).
+   Dark mode: warm dark charcoal surface + cream/off-white text + amber accent.
+   Serif display headings (Fraunces) + humanist sans body (Source Sans 3).
+
+   NOTE: same structural skeleton as traindecade.com (the "decade" brand family),
+   but accent is amber/copper (maker/workshop) instead of jade (health). */
+
+/* ===== Palette (light mode — CSS custom properties) ===== */
+:root {
+    --cream: #FAF7F2;        /* warm paper background */
+    --surface: #FFFFFF;      /* cards */
+    --ink: #292520;          /* warm charcoal text */
+    --muted: #6b635a;        /* secondary text */
+    --amber: #B4551D;        /* primary accent — maker/workshop copper */
+    --amber-dark: #8F4213;   /* hover */
+    --line: #E8E2D8;         /* hairline borders */
+}
+
+/* ===== Dark mode palette — warm dark, not cold gray ===== */
+:root[data-theme="dark"] {
+    --cream: #1B1A17;        /* warm near-black surface */
+    --surface: #23211D;      /* cards */
+    --ink: #E9E4DA;          /* cream/off-white text */
+    --muted: #A8A196;        /* secondary text */
+    --amber: #E0935E;        /* brighter amber for dark bg contrast */
+    --amber-dark: #F0B083;   /* hover */
+    --line: #35322C;         /* hairline borders */
+}
+
+/* ===== Map to PaperMod theme vars (so nav/footer/text follow) ===== */
+:root {
+    --content: var(--cream);
+    --primary: var(--ink);
+    --secondary: var(--muted);
+    --entry: var(--surface);
+    --border: var(--line);
+}
+
+/* ===== Typography ===== */
+body {
+    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+}
+
+h1, h2, h3, h4, h5, h6,
+.entry-header h1,
+.entry-header h2,
+.post-title,
+.home-info .entry-header h1 {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+/* Body — larger, comfortable reading for 40+ */
+.post-content,
+.entry-content {
+    font-size: 1.08rem;
+    line-height: 1.75;
+    color: var(--ink);
+}
+
+/* ===== Links ===== */
+a {
+    color: var(--amber);
+}
+
+a:hover {
+    color: var(--amber-dark);
+}
+
+/* ===== Nav / header ===== */
+.nav a,
+#menu a {
+    color: var(--ink);
+}
+
+.nav a:hover,
+#menu a:hover {
+    color: var(--amber);
+}
+
+.post-title a {
+    color: var(--ink);
+}
+
+.post-title a:hover {
+    color: var(--amber);
+}
+
+/* ===== Hero ===== */
+.home-hero {
+    margin: 0 0 var(--gap) 0;
+}
+
+.home-hero img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    display: block;
+}
+
+/* ===== Compact card list (thumbnail + body) ===== */
+.post-entry.card-entry {
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+    padding: var(--gap);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+.card-thumb {
+    flex: 0 0 180px;
+    max-width: 180px;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.card-thumb img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.card-body .entry-content p {
+    margin: 0;
+    color: var(--muted);
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ===== Post meta (date, reading time) ===== */
+.post-meta {
+    color: var(--muted);
+}
+
+/* ===== responsive: stack on small screens ===== */
+@media (max-width: 720px) {
+    .post-entry.card-entry {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-thumb {
+        flex: 0 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+}
