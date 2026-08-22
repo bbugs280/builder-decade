@@ -46,4 +46,16 @@ PROMPTS = {
         "background with copper and amber glow, high contrast, cinematic "
         "lighting, photorealistic, moody, no text, no watermark"
     ),
+    # "The one-person product team is real" — a single builder dwarfed by
+    # the productive glow of one workstation, no teammates
+    "one-person-team": (
+        "A lone figure of mixed East Asian and Western heritage, ambiguous "
+        "ethnicity, seated at a single workstation in a vast dark workshop, "
+        "a solitary amber desk lamp carving the only pool of light, monitors "
+        "glowing with code and product prototypes, the surrounding benches "
+        "empty and unlit, conveying the scale of what one person can now "
+        "produce alone. Deep charcoal and copper atmosphere, cinematic "
+        "chiaroscuro, volumetric light, photorealistic, moody and "
+        "contemplative, shallow depth of field, no text, no watermark"
+    ),
 }

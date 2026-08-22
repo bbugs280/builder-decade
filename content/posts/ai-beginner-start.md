@@ -70,6 +70,8 @@ A decade from now, you'll have a decade of shipped things. Which is the whole id
 
 The person who builds one small thing every week for a year will pass the person who spends a year "learning to code" before starting — every single time. Start with the tiny thing.
 
+*New to all this? The tools aren't the barrier anymore — [the one-person product team is now real](/posts/one-person-team/), and it's the fastest on-ramp there's ever been to shipping something of your own.*
+
 ---
 
 ## Sources
