@@ -28,6 +28,7 @@ languages:
     title: 建造十年
     contentDir: content-zh
     params:
+      description: "一位獨立建造者用 AI 代理打造真實產品的實戰筆記——軟件、硬件與各類專案，以十年為單位的長期遊戲。沒有炒作，沒有教學農場的雜音。中英雙語。"
       homeInfoParams:
         Title: 建造十年
         Content: >-
@@ -38,6 +39,8 @@ languages:
           講解清晰，並經得起證據檢驗。
 
 params:
+  description: "Field notes from a solo builder shipping real products with AI agents — software, hardware, and projects for the long game. No hype, no tutorial-farm noise. Bilingual English/中文."
+
   defaultTheme: light
   ShowReadingTime: true
   ShowPostNavLinks: true
