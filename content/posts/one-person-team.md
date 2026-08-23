@@ -1,10 +1,10 @@
 ---
-title: "You Have an Idea. Nothing Should Stop You Now."
+title: "Why One Person Can Now Ship What Took a Team"
 translationKey: "one-person-team"
 date: 2026-08-22T00:00:00+08:00
 draft: false
 tags: ["solo builder", "AI", "one-person company", "shipping"]
-description: "Shipping software used to cost a team, months, and a network. In 2026 the tooling collapsed all three: AI coding agents replace the engineering team, Stripe-class distribution takes you to first dollar in weeks, and the receipts are public. The math changed — here's why nothing stops you now."
+description: "The minimum team size needed to ship software has dropped to one. In 2026 three costs collapsed at once — the engineering team became software, shipping went from months to weeks, and the exits went public. Here's the mechanism, with the numbers."
 cover:
   image: "cover-one-person-team.png"
   alt: "You have an idea — nothing should stop you now"
@@ -59,7 +59,7 @@ The transformation worth watching isn't the one-person unicorn. It's the one-per
 
 The tools changed. The math changed. The wall that used to sit between an idea and a shipped product is gone. If you have an idea, the only honest remaining question is *why not today?*
 
-*Ready to start? Here's the honest starting point — [where to actually begin building with AI, no CS degree required](/posts/ai-beginner-start/).*
+*Want the receipts — the exits, the revenue, the names? Here's why [solo founders are winning, and it's not a bubble](/posts/solo-founders-winning/). Or start from zero: [where to actually begin building with AI, no CS degree required](/posts/ai-beginner-start/).*
 
 ---
 

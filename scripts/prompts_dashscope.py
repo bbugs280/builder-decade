@@ -58,4 +58,18 @@ PROMPTS = {
         "chiaroscuro, volumetric light, photorealistic, moody and "
         "contemplative, shallow depth of field, no text, no watermark"
     ),
+    # "Solo founders are winning" — the outcome, not the solitude: a single
+    # builder stepping back to survey a shipping, growing product
+    "solo-founders-winning": (
+        "A single builder of mixed East Asian and Western heritage, ambiguous "
+        "ethnicity, seen from behind at a distance, standing and looking at a "
+        "large glowing wall of monitors in a warm dark control-room-like "
+        "space, each screen showing rising revenue charts, product dashboards "
+        "and delivery-truck-style shipping containers, a quiet triumphant "
+        "scale. The lone silhouetted figure is small against the productive "
+        "glow, conveying that one person now carries the output of a team. "
+        "Deep charcoal and copper amber atmosphere, cinematic volumetric "
+        "light, photorealistic, moody and assured, wide composition, no text, "
+        "no watermark"
+    ),
 }
