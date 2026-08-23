@@ -48,6 +48,14 @@ jobs:
             --minify \
             --baseURL "https://builderdecade.com/"
 
+      # Regression guard: EN/ZH homes must not mix languages. The bug this
+      # catches (global `site.RegularPages` leaking ZH posts onto the EN home)
+      # only reproduces on the Linux/amd64 runner — not on macOS arm64 — so it
+      # MUST run here in CI, not just locally. See tests/test_language_isolation.sh.
+      - name: Test language isolation
+        run: |
+          HUGO_BIN=hugo BASEURL="https://builderdecade.com/" bash tests/test_language_isolation.sh
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

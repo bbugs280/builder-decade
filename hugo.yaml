@@ -26,7 +26,7 @@ languages:
     label: 中文
     weight: 2
     title: 建造十年
-    contentDir: content/zh
+    contentDir: content-zh
     params:
       homeInfoParams:
         Title: 建造十年
