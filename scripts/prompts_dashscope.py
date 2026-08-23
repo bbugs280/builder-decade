@@ -72,4 +72,16 @@ PROMPTS = {
         "light, photorealistic, moody and assured, wide composition, no text, "
         "no watermark"
     ),
+    # "The AI coding stack I actually use" — one focused workstation, a single
+    # terminal-centric toolchain, deliberate rather than a drawer of tools
+    "ai-coding-stack": (
+        "A clean single workstation at night, a laptop showing a focused "
+        "terminal with a bright code editor and a subtle AI assistant panel, "
+        "one warm amber desk lamp, a small notebook and a coffee mug beside it, "
+        "the desk deliberately uncluttered — exactly the tools needed and "
+        "nothing more, conveying focus and intent rather than tool sprawl. No "
+        "person. Deep charcoal and copper amber atmosphere, cinematic "
+        "chiaroscuro, volumetric light, photorealistic, moody and calm, "
+        "shallow depth of field, no text, no watermark"
+    ),
 }
