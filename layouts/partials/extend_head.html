@@ -6,22 +6,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-{{- /* Home-page SEO/AI meta: PaperMod emits no og:description/og:image on the home
-      (index) page — only on posts. Inject a language-aware description + share
-      image so the brand landing surface summarises/cites cleanly. */ -}}
+{{- /* Home-page og:image: PaperMod's opengraph.html emits no og:image on the home
+      (index) page — only on posts — because there's no .Params.cover. Inject the
+      hero image so the brand landing surface gets a proper share/AI-cite image.
+      (Description + og:description + twitter:* are handled by site.Params.description
+      now, so no duplicate injection here.) */ -}}
 {{- if .IsHome }}
-  {{- $desc := site.Params.description | default "" -}}
-  {{- with .Params.description }}{{ $desc = . }}{{ end -}}
-  {{- with $desc }}
-<meta name="description" content="{{ . }}">
-<meta property="og:description" content="{{ . }}">
-<meta name="twitter:description" content="{{ . }}">
-  {{- end }}
   {{- $hero := site.Params.homeHeroImage | default "" -}}
   {{- with $hero }}
 <meta property="og:image" content="{{ . | absURL }}">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ . | absURL }}">
   {{- end }}
 {{- end }}
 
