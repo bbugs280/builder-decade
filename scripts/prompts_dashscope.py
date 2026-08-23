@@ -84,4 +84,16 @@ PROMPTS = {
         "chiaroscuro, volumetric light, photorealistic, moody and calm, "
         "shallow depth of field, no text, no watermark"
     ),
+    # "What AI agents still can't do" — a workbench split between the part the
+    # machine touches and the part only a human hand reaches
+    "what-agents-cant-do": (
+        "A moody split composition across a dark workbench: on the left, a "
+        "glowing laptop and monitor displaying dense code and a terminal, all "
+        "precise and automated, warm amber light; on the right, a single brass "
+        "drafting compass, a hand-drawn sketch and a pencil resting on paper, "
+        "human and imperfect, lit by a cooler shaft of light — the reach of "
+        "the machine versus the reach of the hand. Deep charcoal and copper "
+        "amber atmosphere, cinematic chiaroscuro, volumetric light, "
+        "photorealistic, contemplative, no people, no text, no watermark"
+    ),
 }
