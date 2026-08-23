@@ -96,4 +96,37 @@ PROMPTS = {
         "amber atmosphere, cinematic chiaroscuro, volumetric light, "
         "photorealistic, contemplative, no people, no text, no watermark"
     ),
+    # "The real cost of shipping solo" — time and attention as the currency
+    "cost-of-shipping-solo": (
+        "A dark warm workbench seen from above at an angle, a pair of hands of "
+        "mixed East Asian and Western heritage, ambiguous ethnicity, weighing "
+        "an hourglass of glowing amber sand in one hand and a small stack of "
+        "coins scattered beside a laptop in the other, conveying that the real "
+        "cost is time and attention, not money. Deep charcoal and copper "
+        "amber atmosphere, cinematic chiaroscuro, volumetric light, "
+        "photorealistic, moody and contemplative, shallow depth of field, no "
+        "text, no watermark"
+    ),
+    # "No-code vs vibe code vs real code" — three parallel paths, one choice
+    "no-code-vibe-code": (
+        "Three distinct workstations in a row receding into warm darkness, "
+        "each lit by its own pool of amber light: the first with colorful "
+        "drag-and-drop building blocks, the second with a stream of "
+        "glowing AI-generated code streaming down a monitor, the third with a "
+        "hand-written page of careful code next to a coffee mug. Conveying "
+        "three different ways to build, equally valid, a deliberate choice "
+        "between them. Deep charcoal and copper amber atmosphere, cinematic "
+        "perspective, volumetric light, photorealistic, moody, no people, no "
+        "text, no watermark"
+    ),
+    # "Week three" — the trough, a half-finished bench going dark
+    "week-three": (
+        "A half-finished project abandoned on a dark workbench, tools laid "
+        "down mid-task, a soldering iron still warm with a thin curl of smoke, "
+        "a half-assembled device and scattered notes, the amber desk lamp "
+        "flickering as if about to go out, conveying the quiet stall that hits "
+        "in the messy middle. Deep charcoal and copper amber atmosphere, "
+        "cinematic chiaroscuro, volumetric light, photorealistic, moody and "
+        "melancholic, no people, no text, no watermark"
+    ),
 }
