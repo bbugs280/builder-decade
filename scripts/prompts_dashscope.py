@@ -129,4 +129,36 @@ PROMPTS = {
         "cinematic chiaroscuro, volumetric light, photorealistic, moody and "
         "melancholic, no people, no text, no watermark"
     ),
+    # "Ship one tiny thing" — a single finished object, small and complete
+    "ship-one-tiny-thing": (
+        "A single small, fully-finished object sitting alone on a dark wooden "
+        "workbench under one warm amber lamp — a neatly assembled little device "
+        "or crafted piece, complete and quietly perfect, beside a long row of "
+        "identical empty spots receding into the dark suggesting many more to "
+        "come. Conveying completion and repeatable craft. Deep charcoal and "
+        "copper amber atmosphere, cinematic chiaroscuro, volumetric light, "
+        "photorealistic, moody and calm, shallow depth of field, no people, no "
+        "text, no watermark"
+    ),
+    # "Building hardware solo" — a single maker's bench, physical device
+    "building-hardware-solo": (
+        "A solitary maker's electronics workbench at night, a single device "
+        "half-assembled amid a microcontroller, wires, a multimeter and a "
+        "soldering iron, a bright magnifier lamp casting warm amber light, "
+        "schematic pages pinned behind, conveying the intimate focused craft "
+        "of assembling a physical thing alone. Deep charcoal and copper amber "
+        "atmosphere, cinematic chiaroscuro, volumetric light, photorealistic, "
+        "moody, no people, no text, no watermark"
+    ),
+    # "One year of building" — a long row of shipped things, a body of work
+    "one-year-of-building": (
+        "A long workbench receding into warm darkness, lined with many small "
+        "finished objects and devices at regular intervals, each lit by its "
+        "own faint pool of amber light, forming a row of completed work "
+        "stretching toward the horizon, conveying the accumulation of a full "
+        "year of small shipped things. Deep charcoal and copper amber "
+        "atmosphere, cinematic one-point perspective, volumetric light, "
+        "photorealistic, moody and contemplative, no people, no text, no "
+        "watermark"
+    ),
 }
