@@ -1,4 +1,1 @@
-# Builder Decade ads.txt
-# AdSense is deferred — no publisher ID is assigned to this site yet.
-# Populate this once builderdecade.com has its own approved AdSense account:
-#   google.com, ca-pub-<YOUR_ID>, DIRECT, f08c47fec0942fa0
+google.com, pub-4696981239521155, DIRECT, f08c47fec0942fa0

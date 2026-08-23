@@ -52,12 +52,14 @@ params:
   # (Neutral brand voice: the site is "Builder Decade", a generic publisher.)
   author: Builder Decade
 
-  # Favicons (brand mark) — placeholder until generated
+  # Favicons (brand mark) — raster .ico drives schema logo/image; SVG added via extend_head
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
     favicon32x32: "/favicon-32x32.png"
     apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
+    theme_color: "#B4551D"
 
   # Home hero image (placeholder — replace with a real stock photo later)
   homeHeroImage: "/images/hero.png"
@@ -66,7 +68,7 @@ params:
   # (Leave empty until then; scripts auto-skip while empty.)
   analytics:
     ga4ID: "G-ZB8DJRZJ3X"                       # Builder Decade GA4 property
-    adsensePublisherID: ""                      # AdSense deferred — set builderdecade's own ca-pub- ID after approval
+    adsensePublisherID: "ca-pub-4696981239521155"  # shared AdSense account (matches ads.txt pub-4696981239521155)
     googleSiteVerification: ""
 
   env: production

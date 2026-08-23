@@ -6,6 +6,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+{{- /* SVG favicon — crisp at all sizes; browsers prefer SVG when present.
+      (PaperMod's own <link rel=icon> points at the .ico for schema logo + legacy.) */ -}}
+<link rel="icon" type="image/svg+xml" href="{{ "/favicon.svg" | absURL }}">
+
 {{- /* Home-page og:image: PaperMod's opengraph.html emits no og:image on the home
       (index) page — only on posts — because there's no .Params.cover. Inject the
       hero image so the brand landing surface gets a proper share/AI-cite image.
