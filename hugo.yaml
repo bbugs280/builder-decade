@@ -66,7 +66,7 @@ params:
   # (Leave empty until then; scripts auto-skip while empty.)
   analytics:
     ga4ID: "G-ZB8DJRZJ3X"                       # Builder Decade GA4 property
-    adsensePublisherID: "ca-pub-4696981239521155"
+    adsensePublisherID: ""                      # AdSense deferred — set builderdecade's own ca-pub- ID after approval
     googleSiteVerification: ""
 
   env: production
