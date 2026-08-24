@@ -150,6 +150,18 @@ PROMPTS = {
         "atmosphere, cinematic chiaroscuro, volumetric light, photorealistic, "
         "moody, no people, no text, no watermark"
     ),
+    # "Solo founder vs co-founder" — a fork in the road, a decision, not solitude
+    "solo-founder-vs-cofounder": (
+        "A single builder of mixed East Asian and Western heritage, ambiguous "
+        "ethnicity, seen from behind, standing at a literal fork on a long dark "
+        "workbench — the bench splitting into two diverging paths, the left going "
+        "ahead alone into a narrow focused lane lit by one warm amber lamp, the "
+        "right widening into a space of two empty chairs and a second unlit lamp, "
+        "the builder paused between them weighing the choice. Conveying a "
+        "deliberate decision rather than solitude or default. Deep charcoal and "
+        "copper amber atmosphere, cinematic volumetric light, photorealistic, "
+        "moody and contemplative, shallow depth of field, no text, no watermark"
+    ),
     # "One year of building" — a long row of shipped things, a body of work
     "one-year-of-building": (
         "A long workbench receding into warm darkness, lined with many small "
