@@ -173,4 +173,22 @@ PROMPTS = {
         "photorealistic, moody and contemplative, no people, no text, no "
         "watermark"
     ),
+    # "Reuse vs rebuild" — a fork in the road: one path you keep custody of,
+    # the other path held/leased by someone else. Must show a REAL divergence,
+    # not a single straight aisle.
+    "reuse-vs-rebuild": (
+        "A literal fork in a long dark workbench, the wood splitting into two "
+        "clearly diverging paths: the left path a host of small readymade "
+        "interchangeable components and identical off-the-shelf boxes arranged "
+        "in neat rows, each labeled as if rented or leased, lit by a cooler "
+        "pool of light suggesting someone else's ownership; the right path a "
+        "single hand-crafted device glowing with warm amber light, uniquely "
+        "yours, standing alone and permanent. A single builder of mixed East "
+        "Asian and Western heritage, ambiguous ethnicity, seen from behind at "
+        "the fork, paused weighing which path to take and which to keep. "
+        "Conveying custody and ownership rather than mere cost. Deep charcoal "
+        "and copper amber atmosphere, cinematic volumetric light, "
+        "photorealistic, moody and contemplative, shallow depth of field, no "
+        "text, no watermark"
+    ),
 }
