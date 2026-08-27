@@ -207,4 +207,33 @@ PROMPTS = {
         "photorealistic, moody and contemplative, shallow depth of field, no "
         "text, no watermark"
     ),
+    # "How to price a SaaS as a solo founder" — a pricing decision, weighing one
+    # option against another on a scale or between two hands. Decision, not money.
+    "solo-saas-pricing": (
+        "Close-up of a workbench at night, a single builder of mixed East Asian "
+        "and Western heritage, ambiguous ethnicity, seen only as a pair of hands, "
+        "weighing two small objects in balance: in the left hand a single spent "
+        "coin and a receipt, cool lit and transactional, in the right hand a small "
+        "recurring glowing amber loop or an hourglass of flowing light, warm and "
+        "compounding — the hands paused mid-decision between a one-time price and "
+        "a recurring value. Conveying a deliberate pricing decision, not money "
+        "greed. Deep charcoal and copper amber atmosphere, cinematic chiaroscuro, "
+        "volumetric light, photorealistic, moody and contemplative, shallow depth "
+        "of field, no text, no watermark"
+    ),
+    # "The one-person workweek" — six jobs, one seat: many hats hanging around a
+    # single chair, the builder choosing to set most of them down. Scope-cutting.
+    "one-person-workweek": (
+        "A single wooden chair at an empty dark workbench under one warm amber "
+        "lamp, several distinct hats — a builder's cap, a customer-service "
+        "headset, a banker's visor, a marketer's cap — hanging on a row of pegs "
+        "behind it, most of them shadowed and receding into darkness while one "
+        "hat rests alone beside the chair in the light, conveying that a solo "
+        "builder must set down five of six roles and keep only the one that "
+        "matters, one lit hat resting beside it in the light. Conveying that a solo "
+        "builder must set down five of six roles and keep only the one that "
+        "matters. Deep charcoal and copper amber atmosphere, cinematic "
+        "volumetric light, photorealistic, moody and calm, shallow depth of "
+        "field, no people, no text, no watermark"
+    ),
 }
