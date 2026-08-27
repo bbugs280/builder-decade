@@ -236,4 +236,17 @@ PROMPTS = {
         "volumetric light, photorealistic, moody and calm, shallow depth of "
         "field, no people, no text, no watermark"
     ),
+    # "Solo founder burnout" — a single lamp guttering low over an empty bench,
+    # the quiet slide no one witnesses. Melancholic, not dramatic.
+    "solo-founder-burnout": (
+        "A single builder of mixed East Asian and Western heritage, ambiguous "
+        "ethnicity, seen from behind, head bowed and hands resting flat on a dark "
+        "workbench, a single amber desk lamp guttering low as if about to go out, "
+        "its light just barely reaching the scattered tools and half-finished "
+        "device before fading into deep shadow, the surrounding workshop empty "
+        "and silent, conveying the quiet exhaustion and isolation of burning out "
+        "alone with no one else to notice. Deep charcoal and copper amber "
+        "atmosphere, cinematic chiaroscuro, volumetric light, photorealistic, "
+        "moody and melancholic, shallow depth of field, no text, no watermark"
+    ),
 }
