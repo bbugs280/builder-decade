@@ -173,6 +173,22 @@ PROMPTS = {
         "photorealistic, moody and contemplative, no people, no text, no "
         "watermark"
     ),
+    # "How to get your first users" — quiet distribution: a single builder
+    # showing a finished thing to a gathered crowd, the product speaking for
+    # itself rather than the builder pitching. Show-don't-tell.
+    "how-to-get-first-users-solo": (
+        "A single builder of mixed East Asian and Western heritage, ambiguous "
+        "ethnicity, standing quietly behind a small finished device glowing "
+        "with warm amber light on a dark workbench, while a soft-focus crowd "
+        "of varied faces (East Asian, South Asian, Black, Latino, Middle "
+        "Eastern, Western — a genuine mix) gathers beyond the bench, drawn "
+        "toward the object rather than the builder, the builder's hands resting "
+        "calmly, not gesturing or pitching — the product speaking for itself, "
+        "conveying quiet leverage and show-don't-tell rather than cold "
+        "outreach. Deep charcoal and copper amber atmosphere, cinematic "
+        "volumetric light, photorealistic, moody and assured, shallow depth "
+        "of field, no text, no watermark"
+    ),
     # "Reuse vs rebuild" — a fork in the road: one path you keep custody of,
     # the other path held/leased by someone else. Must show a REAL divergence,
     # not a single straight aisle.
