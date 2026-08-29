@@ -249,4 +249,34 @@ PROMPTS = {
         "atmosphere, cinematic chiaroscuro, volumetric light, photorealistic, "
         "moody and melancholic, shallow depth of field, no text, no watermark"
     ),
+    # "SEO for indie hackers" — one focused query vs scattered noise: a single
+    # glowing beacon/page casting ONE crisp amber beam across a dark bench,
+    # while countless faint scattered papers/signals fade in the surrounding
+    # shadow. Still-life, no person (avoids ethnicity + directionality).
+    "seo-for-indie-hackers": (
+        "A still-life on a dark wooden workbench at night: one single sheet of "
+        "paper standing upright, glowing with warm amber light, casting a single "
+        "crisp focused beam of light across the bench toward the viewer, while in "
+        "the surrounding deep shadow dozens of faint scattered torn papers and "
+        "dim unlit scraps recede into darkness, each too faint to matter — "
+        "conveying the power of choosing ONE focused target over chasing many "
+        "faint signals. Deep charcoal and copper amber atmosphere, cinematic "
+        "chiaroscuro, volumetric light, photorealistic, moody and focused, "
+        "shallow depth of field, no people, no text, no watermark"
+    ),
+    # "Leaving the corporate job" — the threshold: a glass office door on one
+    # side, a warm workbench on the other, a single builder stepping through
+    "leaving-corporate-job-build-solo": (
+        "A single builder of mixed East Asian and Western heritage, ambiguous "
+        "ethnicity, seen from behind stepping across a threshold between two "
+        "worlds: on the left a glass-walled corporate office receding into "
+        "cool grey-blue light, rows of identical desks and monitors, a lanyard "
+        "door; on the right a warm dark workshop with a single amber desk lamp "
+        "over a workbench and small tools, the lamp pooling warm light toward "
+        "the builder as he crosses over, one foot leaving the office and one "
+        "entering the workshop. Conveying a deliberate, quiet decision to walk "
+        "away from the corporate job toward building alone. Deep charcoal and "
+        "copper amber atmosphere, cinematic volumetric light, photorealistic, "
+        "moody and contemplative, shallow depth of field, no text, no watermark"
+    ),
 }
