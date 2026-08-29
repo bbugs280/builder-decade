@@ -279,4 +279,24 @@ PROMPTS = {
         "copper amber atmosphere, cinematic volumetric light, photorealistic, "
         "moody and contemplative, shallow depth of field, no text, no watermark"
     ),
+    # "API vs MCP" — two routes to the same provider, one direct, one mediated:
+    # a concrete direct wire on one side vs a standardized adapter layer on the
+    # other, the builder choosing which to reach for. A deliberate decision
+    # about whether the abstraction is worth the extra layer. Still-life-ish
+    # fork, no person (avoids ethnicity + directionality).
+    "api-vs-mcp": (
+        "A still-life on a dark wooden workbench at night, split into two "
+        "distinct routes toward the same faint glowing endpoint in the "
+        "background: on the left a single direct, taut copper wire running "
+        "straight from a laptop terminal to the endpoint — simple, direct, "
+        "nothing in between, lit by one warm amber lamp; on the right a row of "
+        "small standardized brass adapter blocks and labeled interface plugs "
+        "chained together into a neat stack, also reaching the endpoint but "
+        "through several intermediary layers. Conveying a deliberate choice "
+        "between a direct path and an abstraction layer worth its weight only "
+        "when the complexity justifies it. Deep charcoal and copper amber "
+        "atmosphere, cinematic chiaroscuro, volumetric light, photorealistic, "
+        "moody and focused, shallow depth of field, no people, no text, no "
+        "watermark"
+    ),
 }
