@@ -185,6 +185,54 @@ for slug in ship-one-tiny-thing what-agents-cant-do; do
   fi
 done
 
+echo "== language switcher (lang-menu) targets the CURRENT page, not home =="
+# Bug (2026-08-30): theme header.html used `site.Home.Translations`, so the
+# header lang-toggle always linked to the home page's translation (/zh/ or /)
+# instead of the CURRENT page's translation (/zh/posts/<slug>/ etc). Fix: the
+# header override uses `.Translations` (the current page's).
+# Assert: on a deep post page, the lang-menu href points at the SAME slug in the
+# other language (contains /<lang>/posts/<slug>), NOT the bare home (/zh/ only).
+
+# Extract the lang-menu link(s) from a page's header.
+# The minifier strips attribute quotes, so match the bare `lang-menu` token and
+# grab the first href that follows it (the lang switcher's only anchor).
+lang_menu_hrefs() {
+  # The header is one long minified line. Match the lang-menu anchor directly:
+  # it is the ONLY anchor inside the <ul class=lang-menu> block and immediately
+  # follows the literal token `lang-menu>`. Use sed to flexibly capture up to a
+  # 200-char window (POSIX sed has no {0,300} grep cap) then pull href=.
+  sed -n 's/.*lang-menu>\(.\{0,200\}\).*/\1/p' "$1" | grep -oE 'href=[A-Za-z0-9:./_-]*' | head -1
+}
+
+# A representative deep post (must exist in both languages).
+DEEP_SLUG="infinite-task-list-ai-era"
+EN_POST="$PUB/posts/$DEEP_SLUG/index.html"
+ZH_POST="$PUB/zh/posts/$DEEP_SLUG/index.html"
+[ -f "$EN_POST" ] || { echo "WARN: no EN post $DEEP_SLUG to test lang-menu (skipping)"; EN_POST=""; }
+[ -f "$ZH_POST" ] || { echo "WARN: no ZH post $DEEP_SLUG (skipping)"; ZH_POST=""; }
+
+if [ -n "$EN_POST" ]; then
+  en_menu=$(lang_menu_hrefs "$EN_POST")
+  if printf '%s\n' "$en_menu" | grep -qE 'href=[^ ]*/zh/posts/'"$DEEP_SLUG"; then
+    ok "EN post lang-menu → /zh/posts/$DEEP_SLUG (same post, not home)"
+  else
+    fail "EN post lang-menu does NOT link to the ZH translation of the same post: $en_menu"
+  fi
+  # And it must NOT link to the bare home /zh/
+  if printf '%s\n' "$en_menu" | grep -qE 'href=[^ ]*/zh/?([ ">]|$)'; then
+    fail "EN post lang-menu links to bare /zh/ (home), not the translated post"
+  fi
+fi
+
+if [ -n "$ZH_POST" ]; then
+  zh_menu=$(lang_menu_hrefs "$ZH_POST")
+  if printf '%s\n' "$zh_menu" | grep -qE 'href=[^ ]*/posts/'"$DEEP_SLUG"; then
+    ok "ZH post lang-menu → /posts/$DEEP_SLUG (same post, not home)"
+  else
+    fail "ZH post lang-menu does NOT link to the EN original of the same post: $zh_menu"
+  fi
+fi
+
 rm -rf "$tmp_publish"
 
 echo ""
