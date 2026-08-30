@@ -299,4 +299,20 @@ PROMPTS = {
         "moody and focused, shallow depth of field, no people, no text, no "
         "watermark"
     ),
+    # "The infinite task list" — an overfull queue that never drains: a desk
+    # drowning in tasks/tickets while a single unglamorous bottleneck (one
+    # person's attention) stands at the drain. Still-life, no person (avoids
+    # ethnicity + directionality). The metaphor: capacity outruns attention.
+    "infinite-task-list": (
+        "A still-life on a dark wooden workbench at night, framing the tension "
+        "between output and attention: on the right, an endless cascading pile "
+        "of task cards, sticky notes and to-do tickets spilling over the bench "
+        "edge, a few drifting into the air, all lit by a cold overhead light; on "
+        "the left, a single small, tidy inbox with just one card in it, glowing "
+        "warm amber under a single desk lamp — the one thing being chosen. The "
+        "pile crowds and looms while the lit inbox stays calm and deliberate. "
+        "Deep charcoal and copper amber atmosphere, cinematic chiaroscuro, "
+        "volumetric light, photorealistic, moody and contemplative, shallow "
+        "depth of field, no people, no text, no watermark"
+    ),
 }
