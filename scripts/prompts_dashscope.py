@@ -315,4 +315,18 @@ PROMPTS = {
         "volumetric light, photorealistic, moody and contemplative, shallow "
         "depth of field, no people, no text, no watermark"
     ),
+    # "Vibe coding's hidden cost" — code that looks done but is quietly burning:
+    # a stack of printed code pages on a workbench, one page smoldering. The
+    # metaphor: apparent completion over a slow-burn maintenance bill.
+    # Still-life, no person/hands (avoids ethnicity + directionality).
+    "vibe-coding-hidden-cost": (
+        "Cinematic still life on a dark wooden workbench in a warm workshop: a "
+        "tall messy stack of printed code pages held together with a coffee mug "
+        "as a paperweight, one page near the bottom smoldering and catching fire "
+        "with a soft amber ember glow, faint copper-orange rim light on the edges "
+        "of the paper, sawdust and a small screwdriver nearby suggesting a maker's "
+        "bench, deep charcoal and warm amber palette, moody chiaroscuro, "
+        "photorealistic-illustrative, film grain, 16:9 composition, no text, no "
+        "watermark, no people, no hands"
+    ),
 }
