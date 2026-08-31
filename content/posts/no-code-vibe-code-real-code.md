@@ -4,7 +4,7 @@ translationKey: "no-code-vibe-code-real-code"
 date: 2026-08-23T00:00:00+08:00
 draft: false
 tags: ["no-code", "vibe coding", "programming", "solo builder", "decision"]
-description: "Three ways to build in 2026, and three very different failure modes. No-code, vibe coding, and writing real code aren't a ladder — they're three tools for three different jobs. Here's how to actually pick, instead of defaulting to whichever one your feed is currently hyping."
+description: "No-code vs vibe coding vs real code — which one actually wins? They're not a ladder, they're three tools for three jobs. Here's how to pick the right way to build in 2026, instead of defaulting to whatever your feed is hyping."
 cover:
   image: "cover-no-code-vibe-code.png"
   alt: "Three ways to build, three different jobs"
