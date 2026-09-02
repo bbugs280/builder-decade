@@ -11,7 +11,7 @@ Questions, corrections, or topic requests? I'd like to hear from you.
 
 ## How to reach us
 
-- **Email:** For editorial questions, corrections, and topic suggestions, email the maintainer at the address listed on the [About](/about/) page.
+- **Email:** For editorial questions, corrections, and topic suggestions, email us at **contact@builderdecade.com**.
 - **Topics:** If there's a building-in-the-AI-era subject you'd like covered, suggest it and it'll go on the backlog.
 
 ## What kind of messages help most
