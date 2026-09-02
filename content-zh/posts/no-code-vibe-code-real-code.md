@@ -2,6 +2,7 @@
 title: "No-Code vs. Vibe Coding vs. 真程式碼：每一種到底什麼時候才贏"
 translationKey: "no-code-vibe-code-real-code"
 date: 2026-08-23T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["no-code", "vibe coding", "程式設計", "獨立開發者", "決策"]
 description: "No-code vs vibe coding vs 真程式碼——到底哪一種才贏？它們不是階梯，而是三種應付三種不同工作的工具。這裡講 2026 年怎麼真正挑對建東西的方式，而不是默認選你動態牆上正在炒的那個。"

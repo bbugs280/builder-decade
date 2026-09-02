@@ -2,6 +2,7 @@
 title: "The AI Coding Stack I Actually Use (and Why I Stopped Swapping Tools)"
 translationKey: "ai-coding-stack"
 date: 2026-08-23T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["AI coding", "tools", "Claude Code", "Cursor", "solo builder", "productivity"]
 description: "The tool question isn't the one that matters, but people ask it constantly. Here's the actual stack a solo builder uses day to day in 2026 — one coding agent, a model, a few supporting tools — and the honest reasoning behind each choice, including why the default instinct to keep swapping tools is the thing actually costing you progress."

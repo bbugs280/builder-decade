@@ -2,6 +2,7 @@
 title: "The Infinite Task List: Why AI Made Your To-Do List Longer, Not Shorter"
 translationKey: "infinite-task-list-ai-era"
 date: 2026-08-30T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo founder", "decision discipline", "systems", "ai", "focus", "one-person company"]
 description: "AI gave you more capacity, but you still have one person's worth of attention. That's why the queue never empties — every task you automate refills it faster. The fix isn't a better todo app. It's a rate limit on what you let in."

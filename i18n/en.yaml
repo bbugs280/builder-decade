@@ -1,0 +1,12 @@
+- id: about
+  translation: About
+- id: contact
+  translation: Contact
+- id: privacy
+  translation: Privacy
+- id: about_the_author
+  translation: About the author
+- id: author_bio
+  translation: Builder Decade is written by Vincent, a solo builder shipping real products with AI agents — every method tested against what actually ships and works before it's published here.
+- id: read_more
+  translation: Read more

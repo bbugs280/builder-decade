@@ -2,6 +2,7 @@
 title: "Solo Founder Burnout: Why It Hits Harder When There's No One to Notice"
 translationKey: "solo-founder-burnout"
 date: 2026-08-27T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo founder", "burnout", "mental health", "one-person company", "wellbeing"]
 description: "Burnout has a formal definition — three symptoms the WHO codified — and solo founders hit it for a specific reason: there's no teammate to absorb the load and no manager to notice. Here's the mechanism, and the operational fix."

@@ -2,6 +2,7 @@
 title: "Building with AI: Where to Actually Start (No CS Degree Required)"
 translationKey: "ai-beginner-start"
 date: 2026-08-22T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["building", "AI", "beginner"]
 description: "You don't need a CS degree to start building with AI in 2026. Here's the honest first step — what to build, what you actually need, and the one project that gets you shipping this weekend."

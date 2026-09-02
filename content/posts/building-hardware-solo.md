@@ -2,6 +2,7 @@
 title: "Building Hardware Solo: The Maker Room Most Builders Skip"
 translationKey: "building-hardware-solo"
 date: 2026-08-23T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["hardware", "maker", "solo builder", "electronics", "physical products"]
 description: "Software gets all the solo-builder attention in 2026, but the same cost collapse is quietly happening on the hardware bench. A single maker with cheap microcontrollers, AI-assisted CAD, and on-demand fabrication can now assemble what once took a team. Here's what's actually changed — and where the hardware path still hurts."

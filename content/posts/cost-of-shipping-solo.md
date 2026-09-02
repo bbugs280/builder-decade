@@ -2,6 +2,7 @@
 title: "The Real Cost of Shipping Solo (It's Not the Money)"
 translationKey: "cost-of-shipping-solo"
 date: 2026-08-23T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo builder", "cost", "economics", "time", "shipping"]
 description: "People assume the cost of building solo is money — SaaS subscriptions, an API bill, a domain. Those are the cheap parts. The real cost is time, attention, and the decision load of being the only founder. Here's the honest accounting, and what actually costs the most."

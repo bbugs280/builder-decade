@@ -2,6 +2,7 @@
 title: "How to Get Your First Users as a Solo Builder (Quiet Leverage, Not Cold Outreach)"
 translationKey: "how-to-get-first-users-solo"
 date: 2026-08-26T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo builder", "distribution", "first users", "marketing", "build in public"]
 description: "The hardest part of building alone isn't shipping — it's getting anyone to use the thing. Here's a distribution playbook built for introverts: write and ship in public, go where buyers already gather, and go deep on one channel instead of shallow on ten."

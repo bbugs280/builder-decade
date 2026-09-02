@@ -2,6 +2,7 @@
 title: "Solo Founder vs Co-Founder: A Decision Rule for the AI Era"
 translationKey: "solo-founder-vs-cofounder"
 date: 2026-08-24T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo founder", "co-founder", "one-person company", "decision", "AI"]
 description: "Should you go it alone or find a co-founder? The old answer was 'get a co-founder, obviously.' The data no longer supports that default. Solo founders hire faster, keep more equity, and the 'team safety' argument is now a myth. Here's a receipt-backed decision rule for the AI era."

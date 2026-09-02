@@ -2,6 +2,7 @@
 title: "Why One Person Can Now Ship What Took a Team"
 translationKey: "one-person-team"
 date: 2026-08-22T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo builder", "AI", "one-person company", "shipping"]
 description: "The minimum team size needed to ship software has dropped to one. In 2026 three costs collapsed at once — the engineering team became software, shipping went from months to weeks, and the exits went public. Here's the mechanism, with the numbers."

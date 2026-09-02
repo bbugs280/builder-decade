@@ -2,6 +2,7 @@
 title: "Welcome — What Builder Decade Is"
 translationKey: "welcome"
 date: 2026-08-22T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["building", "AI", "maker"]
 description: "What it means to build for a decade in the AI era — and who this site is for."
@@ -35,3 +36,7 @@ Field notes, not tutorials. Real projects — apps shipped to the App Store, dev
 The point isn't to impress you with what's possible. It's to show you what's *repeatable*.
 
 A decade is coming either way. Spend it building something.
+
+---
+
+*Builder Decade is written by Vincent, a solo builder shipping real products with AI agents.*

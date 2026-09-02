@@ -1,6 +1,7 @@
 ---
 title: "When to Trust an Open Source Library: A Solo Builder's Due-Diligence Rule"
 date: 2026-09-02T09:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["open source", "dependencies", "supply chain", "solo builder", "npm", "security"]
 description: "\"It's free and it's popular\" is how a solo builder inherits someone else's abandoned project — or a credential-stealing worm. Here's the 5-point checklist to run before you npm install, in 30 minutes."

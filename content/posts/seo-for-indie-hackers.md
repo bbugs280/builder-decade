@@ -2,6 +2,7 @@
 title: "SEO for Indie Hackers: Rank for the Query That Pays, Skip the Rest"
 translationKey: "seo-for-indie-hackers"
 date: 2026-08-29T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo builder", "seo", "organic traffic", "distribution", "long tail"]
 description: "Most SEO advice is written for teams with a year to burn. The solo-builder version is narrower: win one high-intent query per product, ship the technical floor once, and let the page compound while you build. Here's the decision rule, not the 40-post content calendar."

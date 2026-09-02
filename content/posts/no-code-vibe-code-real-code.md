@@ -2,6 +2,7 @@
 title: "No-Code vs. Vibe Coding vs. Real Code: When Each Actually Wins"
 translationKey: "no-code-vibe-code-real-code"
 date: 2026-08-23T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["no-code", "vibe coding", "programming", "solo builder", "decision"]
 description: "No-code vs vibe coding vs real code — which one actually wins? They're not a ladder, they're three tools for three jobs. Here's how to pick the right way to build in 2026, instead of defaulting to whatever your feed is hyping."

@@ -2,6 +2,7 @@
 title: "The One-Person Workweek: How Solo Founders Actually Get Things Done"
 translationKey: "one-person-workweek"
 date: 2026-08-27T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo founder", "time management", "one-person company", "prioritization", "scope"]
 description: "A solo founder doesn't have a focus problem — they have a structure problem: six jobs, one seat. The winners don't juggle faster. They delete the jobs. Here's the scope-cutting system behind the one-person workweek."

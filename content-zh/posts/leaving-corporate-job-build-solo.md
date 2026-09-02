@@ -2,6 +2,7 @@
 title: "辭掉正職去做獨立創業：實際會發生什麼"
 translationKey: "leaving-corporate-job-build-solo"
 date: 2026-08-28T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["獨立創業", "辭職", "一人公司", "創業", "轉職"]
 description: "該不該辭掉正職去做自己的東西？看真正走過、還把帳目攤開來的人就知道——無論是一場漂亮的出場，還是誠實的八年長跑。"

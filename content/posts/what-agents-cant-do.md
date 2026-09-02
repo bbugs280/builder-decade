@@ -2,6 +2,7 @@
 title: "What AI Agents Still Can't Do (The Last 10% Is Still Yours)"
 translationKey: "what-agents-cant-do"
 date: 2026-08-23T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["AI agents", "limits", "taste", "judgment", "solo builder"]
 description: "The hype says AI builds anything. The reality: agents are superhuman at volume and untrustworthy at judgment. This post is the honest map of where they genuinely fail — bugs, taste, the last 10% — and why that gap is exactly where a solo builder's value actually lives."

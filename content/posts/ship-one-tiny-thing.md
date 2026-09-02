@@ -2,6 +2,7 @@
 title: "The 'Ship One Tiny Thing' System (How Small Wins Actually Compound)"
 translationKey: "ship-one-tiny-thing"
 date: 2026-08-23T00:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["shipping", "system", "consistency", "solo builder", "compounding"]
 description: "The single most reliable way to get good at building isn't a course or a stack — it's a weekly system of shipping one small, complete thing. Here's the exact loop, why small beats big, and how a year of tiny wins compounds into something that looks like talent from the outside."

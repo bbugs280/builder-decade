@@ -2,6 +2,7 @@
 title: "Vibe Coding 的隱藏成本：AI 寫得很快，但你要一輩子負責維護"
 translationKey: "vibe-coding-hidden-cost"
 date: 2026-08-31T08:00:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["vibe coding", "技術債", "維護", "獨立開發者", "AI 程式設計"]
 description: "AI 幾分鐘就寫出功能程式碼——然後交給你的是一筆以「月」為單位計算的維護帳單。你第一天感受到的速度，其實是第九十天要背的債。數據怎麼說，以及讓獨立開發者不用獨自扛下這一切的「審查習慣」。"

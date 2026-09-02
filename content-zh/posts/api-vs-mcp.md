@@ -2,6 +2,7 @@
 title: "API 還是 MCP：你的 AI Agent 何時該直接呼叫服務商"
 translationKey: "api-vs-mcp"
 date: 2026-08-29
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["MCP", "AI Agent", "整合", "build vs buy", "獨立開發者"]
 description: "MCP 贏了標準之戰，那獨立開發者為什麼還要自己寫 API 呼叫？一個判斷規則：協議什麼時候值得用，什麼時候只是多一層。"

@@ -2,6 +2,7 @@
 title: "API vs MCP: When Your Agent Should Talk to the Provider Directly"
 translationKey: "api-vs-mcp"
 date: 2026-08-29
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["mcp", "ai agents", "integration", "build vs buy", "solo builder"]
 description: "MCP won the standards war, so why would a solo builder ever call a provider's API directly? A decision rule for when the protocol is worth it — and when it's just an extra layer."

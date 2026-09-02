@@ -2,6 +2,7 @@
 title: "3 Agent Patterns Worth Knowing (Before You Blame the Model)"
 translationKey: "agent-patterns-worth-knowing"
 date: 2026-09-01T07:30:00+08:00
+lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["ai agents", "agentic patterns", "tool use", "routing", "reflection", "solo builder"]
 description: "When your agent misbehaves, the instinct is to swap the model or 'prompt harder.' Usually the real problem is the pattern you gave it. Routing, tool use, and reflection each solve a specific failure mode — here's when each one actually earns its cost."
