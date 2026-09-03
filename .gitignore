@@ -28,3 +28,4 @@ __pycache__/
 *.pyc
 .hugo_build.lock
 github-pages/
+scripts/linkedin-api-vs-mcp-draft.md
