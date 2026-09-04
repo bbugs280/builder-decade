@@ -329,4 +329,21 @@ PROMPTS = {
         "photorealistic-illustrative, film grain, 16:9 composition, no text, no "
         "watermark, no people, no hands"
     ),
+    # "AI API cost creep" — the rate card vs the meter: an old analog voltage
+    # gauge / meter with its needle climbing toward the red zone, sitting on a
+    # workbench beside a small laptop, the needle the thing spiraling while a
+    # faded price tag below it stays flat/falling. Still-life, no person
+    # (avoids ethnicity + directionality). The metaphor = consumption, not price.
+    "ai-api-cost-creep": (
+        "Cinematic still life on a dark wooden workbench at night: a single "
+        "old brass analog voltage gauge or meter standing upright at center, its "
+        "needle visibly climbing toward a warm amber-red zone at the top of the "
+        "dial, glowing faintly, while a small faded price tag pinned below the "
+        "gauge sits flat and unloved — the needle rising while the price stays "
+        "still or drifts lower. A small laptop with code, a coiled cable, and a "
+        "few tokens or coins scattered nearby suggest the cost the meter is "
+        "actually counting. Deep charcoal and warm copper-amber palette, moody "
+        "chiaroscuro, volumetric light, photorealistic-illustrative, film grain, "
+        "16:9 composition, no text, no watermark, no people, no hands"
+    ),
 }
