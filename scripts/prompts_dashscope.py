@@ -342,8 +342,28 @@ PROMPTS = {
         "gauge sits flat and unloved — the needle rising while the price stays "
         "still or drifts lower. A small laptop with code, a coiled cable, and a "
         "few tokens or coins scattered nearby suggest the cost the meter is "
-        "actually counting. Deep charcoal and warm copper-amber palette, moody "
-        "chiaroscuro, volumetric light, photorealistic-illustrative, film grain, "
+        "Deep charcoal and warm copper-amber palette, moody " \
+        "chiaroscuro, volumetric light, photorealistic-illustrative, film grain, " \
         "16:9 composition, no text, no watermark, no people, no hands"
+    ),
+    # "Done is a claim, not a fact" — the verification ritual: a rubber "DONE"
+    # stamp held above a workbench surface, and beside it a magnifying glass —
+    # the claim of completion vs the act of inspection. Still-life, no
+    # person/hands (avoids ethnicity + the directionality flip). The stamp is
+    # NOT yet pressed down — suspended above the surface, implying the act of
+    # checking comes before the mark is trusted.
+    "done-is-a-claim": (
+        "Cinematic still life on a dark wooden workbench in a warm maker's "
+        "workshop: a single rubber stamp with the word DONE on its face "
+        "suspended in the air just above the bench surface, not yet pressed "
+        "down, hovering as if paused before contact, while beside it lies a "
+        "large brass-framed magnifying glass with a warm amber glow reflecting "
+        "off its lens, a few fragments of code printout and a small screwdriver "
+        "scattered nearby. The suspended stamp suggests a claim about to be "
+        "made; the magnifying glass suggests the inspection that must come "
+        "first. Deep charcoal and warm copper-amber palette, moody "
+        "chiaroscuro, volumetric light, photorealistic-illustrative, film "
+        "grain, 16:9 composition, no text except the word DONE on the stamp "
+        "face, no watermark, no people, no hands"
     ),
 }
