@@ -1,7 +1,7 @@
 ---
 title: "Memory Is the Product: Why Your Agent Stack Is Worth More Than Your Model"
 translationKey: "memory-is-the-product"
-date: 2026-09-07T08:30:00+08:00
+date: 2026-09-07T08:20:00+08:00
 draft: false
 tags: ["ai agents", "agent memory", "context", "rules", "trust", "solo builder", "one person team"]
 description: "The model is a commodity you rent. What you actually own — and what compounds instead of depreciating — is the memory, rules, and decision boundaries you build around it. Here's why a solo builder's real product is the system, not the bot."
