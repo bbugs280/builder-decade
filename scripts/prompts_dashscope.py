@@ -366,4 +366,27 @@ PROMPTS = {
         "grain, 16:9 composition, no text except the word DONE on the stamp "
         "face, no watermark, no people, no hands"
     ),
+    # \"Memory is the product\" — the durable asset is the memory,rules,
+    # ritual cabinet, not the interchangeable model. A small card-index
+    # cabinet glowing amber in the foreground is the product; a generic,
+    # unlit android/robot model fades into shadow behind it. Still-life,
+    # no person/hands (avoids ethnicity + directionality) — the contrast
+    # between the owned, artifact-like cabinet and the rented, commodity
+    # model does the work.
+    "memory-is-the-product": (
+        "Cinematic still life on a dark wooden workbench in a warm maker's "
+        "workshop: in the foreground, a small hand-crafted card-index cabinet "
+        "with its shallow drawers pulled partway open, each drawer holding "
+        "neat rows of handwritten index cards, tabs and small brass labels, "
+        "glowing with warm amber lamplight and painted with a soft copper rim "
+        "light — the object radiating permanence, curation and accumulated "
+        "memory; in the background fading into deep shadow, a generic unlit "
+        "grey humanoid robot model standing dim and out of focus, identical "
+        "and interchangeable, clearly the commodity behind the crafted "
+        "cabinet. Conveying that the memory and rules are the real product "
+        "and the generic model is the rented thing in shadow. Deep charcoal "
+        "and warm copper-amber palette, moody chiaroscuro, volumetric light, "
+        "photorealistic-illustrative, film grain, 16:9 composition, no text, "
+        "no watermark, no people, no hands"
+    ),
 }
