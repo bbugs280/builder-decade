@@ -408,4 +408,21 @@ PROMPTS = {
         "grain, 16:9 composition, no readable text beyond abstract log lines "
         "and the single mark, no watermark, no people, no hands"
     ),
+    # "Your simulator is lying to you" — on-device bugs: a phone with a crack
+    # across its screen lying on a dark workbench, beside a laptop showing a
+    # glowing simulator window. The metaphor: the simulator claims green while
+    # the real phone tells the truth (the crack). Still-life, no person/hands.
+    "voice-app-on-device": (
+        "Cinematic still life on a dark wooden workbench in a warm maker's "
+        "workshop: a single smartphone lying face-up, its screen split by a "
+        "fine crack running diagonally, the glass catching a faint warm amber "
+        "glint, while beside it a laptop sits open showing a bright glowing "
+        "simulator window with a colorful app interface and a green "
+        "checkmark, the two side by side — the phone revealing what the "
+        "simulator hides. Scattered nearby a coiled audio cable and a pair of "
+        "wireless earbuds. Deep charcoal and warm copper-amber palette, moody "
+        "chiaroscuro, volumetric light, photorealistic-illustrative, film "
+        "grain, 16:9 composition, the screen content abstract and not "
+        "readable, no watermark, no people, no hands"
+    ),
 }
