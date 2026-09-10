@@ -389,4 +389,23 @@ PROMPTS = {
         "photorealistic-illustrative, film grain, 16:9 composition, no text, "
         "no watermark, no people, no hands"
     ),
+    # "Your AI agent fails boringly" — the diagnosis discipline: a single
+    # small punctuation mark (the one-line bug) lying on top of a printed
+    # technical log, with a magnifying glass. The metaphor: the fix isn't
+    # genius, it's reading the one wrong line. Still-life, no person/hands.
+    "agents-fail-boringly": (
+        "Cinematic still life on a dark wooden workbench in a warm maker's "
+        "workshop: a single small typographic symbol — a lone closing "
+        "bracket or semicolon printed in bold serif — lying alone on top of "
+        "a sheet of printed technical log lines, rendered as if the singular "
+        "thing that was wrong, everything around it otherwise orderly, while "
+        "a large brass-framed magnifying glass leans against the page with "
+        "warm amber light pooling on its lens, faint highlights tracing one "
+        "line of the log as if found. Conveying that the failure was boring "
+        "and mechanical — one mark — and the skill was simply reading the "
+        "one line. Deep charcoal and warm copper-amber palette, moody "
+        "chiaroscuro, volumetric light, photorealistic-illustrative, film "
+        "grain, 16:9 composition, no readable text beyond abstract log lines "
+        "and the single mark, no watermark, no people, no hands"
+    ),
 }
