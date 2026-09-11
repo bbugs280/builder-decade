@@ -425,4 +425,46 @@ PROMPTS = {
         "grain, 16:9 composition, the screen content abstract and not "
         "readable, no watermark, no people, no hands"
     ),
+    # "Ship the half-done thing" — a half-finished object being set into the
+    # world: a work-in-progress on the bench, one edge still raw, catching
+    # warm light. Still-life, no person/hands.
+    "ship-the-half-done-thing": (
+        "Cinematic still life of a half-finished handcrafted object on a dark "
+        "wooden workbench in a warm maker's workshop: a small wooden box or "
+        "chassis with one corner still rough and unsanded, clamps still "
+        "holding it, shavings scattered, a single warm amber worklight "
+        "pooling over the finished half while the raw half fades into "
+        "charcoal shadow — the moment of deliberately shipping a thing "
+        "before it is polished. Deep charcoal and warm copper-amber palette, "
+        "moody chiaroscuro, volumetric light, photorealistic-illustrative, "
+        "film grain, 16:9 composition, no readable text, no watermark, no "
+        "people, no hands"
+    ),
+    # "Your first charge" — the first small real payment: a few coins / a
+    # tiny bill laid on a ledger next to a freshly shipped product. Still-life.
+    "first-charge-solo-builder": (
+        "Cinematic still life on a dark wooden workbench in a warm maker's "
+        "workshop: a single crisp bill and a few coin-like tokens laid on an "
+        "open paper ledger, beside a small freshly finished product — a neat "
+        "small box or device — catching a warm amber glint, the money "
+        "modest and unassuming, the mood quietly momentous as if recording "
+        "the first real sale. Deep charcoal and warm copper-amber palette, "
+        "moody chiaroscuro, volumetric light, photorealistic-illustrative, "
+        "film grain, 16:9 composition, no readable currency text, no "
+        "watermark, no people, no hands"
+    ),
+    # "Evenings and weekends" — after-hours building: a workbench lit by a
+    # desk lamp against a window showing dusk/night outside. Still-life, no
+    # person.
+    "evenings-weekends-shipping": (
+        "Cinematic still life of a maker's workbench lit by a single warm "
+        "amber desk lamp in a darkened room, beyond it a window showing deep "
+        "dusk blue evening light outside, a half-assembled device and open "
+        "notebook on the bench, a cooling mug of tea, the whole scene "
+        "evoking the quiet after-hours hours when life pauses and the work "
+        "gets done. Deep charcoal, warm copper-amber, and deep dusk blue "
+        "palette, moody chiaroscuro, volumetric light, "
+        "photorealistic-illustrative, film grain, 16:9 composition, no "
+        "readable text, no watermark, no people, no hands"
+    ),
 }
