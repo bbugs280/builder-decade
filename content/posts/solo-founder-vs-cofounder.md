@@ -2,16 +2,16 @@
 title: "Solo Founder vs Co-Founder: A Decision Rule for the AI Era"
 translationKey: "solo-founder-vs-cofounder"
 date: 2026-08-24T00:00:00+08:00
-lastmod: 2026-09-02T08:00:00+08:00
+lastmod: 2026-09-12T08:00:00+08:00
 draft: false
-tags: ["solo founder", "co-founder", "one-person company", "decision", "AI"]
-description: "Should you go it alone or find a co-founder? The old answer was 'get a co-founder, obviously.' The data no longer supports that default. Solo founders hire faster, keep more equity, and the 'team safety' argument is now a myth. Here's a receipt-backed decision rule for the AI era."
+tags: ["solo founder", "single founder", "solo founders", "co-founder", "one-person company", "decision", "AI"]
+description: "Solo founder vs co-founder — should you go it alone or find a single co-founder? The old answer was 'get a co-founder, obviously.' The data no longer supports that default. Solo founders hire faster, keep more equity, and the 'team safety' argument is now a myth. Here's a receipt-backed decision rule for the AI era — plus when a single founder still needs a co-founder."
 cover:
   image: "cover-solo-founder-vs-cofounder.png"
   alt: "Solo founder or co-founder — a decision rule"
 ---
 
-For most of startup history, "who's your co-founder?" wasn't really a question. It was the first box on a checklist, right after "what's your idea?" Go it alone and the first thing you'd hear was *you'll wish you had a team* — as if a co-founder were insurance you'd bought, not a person you'd now be legally and emotionally tied to for a decade.
+For most of startup history, "who's your co-founder?" wasn't really a question. It was the first box on a checklist, right after "what's your idea?" A **single founder** who went it alone would hear the same first line every time — *you'll wish you had a team* — as if a co-founder were insurance you'd bought, not a person you'd now be legally and emotionally tied to for a decade.
 
 The AI era hasn't made co-founders obsolete. It has made the *default* obsolete. The honest question stopped being "how do I find a co-founder?" and became "do I actually need one — and what am I trading away to get one?" This post is a receipt-backed decision rule for answering that question.
 
