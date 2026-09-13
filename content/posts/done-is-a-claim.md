@@ -2,6 +2,7 @@
 title: "\"Done\" Is a Claim, Not a Fact: The Verification Ritual Every Solo Builder Needs"
 translationKey: "done-is-a-claim"
 date: 2026-09-06T08:30:00+08:00
+lastmod: 2026-09-13T19:23:20+08:00
 draft: false
 tags: ["solo builder", "ai agents", "verification", "trust", "agent reliability", "one person team"]
 description: "When a solo builder ships with AI agents, 'done' stops meaning 'finished' and starts meaning 'the agent says it's finished.' The difference is a verification ritual — run it, read the logs, trust nothing on its word. Here's the discipline that separates a real product from a confident hallucination."

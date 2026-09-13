@@ -2,6 +2,7 @@
 title: "The Supervisor Class: You Stop Writing Code, You Start Directing It"
 translationKey: "supervisor-class"
 date: 2026-09-05T08:00:00+08:00
+lastmod: 2026-09-13T19:23:20+08:00
 draft: false
 tags: ["solo builder", "ai agents", "supervisor class", "agent orchestration", "one person team"]
 description: "The highest-value developers in 2026 don't write every function — they break expertise into reusable agent skills and direct. Here's the identity shift, what it costs, and what still can't be delegated."

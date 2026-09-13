@@ -2,6 +2,7 @@
 title: "Execution Collapse: You Don't Fail at Building, You Fail After Launch"
 translationKey: "execution-collapse"
 date: 2026-09-05T08:30:00+08:00
+lastmod: 2026-09-13T19:23:20+08:00
 draft: false
 tags: ["solo founder", "distribution", "launch", "execution collapse", "one person team", "product hunt"]
 description: "A 2026 analysis of 50 failed solo projects found the #1 cause of death wasn't bad ideas, technical debt, or money — it was 'execution collapse': build, launch into silence, despair, abandon. Here's the cycle, and how to break it before it starts."

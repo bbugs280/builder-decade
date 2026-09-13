@@ -2,6 +2,7 @@
 title: "Your Simulator Is Lying to You: What Shipping on Real Hardware Exposes"
 translationKey: "voice-app-on-device"
 date: 2026-09-10T08:00:00+08:00
+lastmod: 2026-09-13T19:23:20+08:00
 draft: false
 tags: ["on-device", "ios", "voice ai", "debugging", "simulator", "solo builder"]
 description: "A voice app that passes every simulator test still crashed on the phone. The gap between a green test run and a bricked handset is where on-device bugs live: real-time audio threads, Bluetooth routing, app backgrounding. Why 'works on my machine' is the most dangerous sentence in mobile."
