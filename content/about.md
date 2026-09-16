@@ -19,7 +19,7 @@ We publish field notes from the trenches — software, hardware, and projects bu
 
 ## Who writes this
 
-Builder Decade is written by **Vincent**, a solo builder who ships real products — apps that reach the App Store, devices assembled on a bench, agents doing real work — with AI agents as his team. Every method published here is tested against what actually ships and works, with the decisions and mistakes left in.
+Builder Decade is a solo builder who ships real products — apps that reach the App Store, devices assembled on a bench, agents doing real work — with AI agents as the team. Every method published here is tested against what actually ships and works, with the decisions and mistakes left in.
 
 That experience is the point. Most "build in public" advice is written by people who stopped at the tutorial. This is written from inside the build itself.
 

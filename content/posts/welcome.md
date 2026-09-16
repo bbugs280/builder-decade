@@ -39,4 +39,4 @@ A decade is coming either way. Spend it building something.
 
 ---
 
-*Builder Decade is written by Vincent, a solo builder shipping real products with AI agents.*
+*Builder Decade is a solo builder shipping real products with AI agents.*

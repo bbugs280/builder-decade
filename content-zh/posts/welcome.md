@@ -39,4 +39,4 @@ cover:
 
 ---
 
-*Builder Decade 由 Vincent 撰寫——一位用 AI 代理打造真實產品的獨立建造者。*
+*Builder Decade 是一位用 AI 代理打造真實產品的獨立建造者。*

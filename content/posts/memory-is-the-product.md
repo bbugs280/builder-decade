@@ -33,7 +33,7 @@ Strip a working solo-builder agent setup down to what matters and you find it's 
 
 **1. Memory — the durable context.** The file of decisions, preferences, and hard-won corrections that means you never tell the agent the same thing twice. Most people's memory is their chat history, which is just a pile of context that scrolls away. Real memory is curated: written down, organized, and *injected* at the start of every session so the agent begins where you left off, not from zero.
 
-**2. Rules — the decision boundaries.** The stuff that tells the agent what it can do on its own and what it must confirm first. "Search before you create." "Never send email without approval." "HSBC cards stay title-only." These aren't personality — they're constraints, and constraints are what turn a confident chatbot into something you can actually trust with a task. Reliability was never about the model being smart. It's about the fences you put up.
+**2. Rules — the decision boundaries.** The stuff that tells the agent what it can do on its own and what it must confirm first. "Search before you create." "Never send email without approval." "Client work stays out of the logs." These aren't personality — they're constraints, and constraints are what turn a confident chatbot into something you can actually trust with a task. Reliability was never about the model being smart. It's about the fences you put up.
 
 **3. The verification ritual.** We wrote a whole post about this one — ["done" is a claim, not a fact](/posts/done-is-a-claim/) — but it belongs on this list because it's the shipper half of memory. You don't just *remember* what happened; you *check* that it actually did. The ritual is what keeps your memory honest.
 
