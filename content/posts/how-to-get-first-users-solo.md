@@ -5,7 +5,7 @@ date: 2026-08-26T00:00:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo builder", "distribution", "first users", "marketing", "build in public"]
-description: "The hardest part of building alone isn't shipping — it's getting anyone to use the thing. Here's a distribution playbook built for introverts: write and ship in public, go where buyers already gather, and go deep on one channel instead of shallow on ten."
+description: "The hardest part of building alone isn't shipping — it's getting anyone to use it. A distribution playbook built for introverts, not cold outreach."
 cover:
   image: "cover-how-to-get-first-users-solo.png"
   alt: "Quiet leverage for the solo builder"

@@ -5,7 +5,7 @@ date: 2026-08-23T00:00:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo founder", "solo builder", "AI", "one-person company", "indie hacker"]
-description: "The solo founder used to read as a risk. In 2026 the outcomes are public — 36% of new startups are solo, $80M exits, seven-figure solopreneurs — and the stigma is dead. This is the receipts post: the numbers, the names, and the honest limits."
+description: "The solo founder used to read as a risk. In 2026 the outcomes are public — and the stigma is dead. The numbers, the names, and the honest limits."
 cover:
   image: "cover-solo-founders-winning.png"
   alt: "Solo founders are winning"
