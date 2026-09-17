@@ -5,7 +5,7 @@ date: 2026-09-01T07:30:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["ai agents", "agentic patterns", "tool use", "routing", "reflection", "solo builder"]
-description: "當你的 agent 出錯時，本能反應是換更大的模型，或「把 prompt 寫得更用力」。真正的問題往往出在你給它的模式上。路由、工具使用、反思，各自對應一種特定的失敗模式——這篇談它們各自何時才值得付出成本。"
+description: "當 agent 出錯時，本能是換更大的模型或把 prompt 寫得更用力。真正的問題往往出在你給它的模式上。這篇談路由、工具使用、反思何時才值得成本。"
 cover:
   image: "cover-agent-patterns-worth-knowing.png"
   alt: "一條分歧成三條路徑的決策，而不是單一的直線"

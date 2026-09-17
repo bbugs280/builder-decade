@@ -5,7 +5,7 @@ lastmod: 2026-09-03T07:30:00+08:00
 draft: false
 translationKey: "rented-land-ai-search"
 tags: ["流量", "AI 搜尋", "獨立開發者", "indie hacker", "社群"]
-description: "2026 年 8 月，ChatGPT 引用 Reddit 的比例一週內暴跌 86%。這不是第一次，也不會是最後一次。給獨立開發者的教訓是：握緊第一方自己的版面，因為你租來的每個第三方流量管道，都可能在一夜之間被重新加權。"
+description: "2026 年 8 月，ChatGPT 引用 Reddit 的比例一週內暴跌 86%。教訓是：握緊第一方自己的版面，因為租來的流量管道，隨時可能被重新加權。"
 cover:
     image: "cover-rented-land.png"
     alt: "一條木棧道消失在流沙裡，不穩地基上的流量"
