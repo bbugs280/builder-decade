@@ -4,7 +4,7 @@ date: 2026-09-04T07:30:00+08:00
 lastmod: 2026-09-04T07:30:00+08:00
 draft: false
 tags: ["ai cost", "solo founder", "agent api cost", "token economics", "cost of goods"]
-description: "Per-token AI prices have fallen ~97% since 2023, yet AI bills keep climbing for solo builders. The rate card didn't move — the meter did. Here's why, and how to take the meter back."
+description: "Your AI bill is rising even though prices dropped. The rate card didn't move, the meter did. Here's how to match tasks to the cheapest capable model."
 translationKey: "ai-api-cost-creep"
 cover:
   image: "cover-ai-api-cost-creep.png"

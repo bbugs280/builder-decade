@@ -5,7 +5,7 @@ date: 2026-09-11T08:00:00+08:00
 lastmod: 2026-09-11T08:00:00+08:00
 draft: false
 tags: ["shipping", "feedback", "perfectionism", "solo builder", "build in public"]
-description: "Waiting until it's 'done' before showing anyone is the slowest way to build. Here's why shipping the half-done thing — and letting real feedback do the editing — beats polishing in private every time, with the numbers on who actually waits too long."
+description: "Feedback is the only editor that matters. Here's why shipping the half-done thing beats polishing in private, and how to do it safely."
 cover:
   image: "cover-ship-the-half-done-thing.png"
   alt: "A half-finished thing, shipped into the world"

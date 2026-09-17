@@ -5,7 +5,7 @@ date: 2026-09-07T08:20:00+08:00
 lastmod: 2026-09-13T19:23:20+08:00
 draft: false
 tags: ["ai agents", "agent memory", "context", "rules", "trust", "solo builder", "one person team"]
-description: "The model is a commodity you rent. What you actually own — and what compounds instead of depreciating — is the memory, rules, and decision boundaries you build around it. Here's why a solo builder's real product is the system, not the bot."
+description: "The agent isn't the model. Memory, rules and trust rituals are the product. Here's why the smarter-bot upgrade won't fix your workflow."
 cover:
   image: "cover-memory-is-the-product.png"
   alt: "A small cabinet of index cards and rules glowing amber, with a generic robot model behind it fading into shadow"

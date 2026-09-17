@@ -5,7 +5,7 @@ date: 2026-08-23T00:00:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["AI coding", "tools", "Claude Code", "Cursor", "solo builder", "productivity"]
-description: "The tool question isn't the one that matters, but people ask it constantly. Here's the actual stack a solo builder uses day to day in 2026 — one coding agent, a model, a few supporting tools — and the honest reasoning behind each choice, including why the default instinct to keep swapping tools is the thing actually costing you progress."
+description: "The tool question isn't the one that matters. Here's the actual day-to-day stack a solo builder runs in 2026, and why swapping tools costs you progress."
 cover:
   image: "cover-ai-coding-stack.png"
   alt: "A focused AI coding toolchain, not a drawer full of tools"

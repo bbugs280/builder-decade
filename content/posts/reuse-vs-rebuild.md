@@ -5,7 +5,7 @@ date: 2026-08-25T00:00:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo founder", "build vs buy", "one-person company", "cost of ownership", "dependency"]
-description: "AI made rebuilding cheap, so build-vs-buy stopped being a cost question and became a custody question. The real cost isn't the first version — it's who owns the thing when the dependency outlives you, or you outlive it. Here's the decision rule for the solo builder."
+description: "Reuse or rebuild? The instinct to write it yourself feels productive and is usually the expensive choice. A decision rule for solo builders."
 cover:
   image: "cover-reuse-vs-rebuild.png"
   alt: "Reuse or rebuild — two diverging paths, a custody decision"

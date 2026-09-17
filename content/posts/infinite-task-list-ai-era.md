@@ -5,7 +5,7 @@ date: 2026-08-30T00:00:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo founder", "decision discipline", "systems", "ai", "focus", "one-person company"]
-description: "AI gave you more capacity, but you still have one person's worth of attention. That's why the queue never empties — every task you automate refills it faster. The fix isn't a better todo app. It's a rate limit on what you let in."
+description: "AI made your to-do list longer, not shorter. Here's why the queue never empties, and how capacity vs attention actually works."
 cover:
   image: "cover-infinite-task-list.png"
   alt: "An overfull queue that never drains — the solo builder drowning in AI-accelerated task volume"

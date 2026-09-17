@@ -5,7 +5,7 @@ date: 2026-08-28T00:00:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo builder", "quit your job", "bootstrapping", "indie hacker", "career change"]
-description: "Should you quit your corporate job to build your own thing? Here's what actually happens — from the founders who did it and wrote the receipts down, both the exit and the honest eight-year grind."
+description: "Leaving a corporate job to build solo: the runway maths, the identity shift, and the honest case for waiting one more quarter."
 cover:
   image: "cover-leaving-corporate-job-build-solo.png"
   alt: "Leaving the corporate job to build solo"

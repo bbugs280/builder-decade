@@ -5,7 +5,7 @@ date: 2026-08-23T00:00:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["AI agents", "limits", "taste", "judgment", "solo builder"]
-description: "The hype says AI builds anything. The reality: agents are superhuman at volume and untrustworthy at judgment. This post is the honest map of where they genuinely fail — bugs, taste, the last 10% — and why that gap is exactly where a solo builder's value actually lives."
+description: "AI agents are extraordinary at the last mile and terrible at the first. Here's the line worth knowing before you hand one the job."
 cover:
   image: "cover-what-agents-cant-do.png"
   alt: "The part of the work an AI agent still can't reach"

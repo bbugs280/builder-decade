@@ -5,7 +5,7 @@ date: 2026-08-31T08:00:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["vibe coding", "technical debt", "maintenance", "solo builder", "ai coding"]
-description: "AI writes feature code in minutes — then hands you a maintenance bill measured in months. The speed you feel on day one is the debt you'll carry on day ninety. Here's what the data says, and the review habit that keeps a solo builder from inheriting it all."
+description: "AI writes it fast, but you own it forever. Here's the maintenance bill that arrives months after vibe coding feels like a win."
 cover:
   image: "cover-vibe-coding-hidden-cost.png"
   alt: "A stack of printed code pages on a dark workbench, one page catching fire"

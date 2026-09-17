@@ -4,7 +4,7 @@ date: 2026-09-02T09:00:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["open source", "dependencies", "supply chain", "solo builder", "npm", "security"]
-description: "\"It's free and it's popular\" is how a solo builder inherits someone else's abandoned project — or a credential-stealing worm. Here's the 5-point checklist to run before you npm install, in 30 minutes."
+description: "Free libraries carry a bill. Here's a solo builder's due-diligence rule for deciding when to trust an open source dependency."
 cover:
   image: "cover-open-source-dependency.png"
   alt: "Judging an open source dependency — a decision rule for solo builders"

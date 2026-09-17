@@ -5,7 +5,7 @@ date: 2026-08-27T00:00:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo founder", "saas pricing", "one-person company", "recurring revenue", "b2b"]
-description: "Most solo founders price by feel — cost-plus or a round number that 'sounds right.' The data says pricing model, not the number, is what separates the top 10% of solo founders from everyone else. Here's a decision rule built on what actually predicts revenue."
+description: "Pricing a solo SaaS is a decision, not a guess. Here's how to pick a number you can defend, and when to change it."
 cover:
   image: "cover-solo-saas-pricing.png"
   alt: "A solo builder weighing a pricing decision between two options"

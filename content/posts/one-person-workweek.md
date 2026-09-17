@@ -5,7 +5,7 @@ date: 2026-08-27T00:00:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo founder", "time management", "one-person company", "prioritization", "scope"]
-description: "A solo founder doesn't have a focus problem — they have a structure problem: six jobs, one seat. The winners don't juggle faster. They delete the jobs. Here's the scope-cutting system behind the one-person workweek."
+description: "A one-person workweek is six jobs, not one. Here's how to structure the week so the unstoppable work actually gets done."
 cover:
   image: "cover-one-person-workweek.png"
   alt: "One desk, many hats — a solo builder cutting away the roles that don't matter"

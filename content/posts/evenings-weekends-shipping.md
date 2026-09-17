@@ -5,7 +5,7 @@ date: 2026-09-11T08:00:00+08:00
 lastmod: 2026-09-11T08:00:00+08:00
 draft: false
 tags: ["consistency", "time management", "side project", "solo builder", "shipping"]
-description: "You don't need a sabbatical or a quit-your-job leap to build something real. Here's the actual system for shipping on evenings and weekends — the calendar math, the energy management, and the one rule that keeps a side project alive for years instead of weeks."
+description: "You don't need to quit your job to ship. Here's the evenings-and-weekends system that turns a few scattered hours into a finished product."
 cover:
   image: "cover-evenings-weekends-shipping.png"
   alt: "Building after hours, while life happens"

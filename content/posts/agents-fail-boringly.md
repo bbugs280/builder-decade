@@ -5,7 +5,7 @@ date: 2026-09-10T08:30:00+08:00
 lastmod: 2026-09-13T19:23:20+08:00
 draft: false
 tags: ["solo builder", "ai agents", "debugging", "logs", "agent reliability", "one person team"]
-description: "AI agent failures are rarely dramatic — they're mechanical and boring: one missing bracket, one mis-scoped permission, one env var that never made it into the shell. The skill isn't cleverness, it's reading the logs. Here's the diagnosis discipline that turns 'my agent broke mysteriously' into 'it was one line, and now I see it.'"
+description: "AI agent failures are rarely dramatic, they're mechanical: one missing bracket, one bad permission. The skill is reading the logs. Here's the discipline."
 cover:
   image: "cover-agents-fail-boringly.png"
   alt: "A messy workbench with a single small bracket sitting on top of a printed technical log, a magnifying glass behind it"

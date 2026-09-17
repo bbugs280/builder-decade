@@ -5,7 +5,7 @@ date: 2026-09-05T08:30:00+08:00
 lastmod: 2026-09-13T19:23:20+08:00
 draft: false
 tags: ["solo founder", "distribution", "launch", "execution collapse", "one person team", "product hunt"]
-description: "A 2026 analysis of 50 failed solo projects found the #1 cause of death wasn't bad ideas, technical debt, or money — it was 'execution collapse': build, launch into silence, despair, abandon. Here's the cycle, and how to break it before it starts."
+description: "Execution stopped being the bottleneck. Here's what actually separates solo builders in 2026, once everyone can build the thing."
 cover:
   image: "cover-execution-collapse.png"
   alt: "A ship launched from a dock into empty fog, no one on the shore"

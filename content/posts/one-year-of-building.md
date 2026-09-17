@@ -5,7 +5,7 @@ date: 2026-08-23T00:00:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["reflection", "compounding", "consistency", "solo builder", "milestone"]
-description: "A year of consistent building teaches you things no tutorial can — and reveals which parts of the advice actually matter. Here's the honest ledger: what genuinely compounded, what quietly didn't, and the single insight that would have saved the most time if I'd believed it on day one."
+description: "A year of building solo with AI agents: what actually compounded, what was wasted, and the one habit that mattered more than any tool."
 cover:
   image: "cover-one-year-of-building.png"
   alt: "A year of shipped things, side by side"

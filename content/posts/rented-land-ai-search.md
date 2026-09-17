@@ -5,7 +5,7 @@ lastmod: 2026-09-03T07:30:00+08:00
 draft: false
 translationKey: "rented-land-ai-search"
 tags: ["distribution", "AI search", "solo founder", "indie hacker", "community"]
-description: "In August 2026, ChatGPT's citation share of Reddit dropped 86% in a week. It wasn't the first time and it won't be the last. The lesson for solo founders: own the first-party surface, because every third-party channel you rent can be re-weighted overnight."
+description: "Don't build your distribution on rented land. The 2026 AI-search citation collapse is the lesson, and what to own instead."
 cover:
     image: "cover-rented-land.png"
     alt: "A wooden boardwalk path fading into shifting sand, distribution on unstable ground"

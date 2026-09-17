@@ -5,7 +5,7 @@ date: 2026-08-23T00:00:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["solo builder", "motivation", "consistency", "shipping", "retention"]
-description: "Most solo projects don't die at the hard part — they die in week three, when the novelty wears off and the thing still isn't done. This is the pattern, why it happens to motivated people, and the concrete system that gets you past it."
+description: "Week three of building solo is where momentum usually dies. Here's what happens in that dip and how to hold the line."
 cover:
   image: "cover-week-three.png"
   alt: "The wall that appears in week three"

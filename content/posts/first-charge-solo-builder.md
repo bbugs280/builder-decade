@@ -5,7 +5,7 @@ date: 2026-09-11T08:00:00+08:00
 lastmod: 2026-09-11T08:00:00+08:00
 draft: false
 tags: ["revenue", "pricing", "first sale", "solo builder", "validation"]
-description: "Most solo builders wait to charge until the product is 'ready' — and most never charge. Here's why getting even $5 of real, unclaimed revenue early changes everything, and how to price your first thing so it actually gets bought."
+description: "Why $5 of real revenue beats a \"perfect\" launch. Here's how to ask for your first charge and what it teaches you that nothing else can."
 cover:
   image: "cover-first-charge-solo-builder.png"
   alt: "The first small amount of real revenue"

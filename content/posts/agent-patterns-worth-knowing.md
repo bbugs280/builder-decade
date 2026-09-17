@@ -5,7 +5,7 @@ date: 2026-09-01T07:30:00+08:00
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["ai agents", "agentic patterns", "tool use", "routing", "reflection", "solo builder"]
-description: "When your agent misbehaves, the instinct is to swap the model or 'prompt harder.' Usually the real problem is the pattern you gave it. Routing, tool use, and reflection each solve a specific failure mode — here's when each one actually earns its cost."
+description: "Three agent patterns worth knowing before you blame the model: routing, tool use, reflection. Diagnose the failure, not the pattern."
 cover:
   image: "cover-agent-patterns-worth-knowing.png"
   alt: "A branching decision between three pathways, not one straight line"

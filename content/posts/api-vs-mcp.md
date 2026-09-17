@@ -5,7 +5,7 @@ date: 2026-08-29
 lastmod: 2026-09-02T08:00:00+08:00
 draft: false
 tags: ["mcp", "ai agents", "integration", "build vs buy", "solo builder"]
-description: "MCP won the standards war, so why would a solo builder ever call a provider's API directly? A decision rule for when the protocol is worth it — and when it's just an extra layer."
+description: "API or MCP? They solve different problems and the choice shapes your whole integration. Here's how to tell which one you actually need."
 cover:
   image: "cover-api-vs-mcp.png"
   alt: "Two routes to the same endpoint — a direct wire versus a stacked adapter layer"

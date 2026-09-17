@@ -5,7 +5,7 @@ date: 2026-08-24T00:00:00+08:00
 lastmod: 2026-09-12T08:00:00+08:00
 draft: false
 tags: ["solo founder", "single founder", "solo founders", "co-founder", "one-person company", "decision", "AI"]
-description: "Solo founder vs co-founder — should you go it alone or find a single co-founder? The old answer was 'get a co-founder, obviously.' The data no longer supports that default. Solo founders hire faster, keep more equity, and the 'team safety' argument is now a myth. Here's a receipt-backed decision rule for the AI era — plus when a single founder still needs a co-founder."
+description: "Solo or co-founder? The old \"get a co-founder\" default no longer holds. Solo founders hire faster, keep more equity. Here's the decision rule."
 cover:
   image: "cover-solo-founder-vs-cofounder.png"
   alt: "Solo founder or co-founder — a decision rule"
