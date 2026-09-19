@@ -56,6 +56,13 @@ jobs:
         run: |
           HUGO_BIN=hugo BASEURL="https://builderdecade.com/" bash tests/test_language_isolation.sh
 
+      # Regression guard: stray `**` must never reach rendered prose. Two
+      # verified Goldmark shapes cause it (opener-then-bracket, closer-after-
+      # CJK-punctuation) and both are invisible in source review. Runs on the
+      # built output, so it catches the defect regardless of which shape.
+      - name: Check for stray emphasis markers
+        run: python3 tests/check_no_stray_emphasis.py --public ./public
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
