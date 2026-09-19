@@ -1,9 +1,84 @@
 # Builder Decade
 
-> Builder Decade is a resource for solo builders making real things in the AI era — software, hardware, and projects for the long game. Field notes on shipping products with AI agents, explained clearly and tested against the evidence, with bilingual English/Chinese content.
+> Field notes from a solo builder shipping real products with AI agents — software, hardware, and projects for the long game. No hype, no tutorial-farm noise. Bilingual English/中文.
 
-- [Welcome — what this site is](https://builderdecade.com/posts/welcome/): what "building for a decade" means and who this is for.
-- [中文版 — 歡迎](https://builderdecade.com/zh/posts/welcome/): 這是一個怎樣的網站（繁體中文）。
+## English posts (37)
+- [3 Agent Patterns Worth Knowing (Before You Blame the Model)](https://builderdecade.com/posts/agent-patterns-worth-knowing/): Three agent patterns worth knowing before you blame the model: routing, tool use, reflection. Diagnose the failure, not the pattern.
+- [Your AI Agent Fails Boringly, and That's Good News](https://builderdecade.com/posts/agents-fail-boringly/): AI agent failures are rarely dramatic, they're mechanical: one missing bracket, one bad permission. The skill is reading the logs. Here's the discipline.
+- [Your AI Bill Is Rising Even Though Prices Dropped](https://builderdecade.com/posts/ai-api-cost-creep/): Your AI bill is rising even though prices dropped. The rate card didn't move, the meter did. Here's how to match tasks to the cheapest capable model.
+- [Building with AI: Where to Actually Start (No CS Degree Required)](https://builderdecade.com/posts/ai-beginner-start/): Starting with AI has nothing to do with which model you pick. Here's the first thing a beginner should actually build.
+- [The AI Coding Stack I Actually Use (and Why I Stopped Swapping Tools)](https://builderdecade.com/posts/ai-coding-stack/): The tool question isn't the one that matters. Here's the actual day-to-day stack a solo builder runs in 2026, and why swapping tools costs you progress.
+- [API vs MCP: When Your Agent Should Talk to the Provider Directly](https://builderdecade.com/posts/api-vs-mcp/): API or MCP? They solve different problems and the choice shapes your whole integration. Here's how to tell which one you actually need.
+- [Building Hardware Solo: The Maker Room Most Builders Skip](https://builderdecade.com/posts/building-hardware-solo/): The cost collapse hit hardware too. One maker with cheap microcontrollers, AI-assisted CAD and on-demand fabrication can now build what took a team.
+- [The Real Cost of Shipping Solo (It's Not the Money)](https://builderdecade.com/posts/cost-of-shipping-solo/): Shipping solo is cheap until it isn't. Here's the real cost breakdown of running a one-person product, and which line items actually matter.
+- ["Done" Is a Claim, Not a Fact: The Verification Ritual Every Solo Builder Needs](https://builderdecade.com/posts/done-is-a-claim/): With AI agents, "done" starts meaning "the agent says it's done." Here's the verification ritual that separates product from hallucination.
+- [The Evenings-and-Weekends Shipping System (Build While Life Happens)](https://builderdecade.com/posts/evenings-weekends-shipping/): You don't need to quit your job to ship. Here's the evenings-and-weekends system that turns a few scattered hours into a finished product.
+- [Execution Collapse: You Don't Fail at Building, You Fail After Launch](https://builderdecade.com/posts/execution-collapse/): Execution stopped being the bottleneck. Here's what actually separates solo builders in 2026, once everyone can build the thing.
+- [Your First Charge: Why $5 of Real Revenue Beats a 'Perfect' Launch](https://builderdecade.com/posts/first-charge-solo-builder/): Why $5 of real revenue beats a "perfect" launch. Here's how to ask for your first charge and what it teaches you that nothing else can.
+- [How to Get Your First Users as a Solo Builder (Quiet Leverage, Not Cold Outreach)](https://builderdecade.com/posts/how-to-get-first-users-solo/): The hardest part of building alone isn't shipping — it's getting anyone to use it. A distribution playbook built for introverts, not cold outreach.
+- [The Infinite Task List: Why AI Made Your To-Do List Longer, Not Shorter](https://builderdecade.com/posts/infinite-task-list-ai-era/): AI made your to-do list longer, not shorter. Here's why the queue never empties, and how capacity vs attention actually works.
+- [Leaving the Corporate Job to Build Solo: What Actually Happens](https://builderdecade.com/posts/leaving-corporate-job-build-solo/): Leaving a corporate job to build solo: the runway maths, the identity shift, and the honest case for waiting one more quarter.
+- [Memory Is the Product: Why Your Agent Stack Is Worth More Than Your Model](https://builderdecade.com/posts/memory-is-the-product/): The agent isn't the model. Memory, rules and trust rituals are the product. Here's why the smarter-bot upgrade won't fix your workflow.
+- [No Code vs Vibe Coding vs Real Code: Which One Should You Actually Use?](https://builderdecade.com/posts/no-code-vibe-code-real-code/): No-code, vibe coding, real code: not rungs on a ladder but three tools for three jobs. Ask which failure mode you can afford.
+- [Why One Person Can Now Ship What Took a Team](https://builderdecade.com/posts/one-person-team/): The minimum team size needed to ship software just dropped to one. Three costs collapsed at once. Here's the mechanism, with the numbers.
+- [The One-Person Workweek: How Solo Founders Actually Get Things Done](https://builderdecade.com/posts/one-person-workweek/): A one-person workweek is six jobs, not one. Here's how to structure the week so the unstoppable work actually gets done.
+- [One Year of Building: What Actually Compounds (and What Doesn't)](https://builderdecade.com/posts/one-year-of-building/): A year of building solo with AI agents: what actually compounded, what was wasted, and the one habit that mattered more than any tool.
+- [When to Trust an Open Source Library: A Solo Builder's Due-Diligence Rule](https://builderdecade.com/posts/open-source-dependency/): Free libraries carry a bill. Here's a solo builder's due-diligence rule for deciding when to trust an open source dependency.
+- [Don't Build Your Distribution on Rented Land: The AI Search Lesson](https://builderdecade.com/posts/rented-land-ai-search/): Don't build your distribution on rented land. The 2026 AI-search citation collapse is the lesson, and what to own instead.
+- [Reuse vs Rebuild: The Custody Rule for Solo Builders](https://builderdecade.com/posts/reuse-vs-rebuild/): Reuse or rebuild? The instinct to write it yourself feels productive and is usually the expensive choice. A decision rule for solo builders.
+- [SEO for Indie Hackers: Rank for the Query That Pays, Skip the Rest](https://builderdecade.com/posts/seo-for-indie-hackers/): Most SEO advice assumes a team and a year to burn. The solo version is narrower: win one high-intent query, then let the page compound. Here's how.
+- [The 'Ship One Tiny Thing' System (How Small Wins Actually Compound)](https://builderdecade.com/posts/ship-one-tiny-thing/): The first thing you ship should be embarrassingly small. Here's why a tiny finished thing beats a big half-thing, and how to pick yours.
+- [Ship the Half-Done Thing: Feedback Is the Only Editor That Matters](https://builderdecade.com/posts/ship-the-half-done-thing/): Feedback is the only editor that matters. Here's why shipping the half-done thing beats polishing in private, and how to do it safely.
+- [Solo Founder Burnout: Why It Hits Harder When There's No One to Notice](https://builderdecade.com/posts/solo-founder-burnout/): Solo founder burnout isn't a discipline problem, it's an unowned-variable problem. Here's how to spot it before it costs you the project.
+- [Solo Founder vs Co-Founder: A Decision Rule for the AI Era](https://builderdecade.com/posts/solo-founder-vs-cofounder/): Solo or co-founder? The old "get a co-founder" default no longer holds. Solo founders hire faster, keep more equity. Here's the decision rule.
+- [Solo Founders Are Winning — Here's What Changed](https://builderdecade.com/posts/solo-founders-winning/): The solo founder used to read as a risk. In 2026 the outcomes are public — and the stigma is dead. The numbers, the names, and the honest limits.
+- [How to Price a SaaS as a Solo Founder (A Decision Rule, Not a Guess)](https://builderdecade.com/posts/solo-saas-pricing/): Pricing a solo SaaS is a decision, not a guess. Here's how to pick a number you can defend, and when to change it.
+- [The Supervisor Class: You Stop Writing Code, You Start Directing It](https://builderdecade.com/posts/supervisor-class/): The supervisor class: your job shifts from doing the work to specifying, checking and owning it. Here's the discipline that requires.
+- [Vibe Coding's Hidden Cost: AI Writes It Fast, But You Own It Forever](https://builderdecade.com/posts/vibe-coding-hidden-cost/): AI writes it fast, but you own it forever. Here's the maintenance bill that arrives months after vibe coding feels like a win.
+- [Your Simulator Is Lying to You: What Shipping on Real Hardware Exposes](https://builderdecade.com/posts/voice-app-on-device/): A voice app that passes every simulator test can still crash on the phone. Here's where on-device bugs hide, from audio threads to Bluetooth routing.
+- [Why Most Solo Projects Die in Week 3 (and How Not to)](https://builderdecade.com/posts/week-three/): Week three of building solo is where momentum usually dies. Here's what happens in that dip and how to hold the line.
+- [Welcome — What Builder Decade Is](https://builderdecade.com/posts/welcome/): What it means to build for a decade in the AI era — and who this site is for.
+- [What AI Agents Still Can't Do (The Last 10% Is Still Yours)](https://builderdecade.com/posts/what-agents-cant-do/): AI agents are extraordinary at the last mile and terrible at the first. Here's the line worth knowing before you hand one the job.
+- [When to Hire Your First Contractor (and When Not To)](https://builderdecade.com/posts/when-to-hire-your-first-contractor/): Most 'hire your first contractor' advice comes from people who sell contractors. Here's the receipts-based case for when to actually spend.
+
+## 中文文章 (37)
+- [三個值得認識的 Agent 模式（先別怪模型）](https://builderdecade.com/zh/posts/agent-patterns-worth-knowing/)：當 agent 出錯時，本能是換更大的模型或把 prompt 寫得更用力。真正的問題往往出在你給它的模式上。這篇談路由、工具使用、反思何時才值得成本。
+- [你的 AI 助手以平凡的方式出錯，這反而是好消息](https://builderdecade.com/zh/posts/agents-fail-boringly/)：AI 助手的失敗很少戲劇性，多半是機械而平凡的：少一個括號、權限少開一層、環境變數沒進到 shell。真正的能力不是聰明，是讀日誌。
+- [你的 AI 帳單在上漲，即使價格在下跌](https://builderdecade.com/zh/posts/ai-api-cost-creep/)：每個 token 的 AI 價格自 2023 年以來已下跌約 97%，但獨立開發者的 AI 帳單卻持續攀升。價目表沒變，變的是計量表。這裡說明原因，以及如何把計量表拿回來。
+- [用 AI 動手建造：到底該從哪裡開始（不需要電腦科學學位）](https://builderdecade.com/zh/posts/ai-beginner-start/)：2026 年，你不需要電腦科學學位就能用 AI 動手建造。這是誠實的第一步——要造什麼、你真正需要什麼，以及一個讓你在這個週末就完成第一個成品的專案。
+- [我實際在用的 AI 程式開發堆疊（以及為什麼我不再換工具了）](https://builderdecade.com/zh/posts/ai-coding-stack/)：工具的問題不是重點，但大家一直問。這裡是獨立開發者 2026 年平常在用的堆疊，以及為什麼一直換工具才是真正拖累你進度的原因。
+- [API 還是 MCP：你的 AI Agent 何時該直接呼叫服務商](https://builderdecade.com/zh/posts/api-vs-mcp/)：MCP 贏了標準之戰，那獨立開發者為什麼還要自己寫 API 呼叫？一個判斷規則：協議什麼時候值得用，什麼時候只是多一層。
+- [一個人做硬體：多數建造者略過的那個 maker 房間](https://builderdecade.com/zh/posts/building-hardware-solo/)：軟體佔盡了獨立開發者的話題，但同樣的成本塌陷也發生在硬體工作檯上。一個人用便宜微控制器、AI 輔助 CAD 和按需製造，就能做出過去要一隊人做的東西。
+- [獨立出貨的真正成本（不是錢）](https://builderdecade.com/zh/posts/cost-of-shipping-solo/)：大家以為獨立建產品的成本是錢——訂閱、API 帳單、網域。那些是便宜的部分。真正的成本是時間、注意力，以及作為唯一創辦人的決策負擔。
+- [「完成了」是一個主張，不是事實](https://builderdecade.com/zh/posts/done-is-a-claim/)：靠 AI 助手交付時，「完成」不再是「做好」，而是「助手說做好了」。差別在於一套驗證儀式：親手跑一次、讀那行日誌、不憑一句話就相信。
+- [晚上與週末的出貨系統（在生活照樣進行的同時蓋東西）](https://builderdecade.com/zh/posts/evenings-weekends-shipping/)：你不需要空檔年，也不需要辭職跳崖，就能蓋出真的東西。這篇給出晚上與週末實際出貨的系統——行事曆的數學，以及讓副業活上好幾年的那條規則。
+- [執行崩潰：你沒有敗在打造，你敗在上線之後](https://builderdecade.com/zh/posts/execution-collapse/)：一份 2026 年對 50 個失敗獨立專案的分析發現，頭號死因不是爛點子、技術債或沒錢，而是「執行崩潰」。這裡拆解這個循環，以及如何提早打破它。
+- [你的第一筆收費：為什麼 5 美元的真人付款，贏過一次「完美」的發布](https://builderdecade.com/zh/posts/first-charge-solo-builder/)：多數獨立開發者會等產品「夠好」才收費——而多數人永遠沒開始收費。這篇講為什麼早點收到哪怕 5 美元的真人付款，會改變一切。
+- [独立开发者如何获取第一批用户（静默杠杆，而非冷启动）](https://builderdecade.com/zh/posts/how-to-get-first-users-solo/)：獨立開發最難的不是把東西做出來，而是讓人真的去用。這份分發策略是寫給內向者的：公開寫作與公開構建，在一個渠道深耕，而不是在十個渠道走馬看花。
+- [無限待辦清單：為什麼 AI 讓你的清單變長，而不是變短](https://builderdecade.com/zh/posts/infinite-task-list-ai-era/)：AI 給了你更多產能，但你仍只有一個人的注意力額度。這就是為什麼佇列永遠清不完。解方不是更好的待辦 App，而是對「放進來的東西」設上限。
+- [辭掉正職去做獨立創業：實際會發生什麼](https://builderdecade.com/zh/posts/leaving-corporate-job-build-solo/)：該不該辭掉正職去做自己的東西？看真正走過、還把帳目攤開來的人就知道——無論是一場漂亮的出場，還是誠實的八年長跑。
+- [記憶才是產品：你的代理系統比模型更值錢](https://builderdecade.com/zh/posts/memory-is-the-product/)：模型是你租來的商品。你真正擁有、而且只會增值不會貶值的，是你圍繞它建立的記憶、規則與決策邊界。獨立開發者真正的產品，是那套系統，不是那個機器人。
+- [No Code vs Vibe Coding vs 真程式碼：到底該用哪一種？](https://builderdecade.com/zh/posts/no-code-vibe-code-real-code/)：No code、vibe coding、真程式碼——該用哪一種？它們不是階梯，而是應付三種不同工作的工具。這裡講 2026 年怎麼真正挑對建東西的方式。
+- [為什麼一個人現在能做出過去一整個團隊的事](https://builderdecade.com/zh/posts/one-person-team/)：出貨一套軟體，以前要一個團隊、幾個月、還有人脈。2026 年這三樣全被推翻。數學變了——這篇講為什麼現在沒什麼能擋住你。
+- [一人工作周：獨立開發者如何真正把事情做完](https://builderdecade.com/zh/posts/one-person-workweek/)：獨立開發者缺的不是專注力，而是結構：六份工作、一個位子。贏家不是切換得更快，而是刪掉了那些工作。這是一人工作周背後那套「砍範疇」的系統。
+- [建造了一年：真正會複利的（以及不會的）](https://builderdecade.com/zh/posts/one-year-of-building/)：持續建造一年，教會你任何教學都教不了的東西，也揭穿了哪些建議真正有用。這裡是誠實的帳本：什麼複利了、什麼沒有，以及能省下最多時間的那個洞見。
+- [何時該信任一個開源套件：獨立開發者的盡職調查守則](https://builderdecade.com/zh/posts/open-source-dependency/)：「免費又很多人用」正是獨立開發者繼承別人拋棄的專案——或竊取憑證的蠕蟲——的方式。這裡是五項檢查清單，讓你按下 npm install 之前，用三十分鐘跑完。
+- [別把你的流量蓋在租來的土地上：AI 搜尋給我們的教訓](https://builderdecade.com/zh/posts/rented-land-ai-search/)：2026 年 8 月，ChatGPT 引用 Reddit 的比例一週內暴跌 86%。教訓是：握緊第一方自己的版面，因為租來的流量管道，隨時可能被重新加權。
+- [复用还是重写：独立开发者的「托管」法则](https://builderdecade.com/zh/posts/reuse-vs-rebuild/)：AI 讓「重寫」變便宜，於是「自建還是購買」不再是成本問題，而是託管問題。真正的代價是當某個依賴比你活得久、或你比它活得久時，東西歸誰管。
+- [獨立開發者的 SEO：只爭取會付錢的那個搜尋詞](https://builderdecade.com/zh/posts/seo-for-indie-hackers/)：市面上的 SEO 建議，大多是寫給有內容團隊、有一整年可燒的公司。獨立開發者完全不是這種處境。這是一套決策法則，不是四十篇文章的行事曆。
+- [「每週出貨一個小東西」系統（微小勝利如何真正複利）](https://builderdecade.com/zh/posts/ship-one-tiny-thing/)：讓自己變會建東西，最可靠的方法不是一門課，而是每週出貨一個小而完整的東西。這裡是精確的迴圈，以及微小勝利如何複利成看起來像天賦的東西。
+- [先發布半成品：回饋，是唯一真正有用的編輯](https://builderdecade.com/zh/posts/ship-the-half-done-thing/)：一直等到「完成」才給別人看，是最慢的蓋法。這篇講為什麼刻意發布半成品、讓真實回饋幫你改，永遠贏過關起門來自己磨——還附上那些其實拖到太晚的人的數字。
+- [獨立開發者的倦怠：為什麼沒人察覺時，它來得更猛烈](https://builderdecade.com/zh/posts/solo-founder-burnout/)：倦怠有正式定義——WHO 歸納出三項症狀——而獨立開發者特別容易中招，因為身邊沒有隊友分擔負荷。這是背後的機制，以及營運層面的解方。
+- [單獨創業還是找共同創辦人？AI 時代的決策法則](https://builderdecade.com/zh/posts/solo-founder-vs-cofounder/)：該一個人創業，還是找共同創辦人？舊答案永遠是「當然要找人」，但數據已經不支持這個預設了。這是一套有數據背書的 AI 時代決策法則。
+- [獨立創辦人正在勝出——改變了什麼](https://builderdecade.com/zh/posts/solo-founders-winning/)：「獨立創辦人」以前讀起來像風險。2026 年的結果是公開的——污名已經死了。這篇是收據文：數字、名字，以及誠實的界線。
+- [獨立開發者如何為 SaaS 定價（一套決策規則，而非靠猜）](https://builderdecade.com/zh/posts/solo-saas-pricing/)：多數獨立開發者憑感覺定價——成本加成，或一個聽起來合理的整數。數據顯示，區分前 10% 的關鍵是定價模式，不是那個數字。這是一套決策規則。
+- [監督者世代：你不再寫程式碼，你指揮它](https://builderdecade.com/zh/posts/supervisor-class/)：2026 年最有價值的開發者不再親手寫每個函式——他們把專業拆成可重複使用的代理技能，然後指揮。這裡談這個身份轉變、它的代價，以及仍然無法被委派的部分。
+- [Vibe Coding 的隱藏成本：AI 寫得很快，但你要一輩子負責維護](https://builderdecade.com/zh/posts/vibe-coding-hidden-cost/)：AI 幾分鐘寫出功能，然後交給你一筆以「月」計算的維護帳單。你第一天感受到的速度，其實是第九十天要背的債。數據怎麼說，以及審查的習慣。
+- [你的模擬器在騙你：真機才能暴露的事](https://builderdecade.com/zh/posts/voice-app-on-device/)：通過所有模擬器測試的語音 App，在真機上照樣當機。綠燈測試與磚頭手機之間，正是裝置上才現形的 bug 所在。為什麼「在我機器上可以」最危險。
+- [為什麼多數獨立專案死在第三週（以及怎麼避免）](https://builderdecade.com/zh/posts/week-three/)：多數獨立專案不是死在最難的地方，而是死在第三週——新奇感消退、東西卻還沒完成的時候。這裡是這個模式，以及一套幫你撐過去的具體系統。
+- [歡迎 — 這是怎樣一個網站](https://builderdecade.com/zh/posts/welcome/)：在 AI 時代以十年為單位建造，是什麼意思——以及這個網站為誰而寫。
+- [AI 代理仍然做不到的事（最後那 10%，還是你的）](https://builderdecade.com/zh/posts/what-agents-cant-do/)：炒作說 AI 什麼都能建。現實是：代理在「量」上是超人，在「判斷」上不可信。這是它們真正失靈之處的地圖，以及為什麼那正是你的價值所在。
+- [何時該聘請你的第一位外包（以及何時不該）](https://builderdecade.com/zh/posts/when-to-hire-your-first-contractor/)：多數「該聘第一位外包」的建議，都來自靠外包賺錢的人。本文以實際數據說明獨立開發者何時真正該花這筆錢、第一位員工的成本是多少，以及哪些角色你不該放手。
 
 ## About
-Builder Decade is published in English and Chinese (繁體中文 at /zh/). All claims are sourced where possible, listed in each article's Sources section. No hype, no quick-fix noise.
+Builder Decade is published in English and Chinese (中文 at /zh/). Field notes from building real products with AI agents — the mechanics, the dead ends, and the costs.
