@@ -10,3 +10,51 @@
   translation: Builder Decade 是一位獨立的建造者，以 AI 代理打造真實產品，每一種方法都在發表前，經過「真正上線並運作」的檢驗。
 - id: read_more
   translation: 了解更多
+
+# --- 終端動作：MCP 設定自我審查 shortcode ---
+- id: mcp_audit_title
+  translation: 用檢查指令掃描你自己的設定
+- id: mcp_audit_intro
+  translation: 三條 grep 指令，針對你的 MCP 設定。複製、執行、讀結果。這裡不會把任何資料送出——指令只在你自己的機器上跑。
+- id: mcp_audit_step1
+  translation: 隱藏字元（看不見的指令）
+- id: mcp_audit_step2
+  translation: 敏感路徑
+- id: mcp_audit_step3
+  translation: 外洩行為特徵
+- id: mcp_audit_copy
+  translation: 複製
+- id: mcp_audit_copied
+  translation: 已複製
+- id: mcp_audit_score_title
+  translation: 現在為你找到的結果打分
+- id: mcp_audit_score_intro
+  translation: 勾選所有對你的設定而言「成立」的敘述。勾選的數量，就是你的曝險程度。
+- id: mcp_audit_q1
+  translation: 我的代理同時能讀取檔案，又能發出對外網路請求
+- id: mcp_audit_q2
+  translation: 至少有一個伺服器，是從部落格文章、README 或我沒審查過的登錄庫加進來的
+- id: mcp_audit_q3
+  translation: 我從未讀過自己所連接伺服器的工具描述
+- id: mcp_audit_q4
+  translation: 某個伺服器持有的憑證權限，比它實際要做的事更廣
+- id: mcp_audit_q5
+  translation: 破壞性操作（刪除、部署、轉帳）可以在未經我明確確認的情況下執行
+- id: mcp_audit_zero
+  translation: 勾選所有符合的項目——數量就是你的曝險程度。
+- id: mcp_audit_v0
+  translation: 沒有發現問題——乾淨。
+- id: mcp_audit_a0
+  translation: 你的設定已經符合那四條規則。每次新增伺服器時，重跑一次 grep 即可。
+- id: mcp_audit_v1
+  translation: 1 項警示——仍在可控範圍。
+- id: mcp_audit_a1
+  translation: 先修掉那一項。那一個改動，就是這頁上最有價值的事。
+- id: mcp_audit_v2
+  translation: 2-3 項警示——影響範圍值得在意。
+- id: mcp_audit_a2
+  translation: 從規則 1（一個伺服器、一項職責）與規則 4（破壞性操作需把關）開始。這兩項每花一分鐘，縮小的範圍最多。
+- id: mcp_audit_v3
+  translation: 4-5 項警示——你的代理就是單點故障。
+- id: mcp_audit_a3
+  translation: 假設任何你沒審查過的伺服器都是惡意的，然後反推：它能碰到什麼？先撤掉權限最廣的那組憑證。

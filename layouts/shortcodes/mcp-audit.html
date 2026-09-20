@@ -1,0 +1,143 @@
+{{- /* Terminal action: MCP config audit checklist.
+      Renders a copy-and-run block a reader executes against their OWN config.
+      Client-side only — no server, no data leaves the browser.
+      Language-aware via i18n keys (mcp_audit_*).
+
+      Usage in a post body:
+        {{< mcp-audit >}}
+
+      Why a shortcode and not raw HTML in the post: keeps the check versioned
+      and reusable across any future security post, and out of the essay body.
+*/ -}}
+
+{{- $lang := .Page.Lang -}}
+
+<div class="mcp-audit" id="mcp-audit" style="margin: 2rem 0; padding: 1.5rem; border: 1px solid var(--border); border-radius: 12px; background: var(--entry);">
+
+  <h2 style="margin-top: 0; font-size: 1.35rem;">
+    {{ i18n "mcp_audit_title" | default "Run the check on your own config" }}
+  </h2>
+
+  <p style="opacity: 0.85; margin-bottom: 1.25rem;">
+    {{ i18n "mcp_audit_intro" | default "Three greps against your MCP config. Copy, run, read the output. Nothing here is sent anywhere — the commands run on your machine." }}
+  </p>
+
+  <div style="margin-bottom: 1.25rem;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 0.4rem;">
+      <strong style="font-size: 0.95rem;">1. {{ i18n "mcp_audit_step1" | default "Hidden characters (invisible instructions)" }}</strong>
+      <button type="button" class="mcp-copy" data-target="mcp-cmd-1"
+              style="flex-shrink: 0; padding: 0.3rem 0.7rem; font-size: 0.8rem; border: 1px solid var(--border); border-radius: 6px; background: transparent; color: var(--primary); cursor: pointer;">
+        {{ i18n "mcp_audit_copy" | default "Copy" }}
+      </button>
+    </div>
+    <pre id="mcp-cmd-1" style="margin: 0; padding: 0.85rem; overflow-x: auto; border-radius: 8px; background: var(--code-bg); font-size: 0.82rem; line-height: 1.5;"><code>grep -rP '[\x{200B}-\x{200F}\x{202A}-\x{202E}\x{2060}\x{FEFF}]' ~/.config/ ~/Library/Application\ Support/ 2&gt;/dev/null</code></pre>
+  </div>
+
+  <div style="margin-bottom: 1.25rem;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 0.4rem;">
+      <strong style="font-size: 0.95rem;">2. {{ i18n "mcp_audit_step2" | default "Sensitive paths" }}</strong>
+      <button type="button" class="mcp-copy" data-target="mcp-cmd-2"
+              style="flex-shrink: 0; padding: 0.3rem 0.7rem; font-size: 0.8rem; border: 1px solid var(--border); border-radius: 6px; background: transparent; color: var(--primary); cursor: pointer;">
+        {{ i18n "mcp_audit_copy" | default "Copy" }}
+      </button>
+    </div>
+    <pre id="mcp-cmd-2" style="margin: 0; padding: 0.85rem; overflow-x: auto; border-radius: 8px; background: var(--code-bg); font-size: 0.82rem; line-height: 1.5;"><code>grep -riE '\.ssh|id_rsa|\.env|\.aws|credentials|/etc/passwd|keychain' ~/.config/ ~/Library/Application\ Support/ 2&gt;/dev/null | grep -i mcp</code></pre>
+  </div>
+
+  <div style="margin-bottom: 1.5rem;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 0.4rem;">
+      <strong style="font-size: 0.95rem;">3. {{ i18n "mcp_audit_step3" | default "Exfiltration shapes" }}</strong>
+      <button type="button" class="mcp-copy" data-target="mcp-cmd-3"
+              style="flex-shrink: 0; padding: 0.3rem 0.7rem; font-size: 0.8rem; border: 1px solid var(--border); border-radius: 6px; background: transparent; color: var(--primary); cursor: pointer;">
+        {{ i18n "mcp_audit_copy" | default "Copy" }}
+      </button>
+    </div>
+    <pre id="mcp-cmd-3" style="margin: 0; padding: 0.85rem; overflow-x: auto; border-radius: 8px; background: var(--code-bg); font-size: 0.82rem; line-height: 1.5;"><code>grep -riE '(send|post|upload|forward|curl|wget).{0,40}(https?://|webhook|endpoint)' ~/.config/ 2&gt;/dev/null | grep -i mcp</code></pre>
+  </div>
+
+  <div style="border-top: 1px solid var(--border); padding-top: 1.25rem;">
+    <strong style="display: block; margin-bottom: 0.65rem; font-size: 0.95rem;">
+      {{ i18n "mcp_audit_score_title" | default "Now score what you found" }}
+    </strong>
+    <p style="opacity: 0.8; font-size: 0.88rem; margin-bottom: 0.9rem;">
+      {{ i18n "mcp_audit_score_intro" | default "Tick every statement that is TRUE for your setup. The count is your exposure." }}
+    </p>
+
+    <div id="mcp-audit-score">
+      <label style="display: block; margin-bottom: 0.55rem; cursor: pointer; font-size: 0.9rem;"><input type="checkbox" class="mcp-check" style="margin-right: 0.5rem;"> {{ i18n "mcp_audit_q1" | default "I have an agent that can both read files AND make outbound network calls" }}</label>
+      <label style="display: block; margin-bottom: 0.55rem; cursor: pointer; font-size: 0.9rem;"><input type="checkbox" class="mcp-check" style="margin-right: 0.5rem;"> {{ i18n "mcp_audit_q2" | default "At least one server was added from a blog post, README, or a registry I didn't vet" }}</label>
+      <label style="display: block; margin-bottom: 0.55rem; cursor: pointer; font-size: 0.9rem;"><input type="checkbox" class="mcp-check" style="margin-right: 0.5rem;"> {{ i18n "mcp_audit_q3" | default "I have never read the tool descriptions of a server I connected" }}</label>
+      <label style="display: block; margin-bottom: 0.55rem; cursor: pointer; font-size: 0.9rem;"><input type="checkbox" class="mcp-check" style="margin-right: 0.5rem;"> {{ i18n "mcp_audit_q4" | default "A server holds a credential that is broader than the job it does" }}</label>
+      <label style="display: block; margin-bottom: 0.55rem; cursor: pointer; font-size: 0.9rem;"><input type="checkbox" class="mcp-check" style="margin-right: 0.5rem;"> {{ i18n "mcp_audit_q5" | default "Destructive actions (delete, deploy, transfer) can run without my explicit confirmation" }}</label>
+    </div>
+
+    <div id="mcp-audit-result" style="margin-top: 1.1rem; padding: 0.9rem 1rem; border-radius: 8px; background: var(--code-bg); font-size: 0.9rem;">
+      <strong id="mcp-audit-verdict">{{ i18n "mcp_audit_zero" | default "Tick any that apply — the count is your exposure." }}</strong>
+      <div id="mcp-audit-advice" style="margin-top: 0.4rem; opacity: 0.85;"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  // Copy buttons — clipboard API with a visible-text fallback.
+  document.querySelectorAll('.mcp-copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var pre = document.getElementById(btn.dataset.target);
+      if (!pre) return;
+      var text = pre.innerText;
+      var done = function () {
+        var orig = btn.textContent;
+        btn.textContent = '{{ i18n "mcp_audit_copied" | default "Copied" }}';
+        setTimeout(function () { btn.textContent = orig; }, 1400);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, function () { fallback(text, done); });
+      } else {
+        fallback(text, done);
+      }
+    });
+  });
+  function fallback(text, cb) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); cb(); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+
+  // Exposure score — pure client-side tally.
+  var boxes = document.querySelectorAll('.mcp-check');
+  var verdict = document.getElementById('mcp-audit-verdict');
+  var advice = document.getElementById('mcp-audit-advice');
+  if (!boxes.length || !verdict) return;
+
+  var bands = [
+    { max: 0,
+      v: '{{ i18n "mcp_audit_v0" | default "Nothing flagged." }}',
+      a: '{{ i18n "mcp_audit_a0" | default "Your setup is already following the four rules. Re-run the greps whenever you add a server." }}' },
+    { max: 1,
+      v: '{{ i18n "mcp_audit_v1" | default "1 flag — contained." }}',
+      a: '{{ i18n "mcp_audit_a1" | default "Fix the one item. That single change is the highest-value thing on this page." }}' },
+    { max: 3,
+      v: '{{ i18n "mcp_audit_v2" | default "2-3 flags — meaningful blast radius." }}',
+      a: '{{ i18n "mcp_audit_a2" | default "Start with rule 1 (one server, one job) and rule 4 (gate destructive actions). Those two shrink the radius most per minute spent." }}' },
+    { max: 5,
+      v: '{{ i18n "mcp_audit_v3" | default "4-5 flags — your agent is a single point of failure." }}',
+      a: '{{ i18n "mcp_audit_a3" | default "Assume any server you did not vet is hostile, and work backwards: what could it reach? Revoke the broadest credential first." }}' }
+  ];
+
+  function update() {
+    var n = 0;
+    boxes.forEach(function (b) { if (b.checked) n++; });
+    var band = bands.find(function (b) { return n <= b.max; }) || bands[bands.length - 1];
+    verdict.textContent = band.v;
+    advice.textContent = band.a;
+  }
+  boxes.forEach(function (b) { b.addEventListener('change', update); });
+  update();
+})();
+</script>

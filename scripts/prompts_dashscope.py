@@ -467,4 +467,42 @@ PROMPTS = {
         "photorealistic-illustrative, film grain, 16:9 composition, no "
         "readable text, no watermark, no people, no hands"
     ),
+    # "Your Agent Trusts Everything You Connected It To" (2026-09-20) — MCP
+    # security: the trust gap between connect-time review and runtime responses.
+    # Thesis: you vetted the plug once, then handed over the keys. Still-life,
+    # no figure — avoids both the directionality and ethnicity traps.
+    "mcp-security-solo-builder": (
+        "Cinematic wide still life on a dark walnut workbench: a single small "
+        "matte-black hub at the centre with several cables plugged into it, "
+        "each cable leading away to a different object — a labelled keyring "
+        "with keys, a closed folder, a small drive, a padlock lying open — "
+        "so the hub is visibly the one thing everything else depends on. "
+        "One cable is frayed and exposed near its connector, strands of bare "
+        "wire catching the light, clearly the compromised link among otherwise "
+        "tidy ones. The whole arrangement is orderly and calm, which is what "
+        "makes the single damaged cable unsettling. Warm amber lamplight "
+        "raking across the connectors, the far edges falling into deep shadow. "
+        "Deep charcoal, warm copper-amber palette, moody chiaroscuro, "
+        "volumetric light, photorealistic-illustrative, film grain, 1.91:1 "
+        "composition, entirely unlabelled plain objects with no lettering, "
+        "no writing, no printed words anywhere in the frame, "
+        "no watermark, no people, no hands"
+    ),
+    # "The cost moved" (LinkedIn, 2026-09-23) — software lifecycle cost shift:
+    # three workstations in a row, each with a differently-sized stack of
+    # unfinished work; the lefts are nearly empty (cheap), the right piles up
+    # unprocessed. The thesis: the cost didn't vanish, it accumulated downstream.
+    "cost-moved": (
+        "Cinematic wide still life of a long wooden editorial workbench in a "
+        "darkened workshop, divided into stations from left to right: at the "
+        "far left a single glowing laptop, nearly finished, then a modest "
+        "stack of papers, then a towering cliff of unread documents, folders "
+        "and stacked printouts at the far right, teetering and casting long "
+        "shadows, the pile visibly the heaviest object in the frame. Warm "
+        "amber lamplight pooled over the empty left end, the right side "
+        "falling into deep shadow under the weight. Deep charcoal, warm "
+        "copper-amber palette, moody chiaroscuro, volumetric light, "
+        "photorealistic-illustrative, film grain, 1.91:1 composition, no "
+        "readable text, no watermark, no people, no hands"
+    ),
 }

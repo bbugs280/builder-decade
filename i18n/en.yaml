@@ -10,3 +10,51 @@
   translation: Builder Decade is a solo builder shipping real products with AI agents — every method tested against what actually ships and works before it's published here.
 - id: read_more
   translation: Read more
+
+# --- Terminal action: MCP config audit shortcode ---
+- id: mcp_audit_title
+  translation: Run the check on your own config
+- id: mcp_audit_intro
+  translation: Three greps against your MCP config. Copy, run, read the output. Nothing here is sent anywhere — the commands run on your own machine.
+- id: mcp_audit_step1
+  translation: Hidden characters (invisible instructions)
+- id: mcp_audit_step2
+  translation: Sensitive paths
+- id: mcp_audit_step3
+  translation: Exfiltration shapes
+- id: mcp_audit_copy
+  translation: Copy
+- id: mcp_audit_copied
+  translation: Copied
+- id: mcp_audit_score_title
+  translation: Now score what you found
+- id: mcp_audit_score_intro
+  translation: Tick every statement that is TRUE for your setup. The count is your exposure.
+- id: mcp_audit_q1
+  translation: I have an agent that can both read files AND make outbound network calls
+- id: mcp_audit_q2
+  translation: At least one server was added from a blog post, README, or a registry I didn't vet
+- id: mcp_audit_q3
+  translation: I have never read the tool descriptions of a server I connected
+- id: mcp_audit_q4
+  translation: A server holds a credential that is broader than the job it does
+- id: mcp_audit_q5
+  translation: Destructive actions (delete, deploy, transfer) can run without my explicit confirmation
+- id: mcp_audit_zero
+  translation: Tick any that apply — the count is your exposure.
+- id: mcp_audit_v0
+  translation: Nothing flagged — clean.
+- id: mcp_audit_a0
+  translation: Your setup already follows the four rules. Re-run the greps whenever you add a server.
+- id: mcp_audit_v1
+  translation: 1 flag — contained.
+- id: mcp_audit_a1
+  translation: Fix the one item. That single change is the highest-value thing on this page.
+- id: mcp_audit_v2
+  translation: 2-3 flags — meaningful blast radius.
+- id: mcp_audit_a2
+  translation: Start with rule 1 (one server, one job) and rule 4 (gate destructive actions). Those two shrink the radius most per minute spent.
+- id: mcp_audit_v3
+  translation: 4-5 flags — your agent is a single point of failure.
+- id: mcp_audit_a3
+  translation: Assume any server you did not vet is hostile, and work backwards — what could it reach? Revoke the broadest credential first.
