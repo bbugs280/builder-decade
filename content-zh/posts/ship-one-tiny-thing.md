@@ -57,6 +57,8 @@ cover:
 
 *這是〈[新手入門](/zh/posts/ai-beginner-start/)〉背後的運作迴圈——也是殺死多數獨立專案的〈[第三週之牆](/zh/posts/week-three/)〉的解藥。*
 
+如果這是第一階，那接下來的問題都跟「出貨之後」有關：〈[先發布半成品](/zh/posts/ship-the-half-done-thing/)〉講的是那種想繼續打磨的衝動，〈[你的第一筆收費](/zh/posts/first-charge-solo-builder/)〉說的是為什麼該早點收到錢，而〈[晚上與週末的出貨系統](/zh/posts/evenings-weekends-shipping/)〉則是讓這件事在沒有團隊的情況下持續下去的節奏。
+
 ---
 
 ## Sources

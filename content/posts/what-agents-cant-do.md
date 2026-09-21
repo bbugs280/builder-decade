@@ -62,6 +62,8 @@ The volume is automated. The judgment is not. And the judgment is the last 10% t
 
 ---
 
+That trust gap has a second half worth knowing: the ceiling isn't only about what you *should* let an agent do — it's also about what you hand it access to. [Your Agent Trusts Everything You Connected It To](/posts/mcp-security-solo-builder/) covers the trust you extend at connect time. Two related operator pieces: [Why Agents Fail Boringly](/posts/agents-fail-boringly/) (diagnosing the failure) and [Memory Is the Product](/posts/memory-is-the-product/) (why the operator's system, not the model, is the product).
+
 ## Sources
 
 - Stack Overflow 2025 Developer Survey — only 3.1% of developers "highly trust" AI output; 45.7% somewhat or highly distrust it. Adoption is high (84%), trust is low — the gap between volume and judgment is measurable.

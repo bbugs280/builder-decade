@@ -63,6 +63,8 @@ The brutal truth underneath it all: **most solo projects don't die from a bad pr
 
 ---
 
+A note on *where* those first users should come from, since it's the part that outlasts the tactics above: [How to Pick the One Search Query Worth Owning](/posts/seo-for-indie-hackers/) covers choosing a channel you can actually win, and [Don't Build on Rented Land](/posts/rented-land-ai-search/) is the warning case for the platforms you don't control. When the channel starts producing more than you can handle alone, [When to Hire Your First Contractor](/posts/when-to-hire-your-first-contractor/) is the decision rule for that step.
+
 ## Sources
 
 - Carta — Solo Founders Report 2025: the solo-founded share of new US startups rose from 23.7% (2019) to 36.3% (H1 2025), and the persistence of solo founders is downstream of consistent low-cost iteration rather than single big bets — the same logic that makes "go deep on one channel" work.

@@ -59,6 +59,8 @@ For a one-person product team, the rule collapses to something you can actually 
 
 The point isn't that solo builders should rebuild everything or buy everything. It's that the question changed. Twenty years ago you asked "what will it cost to build vs license?" Now the honest question is **"what am I willing to be custodian of, and what am I willing to rent?"** — and most solo builders, most of the time, are renting far more than they realize, and custodian of almost nothing that actually matters.
 
+The rule has two neighbours worth reading next: [Vibe Coding's Hidden Cost](/posts/vibe-coding-hidden-cost/) is the same ownership bill arriving from a different direction, and [When to Trust an Open Source Library](/posts/open-source-dependency/) is the due-diligence step before you take on a dependency you'll have to maintain.
+
 ## Sources
 
 - Gartner — *IT maintenance spending*: organizations spend ~55–80% of IT budgets maintaining existing systems (percent-of-ownership benchmark, widely cited across Gartner's IT key-metrics research).

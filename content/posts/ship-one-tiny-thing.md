@@ -59,6 +59,8 @@ That's the entire system. It's not a shortcut. It's the only reliable path there
 
 ---
 
+If this is the first rung, the natural next questions are all about what happens *after* you ship: [Ship the Half-Done Thing](/posts/ship-the-half-done-thing/) covers the instinct to keep polishing, [Your First Charge](/posts/first-charge-solo-builder/) is the case for getting paid early, and [The Evenings-and-Weekends System](/posts/evenings-weekends-shipping/) is the cadence that keeps it going without a team.
+
 ## Sources
 
 - The compounding-feedback structure here mirrors the deliberate-practice literature (Ericsson) — small, repeated, feedback-rich iterations beat infrequent large efforts — applied to the specific mechanics of solo shipping.

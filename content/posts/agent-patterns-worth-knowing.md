@@ -69,6 +69,8 @@ A bigger model won't fix a routing problem. A better prompt won't fix a missing 
 
 *This is the pattern-level companion to two earlier posts: [API vs MCP](/posts/api-vs-mcp/) (which *transport* your tools talk over) and [what AI agents still can't do](/posts/what-agents-cant-do/) (the ceiling no pattern reaches). This one is about the patterns themselves — what each is for, and when it's worth it.*
 
+The diagnosis points somewhere concrete: if the failure lives in reflection, [Done Is a Claim, Not a Fact](/posts/done-is-a-claim/) is the verification ritual that catches it; if it's memory, [Memory Is the Product](/posts/memory-is-the-product/) covers why the system around the model is what actually holds. And when the failing pattern is a tool call, the blast radius is a separate question — [Your Agent Trusts Everything You Connected It To](/posts/mcp-security-solo-builder/).
+
 ## Sources
 
 - **Zheng et al., *Where LLM Agents Fail and How They Can Learn From Failures* (arXiv:2509.25370, 2025).** — AgentErrorTaxonomy: agent failures modularly span memory, reflection, planning, action, and system-level operations; a single root-cause error cascades through subsequent decisions. Grounds "diagnose the failure, not the pattern."

@@ -62,6 +62,8 @@ The stigma didn't get argued away. It got out-earned. And that's the most convin
 
 *Want the mechanism behind this — why one person can now ship what took a team? Read [Why One Person Can Now Ship What Took a Team](/posts/one-person-team/).*
 
+If the numbers above are the *outcome*, the decision that produced them is a different question — and it's the one most people get wrong. [Should You Take a Co-Founder?](/posts/solo-founder-vs-cofounder/) works through the actual decision rule, and if you're still deciding whether the route pays at all, [How to Price What You Sell](/posts/solo-saas-pricing/) covers the part that determines whether solo stays viable past the first year.
+
 ---
 
 ## Sources

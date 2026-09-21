@@ -69,6 +69,8 @@ cover:
 
 *這是另外兩篇的「模式層」姊妹篇：[API vs MCP](/posts/api-vs-mcp/)（你的工具用哪種傳輸溝通），以及 [AI agent 仍然做不到的事](/posts/what-agents-cant-do/)（任何模式都搆不到的天花板）。這篇談的是模式本身——每個模式為了什麼而存在，又何時才值得。*
 
+這個診斷會指向具體的地方：如果失敗出在反思，〈[「完成」是一個宣稱，不是事實](/zh/posts/done-is-a-claim/)〉就是能抓到它的驗證儀式；如果出在記憶，〈[記憶才是產品](/zh/posts/memory-is-the-product/)〉談的是為什麼真正撐住一切的是模型周圍的那套系統。而當出錯的模式是工具呼叫時，影響範圍就是另一個問題了——〈[你的代理，信任所有你接上去的東西](/zh/posts/mcp-security-solo-builder/)〉。
+
 ## 資料來源
 
 - **Zheng et al., *Where LLM Agents Fail and How They Can Learn From Failures*（arXiv:2509.25370，2025）。** —— AgentErrorTaxonomy：agent 的失敗模組化地橫跨記憶、反思、規劃、行動與系統層操作；單一根本原因錯誤會一路串聯影響後續決策。支撐「診斷失敗，而非選模式」的論點。
