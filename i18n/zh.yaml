@@ -58,3 +58,32 @@
   translation: 4-5 項警示——你的代理就是單點故障。
 - id: mcp_audit_a3
   translation: 假設任何你沒審查過的伺服器都是惡意的，然後反推：它能碰到什麼？先撤掉權限最廣的那組憑證。
+
+- id: agent_reach_title
+  translation: 為你自己的曝險程度打個分
+- id: agent_reach_intro
+  translation: 六個關於你目前實際上線設定的敘述。勾選符合的項目。這裡不會送出任何資料——計分完全在你的瀏覽器裡完成。
+- id: agent_reach_q1
+  translation: 我至少有一個代理持有不會過期的憑證——API key、PAT，或長期有效的 token。
+- id: agent_reach_q2
+  translation: 代理可以連上公開網際網路，而沒有目的地位址允許清單——它可以 POST 到任何地方。
+- id: agent_reach_q3
+  translation: 持有廣泛權限憑證的那個代理，同時也具備通用工具——shell、瀏覽器，或 HTTP 抓取。
+- id: agent_reach_q4
+  translation: 我從來沒有列過允許哪些目的地位址——我得去讀設定檔才知道答案。
+- id: agent_reach_q5
+  translation: 我沒有辦法在不輪替其他代理共用憑證的情況下，單獨撤銷某一個代理的存取權。
+- id: agent_reach_q6
+  translation: 如果明天某個代理的輸出變成了另一個工具的輸入，我的設定裡沒有任何東西會標示出來。
+- id: agent_reach_score
+  translation: 你的曝險分數
+- id: agent_reach_v0
+  translation: 還沒勾選任何項目。把所有符合你設定狀況的敘述都勾起來。
+- id: agent_reach_v1
+  translation: 低。你的憑證有範圍限制，也有目的地位址邊界。繼續保持短效期。
+- id: agent_reach_v2
+  translation: 中等。有一到兩個缺口——最常見的是效期。在你接上下一個東西之前先修掉它。
+- id: agent_reach_v3
+  translation: 高。一個長期有效的憑證加上一條開放的外連路徑，正是 2026 年那些事故的形狀——完全不需要漏洞利用。
+- id: agent_reach_v4
+  translation: 極高。讓那些事故得以發生的一切，同時都存在。打斷這個組合：縮小範圍、設定效期、加上允許清單。

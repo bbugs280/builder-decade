@@ -58,3 +58,32 @@
   translation: 4-5 flags — your agent is a single point of failure.
 - id: mcp_audit_a3
   translation: Assume any server you did not vet is hostile, and work backwards — what could it reach? Revoke the broadest credential first.
+
+- id: agent_reach_title
+  translation: Score your own exposure
+- id: agent_reach_intro
+  translation: Six statements about the setup you actually run. Tick what is true. Nothing here is sent anywhere — this scores in your browser.
+- id: agent_reach_q1
+  translation: At least one of my agents holds a credential that does not expire — an API key, a PAT, or a long-lived token.
+- id: agent_reach_q2
+  translation: An agent can reach the open internet without a destination allow-list — it can POST anywhere.
+- id: agent_reach_q3
+  translation: The same agent that holds a wide credential also has a general-purpose tool — a shell, a browser, or an HTTP fetch.
+- id: agent_reach_q4
+  translation: I have never listed which destinations are allowed — I would have to read the config to answer that.
+- id: agent_reach_q5
+  translation: I do not have a way to revoke one agent's access without rotating credentials shared with the others.
+- id: agent_reach_q6
+  translation: If an agent's output became an input to another tool tomorrow, nothing in my setup would flag it.
+- id: agent_reach_score
+  translation: Your exposure score
+- id: agent_reach_v0
+  translation: Nothing ticked yet. Tick every statement that is true of your setup.
+- id: agent_reach_v1
+  translation: Low. You have scoped credentials and a destination boundary. Keep the short expiry.
+- id: agent_reach_v2
+  translation: Moderate. One or two gaps — the usual one is expiry. Fix that before the next thing you connect.
+- id: agent_reach_v3
+  translation: High. A standing credential plus an open egress path is the exact shape of the 2026 breaches — no exploit required.
+- id: agent_reach_v4
+  translation: Critical. Everything that made those incidents possible is present at once. Break the combination — scope it, expire it, allow-list it.

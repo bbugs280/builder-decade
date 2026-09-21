@@ -1,0 +1,139 @@
+{{- /* Terminal action: agent access / egress exposure score.
+      Renders a 6-statement self-assessment the reader answers about THEIR OWN setup,
+      scoring standing access + egress + blast radius. Client-side only — no server,
+      nothing leaves the browser.
+
+      Companion to mcp-audit.html (that = what you CONNECT; this = what the agent can
+      then DO once connected). Same visual/interaction pattern deliberately reused.
+
+      Language-aware via i18n keys (agent_reach_*).
+
+      Usage in a post body:
+        {{< agent-reach >}}
+*/ -}}
+
+{{- $lang := .Page.Lang -}}
+
+<div class="agent-reach" id="agent-reach" style="margin: 2rem 0; padding: 1.5rem; border: 1px solid var(--border); border-radius: 12px; background: var(--entry);">
+
+  <h2 style="margin-top: 0; font-size: 1.35rem;">
+    {{ i18n "agent_reach_title" | default "Score your own exposure" }}
+  </h2>
+
+  <p style="opacity: 0.85; margin-bottom: 1.25rem;">
+    {{ i18n "agent_reach_intro" | default "Six statements about the setup you actually run. Tick what is true. Nothing here is sent anywhere — this scores in your browser." }}
+  </p>
+
+  <div id="agent-reach-items">
+
+    <label style="display:flex; gap:0.7rem; align-items:flex-start; margin-bottom:0.85rem; cursor:pointer;">
+      <input type="checkbox" class="agent-reach-box" data-weight="2" style="margin-top:0.3rem; flex-shrink:0;">
+      <span>{{ i18n "agent_reach_q1" | default "At least one of my agents holds a credential that does not expire — an API key, a PAT, or a long-lived token." }}</span>
+    </label>
+
+    <label style="display:flex; gap:0.7rem; align-items:flex-start; margin-bottom:0.85rem; cursor:pointer;">
+      <input type="checkbox" class="agent-reach-box" data-weight="2" style="margin-top:0.3rem; flex-shrink:0;">
+      <span>{{ i18n "agent_reach_q2" | default "An agent can reach the open internet without a destination allow-list — it can POST anywhere." }}</span>
+    </label>
+
+    <label style="display:flex; gap:0.7rem; align-items:flex-start; margin-bottom:0.85rem; cursor:pointer;">
+      <input type="checkbox" class="agent-reach-box" data-weight="2" style="margin-top:0.3rem; flex-shrink:0;">
+      <span>{{ i18n "agent_reach_q3" | default "The same agent that holds a wide credential also has a general-purpose tool — a shell, a browser, or an HTTP fetch." }}</span>
+    </label>
+
+    <label style="display:flex; gap:0.7rem; align-items:flex-start; margin-bottom:0.85rem; cursor:pointer;">
+      <input type="checkbox" class="agent-reach-box" data-weight="1" style="margin-top:0.3rem; flex-shrink:0;">
+      <span>{{ i18n "agent_reach_q4" | default "I have never listed which destinations are allowed — I would have to read the config to answer that." }}</span>
+    </label>
+
+    <label style="display:flex; gap:0.7rem; align-items:flex-start; margin-bottom:0.85rem; cursor:pointer;">
+      <input type="checkbox" class="agent-reach-box" data-weight="2" style="margin-top:0.3rem; flex-shrink:0;">
+      <span>{{ i18n "agent_reach_q5" | default "I do not have a way to revoke one agent's access without rotating credentials shared with the others." }}</span>
+    </label>
+
+    <label style="display:flex; gap:0.7rem; align-items:flex-start; margin-bottom:1.25rem; cursor:pointer;">
+      <input type="checkbox" class="agent-reach-box" data-weight="1" style="margin-top:0.3rem; flex-shrink:0;">
+      <span>{{ i18n "agent_reach_q6" | default "If an agent's output became an input to another tool tomorrow, nothing in my setup would flag it." }}</span>
+    </label>
+
+  </div>
+
+  <div style="border-top: 1px solid var(--border); padding-top: 1.25rem;">
+    <div style="display:flex; align-items:baseline; gap:1rem; flex-wrap:wrap;">
+      <strong style="font-size: 0.95rem;">
+        {{ i18n "agent_reach_score" | default "Your exposure score" }}:
+      </strong>
+      <span id="agent-reach-value" style="font-size:1.6rem; font-weight:700;">0</span>
+      <span style="opacity:0.7; font-size:0.85rem;">/ 10</span>
+    </div>
+
+    <p id="agent-reach-verdict" style="margin:0.85rem 0 0; padding:0.75rem 1rem; border-radius:8px; background: var(--code-bg); font-size:0.92rem;">
+      {{ i18n "agent_reach_v0" | default "Nothing ticked yet. Tick every statement that is true of your setup." }}
+    </p>
+  </div>
+</div>
+
+<script>
+(function () {
+  var boxes = document.querySelectorAll('.agent-reach-box');
+  if (!boxes.length) return;
+
+  var bands = [
+    { max: 0, key: 'agent_reach_v0', fallback: 'Nothing ticked yet. Tick every statement that is true of your setup.' },
+    { max: 1, key: 'agent_reach_v1', fallback: 'Low. You have scoped credentials and a destination boundary. Keep the short expiry.' },
+    { max: 3, key: 'agent_reach_v2', fallback: 'Moderate. One or two gaps — the usual one is expiry. Fix that before the next thing you connect.' },
+    { max: 5, key: 'agent_reach_v3', fallback: 'High. A standing credential plus an open egress path is the exact shape of the 2026 breaches — no exploit required.' },
+    { max: 10, key: 'agent_reach_v4', fallback: 'Critical. Everything that made those incidents possible is present at once. Break the combination: scope it, expire it, allow-list it.' }
+  ];
+
+  var verdicts = [];
+  var i18nEls = document.querySelectorAll('[data-agent-reach-i18n]');
+
+  // i18n text is injected by Hugo into hidden spans so the JS stays language-aware
+  // without a build step. Fallbacks cover the monolingual case.
+  var i18nMap = {};
+  try {
+    var payload = document.getElementById('agent-reach-i18n');
+    if (payload) i18nMap = JSON.parse(payload.textContent);
+  } catch (e) { /* fallback strings below */ }
+
+  function textFor(band) {
+    if (i18nMap && i18nMap[band.key]) return i18nMap[band.key];
+    return band.fallback;
+  }
+
+  function update() {
+    var total = 0;
+    for (var i = 0; i < boxes.length; i++) {
+      if (boxes[i].checked) total += parseInt(boxes[i].getAttribute('data-weight'), 10) || 0;
+    }
+    var valueEl = document.getElementById('agent-reach-value');
+    var verdictEl = document.getElementById('agent-reach-verdict');
+    if (valueEl) valueEl.textContent = total;
+
+    var band = bands[0];
+    for (var b = 0; b < bands.length; b++) {
+      if (total <= bands[b].max) { band = bands[b]; break; }
+      band = bands[b];
+    }
+    if (verdictEl) verdictEl.textContent = textFor(band);
+  }
+
+  for (var j = 0; j < boxes.length; j++) {
+    boxes[j].addEventListener('change', update);
+  }
+
+  update();
+})();
+</script>
+
+{{- /* i18n payload for the JS verdict bands */ -}}
+<script type="application/json" id="agent-reach-i18n">
+{
+  "agent_reach_v0": {{ i18n "agent_reach_v0" | default "Nothing ticked yet. Tick every statement that is true of your setup." }},
+  "agent_reach_v1": {{ i18n "agent_reach_v1" | default "Low. You have scoped credentials and a destination boundary. Keep the short expiry." }},
+  "agent_reach_v2": {{ i18n "agent_reach_v2" | default "Moderate. One or two gaps — the usual one is expiry. Fix that before the next thing you connect." }},
+  "agent_reach_v3": {{ i18n "agent_reach_v3" | default "High. A standing credential plus an open egress path is the exact shape of the 2026 breaches — no exploit required." }},
+  "agent_reach_v4": {{ i18n "agent_reach_v4" | default "Critical. Everything that made those incidents possible is present at once. Break the combination: scope it, expire it, allow-list it." }}
+}
+</script>

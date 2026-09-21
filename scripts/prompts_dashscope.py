@@ -488,6 +488,26 @@ PROMPTS = {
         "no writing, no printed words anywhere in the frame, "
         "no watermark, no people, no hands"
     ),
+    # "what-your-agent-can-reach" (2026-09-21) — the trust handoff: the agent
+    # doesn't break the boundary, it writes something a trusted thing outside
+    # the boundary later runs. Visual: an open door with the key still in the
+    # lock, relaying a note underneath. Sells nothing; the metaphor is the point.
+    "what-your-agent-can-reach": (
+        "Cinematic wide still life on a dark walnut workbench: a small closed "
+        "strongbox with a heavy brass lock, and the key still sitting in the "
+        "lock — turned, unlocked, the shackle hanging open. A folded paper "
+        "note has been slipped underneath the box and is emerging from the "
+        "other side, half in shadow, the only thing bridging inside and "
+        "outside. Nothing is broken or forced; every object is orderly and "
+        "intact, which is what makes the open lock unsettling. No forced "
+        "entry, no damage, no tools of breaking. Warm amber lamplight raking "
+        "across the brass, far edges falling into deep shadow. Deep charcoal, "
+        "warm copper-amber palette, moody chiaroscuro, volumetric light, "
+        "photorealistic-illustrative, film grain, 1.91:1 composition, "
+        "entirely unlabelled plain objects with no lettering, no writing, "
+        "no printed words anywhere in the frame, no watermark, no people, "
+        "no hands"
+    ),
     # "The cost moved" (LinkedIn, 2026-09-23) — software lifecycle cost shift:
     # three workstations in a row, each with a differently-sized stack of
     # unfinished work; the lefts are nearly empty (cheap), the right piles up

@@ -75,6 +75,8 @@ This is the same discipline pointed one layer down. That one asks *did it do the
 
 A related distinction worth holding: [What Agents Can't Do]({{< ref "/posts/what-agents-cant-do" >}}) covers the capability ceiling, and [API vs MCP]({{< ref "/posts/api-vs-mcp" >}}) covers the transport decision. Neither is about safety. Transport being standardised says nothing about whether what travels over it is trustworthy.
 
+And it's worth separating this from the step that comes next: this post is about **what you connect** — the tool descriptions you trusted at setup. [Your Agent Doesn't Need to Be Hacked](/posts/what-your-agent-can-reach/) is about **what the agent can do once it's connected** — the standing access you granted, and what it can write that something else will later trust. Two different failure modes, two different checks.
+
 ## What to do today
 
 {{< mcp-audit >}}

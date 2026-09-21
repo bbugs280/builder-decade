@@ -62,7 +62,7 @@ AI 建置工具的承諾持續膨脹：「描述任何東西，它就能建出�
 
 ---
 
-這個信任落差還有另一半值得知道：上限不只關乎你*該*讓代理做什麼，也關乎你交到它手上的存取權。[你的代理，信任所有你接上去的東西](/zh/posts/mcp-security-solo-builder/)談的是你在「連接那一刻」給出的信任。另外兩篇操作者相關的文章：[你的 AI 助手以平凡的方式出錯](/zh/posts/agents-fail-boringly/)（如何診斷失敗），以及[記憶才是產品](/zh/posts/memory-is-the-product/)（為什麼產品是操作者的系統，而不是模型）。
+這個信任落差還有另一半值得知道：上限不只關乎你*該*讓代理做什麼，也關乎你交到它手上的存取權。[你的代理不需要被駭](/zh/posts/what-your-agent-can-reach/)整理了長期存取權的檢查清單。另外兩篇操作者相關的文章：[你的 AI 助手以平凡的方式出錯](/zh/posts/agents-fail-boringly/)（如何診斷失敗），以及[記憶才是產品](/zh/posts/memory-is-the-product/)（為什麼產品是操作者的系統，而不是模型）。
 
 ## Sources
 
