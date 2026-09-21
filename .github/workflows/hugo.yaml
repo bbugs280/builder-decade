@@ -63,6 +63,20 @@ jobs:
       - name: Check for stray emphasis markers
         run: python3 tests/check_no_stray_emphasis.py --public ./public
 
+      # Regression guard: ZH posts must be Traditional Chinese, never Simplified.
+      # ZH is this site's only converting lane; a Simplified body passes every
+      # other test but breaks the stated language mandate.
+      - name: Check ZH posts are Traditional Chinese
+        run: python3 tests/check_zh_traditional.py
+
+      # Regression guard: shortcode i18n values inside a JSON payload must not be
+      # double-encoded. `| jsonify` applied to an already-quoted string literal
+      # yields text with literal quote marks after JSON.parse, which the JS writes
+      # into the DOM — visible to the reader only AFTER interaction, so no static
+      # HTML check catches it.
+      - name: Check for double-encoded shortcode JSON
+        run: python3 tests/check_shortcode_json.py
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
