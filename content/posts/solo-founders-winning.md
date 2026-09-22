@@ -64,6 +64,8 @@ The stigma didn't get argued away. It got out-earned. And that's the most convin
 
 If the numbers above are the *outcome*, the decision that produced them is a different question — and it's the one most people get wrong. [Should You Take a Co-Founder?](/posts/solo-founder-vs-cofounder/) works through the actual decision rule, and if you're still deciding whether the route pays at all, [How to Price What You Sell](/posts/solo-saas-pricing/) covers the part that determines whether solo stays viable past the first year.
 
+There's also a claim that rides along with this trend and doesn't survive contact with the data: that solo founders still can't get funded, usually sourced to one misread statistic. [The One-Person Company Stopped Being a Thesis](/posts/one-person-company-is-real-now/) pulls the two datasets that measure the same population and disagree — and explains why the gate never actually closed.
+
 ---
 
 ## Sources

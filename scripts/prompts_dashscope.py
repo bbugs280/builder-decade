@@ -525,4 +525,25 @@ PROMPTS = {
         "photorealistic-illustrative, film grain, 1.91:1 composition, no "
         "readable text, no watermark, no people, no hands"
     ),
+    # "one-person-company-is-real-now" (2026-09-22) — the one-person company is
+    # the modal shape, but funding outcomes disperse. Thesis: same starting
+    # point, wildly different outcomes by month 24 (top decile 61x median).
+    # Visual: one identical small desk lamp at far left; a long row of identical
+    # desks receding right where the light pools grow and compound, the last
+    # casting an enormous bloom. Start is equal, outcome is not.
+    "one-person-company-is-real-now": (
+        "Cinematic wide still life of a long dark workshop bench receding into "
+        "deep perspective, lined with identical simple workbenches at regular "
+        "intervals. At the near-left end a single small desk lamp glows faintly "
+        "over a bare empty bench. Moving right, each successive identical bench "
+        "carries a progressively larger pool of warm light spilling wider and "
+        "brighter, until the farthest bench at the right edge blazes with an "
+        "enormous luminous bloom that floods the frame, far out of proportion to "
+        "the identical furniture beneath it. The desks are the same; only the "
+        "light compounds. Deep charcoal, warm copper-amber palette, moody "
+        "chiaroscuro, volumetric light rays, photorealistic-illustrative, film "
+        "grain, 1.91:1 composition, entirely unlabelled plain objects with no "
+        "lettering, no writing, no printed words anywhere in the frame, no "
+        "watermark, no people, no hands"
+    ),
 }
