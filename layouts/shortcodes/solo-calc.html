@@ -1,0 +1,179 @@
+{{- /* Terminal action: solo-business decision calculator.
+      Two modes, chosen by the calling shortcode spec:
+        {{< solo-calc mode="hire" >}}    → first-hire break-even
+        {{< solo-calc mode="price" >}}   → pricing floor / effective rate
+
+      Client-side only — no server, nothing leaves the browser.
+      Language-aware via i18n keys (solo_calc_*).
+
+      Why a shortcode: the numbers a reader plugs in are theirs, not ours, so
+      the page can't state the answer — it has to let them compute it. Keeps
+      the arithmetic versioned and reusable across both foothold posts.
+*/ -}}
+
+{{- $mode := .Get "mode" | default "hire" -}}
+
+<div class="solo-calc" id="solo-calc-{{ $mode }}" data-mode="{{ $mode }}" style="margin: 2rem 0; padding: 1.5rem; border: 1px solid var(--border); border-radius: 12px; background: var(--entry);">
+
+  <h2 style="margin-top: 0; font-size: 1.35rem;">
+    {{ if eq $mode "hire" }}
+      {{ i18n "solo_calc_hire_title" | default "Run your own break-even" }}
+    {{ else }}
+      {{ i18n "solo_calc_price_title" | default "Find your actual floor" }}
+    {{ end }}
+  </h2>
+
+  <p style="opacity: 0.85; margin-bottom: 1.25rem;">
+    {{ if eq $mode "hire" }}
+      {{ i18n "solo_calc_hire_intro" | default "Most solo founders decide on the salary. The salary is the small number. Put your real figures in — nothing here is sent anywhere or stored." }}
+    {{ else }}
+      {{ i18n "solo_calc_price_intro" | default "Your rate isn't what you want to earn. It's what your overhead and your unbillable hours leave you with. Put your real figures in." }}
+    {{ end }}
+  </p>
+
+  {{ if eq $mode "hire" }}
+  <div class="sc-fields">
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_hire_f1" | default "Annual salary you'd pay" }}</span>
+      <input type="number" class="sc-in" data-k="salary" value="60000" min="0" step="1000">
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_hire_f2" | default "Employer taxes + benefits (% of salary)" }}</span>
+      <input type="number" class="sc-in" data-k="burden" value="25" min="0" step="1">
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_hire_f3" | default "One-off hiring cost (recruit, setup, hardware)" }}</span>
+      <input type="number" class="sc-in" data-k="onetime" value="4000" min="0" step="500">
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_hire_f4" | default "Your own revenue per month" }}</span>
+      <input type="number" class="sc-in" data-k="revenue" value="26000" min="0" step="500">
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_hire_f5" | default "Hours per week you'd hand over" }}</span>
+      <input type="number" class="sc-in" data-k="hours" value="40" min="0" step="1">
+    </label>
+  </div>
+  {{ else }}
+  <div class="sc-fields">
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_price_f1" | default "Take-home you need per year" }}</span>
+      <input type="number" class="sc-in" data-k="target" value="80000" min="0" step="1000">
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_price_f2" | default "Annual business costs (tools, hosting, insurance)" }}</span>
+      <input type="number" class="sc-in" data-k="overhead" value="9000" min="0" step="500">
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_price_f3" | default "Billable hours per week" }}</span>
+      <input type="number" class="sc-in" data-k="billable" value="15" min="0" step="1">
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_price_f4" | default "Weeks worked per year" }}</span>
+      <input type="number" class="sc-in" data-k="weeks" value="46" min="1" step="1">
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_price_f5" | default "Unbillable hours per week (admin, sales, support)" }}</span>
+      <input type="number" class="sc-in" data-k="unbillable" value="20" min="0" step="1">
+    </label>
+  </div>
+  {{ end }}
+
+  <div class="sc-out" style="margin-top: 1.25rem; padding: 0.9rem 1rem; border-radius: 8px; background: var(--code-bg); font-size: 0.9rem;">
+    <strong class="sc-verdict"></strong>
+    <div class="sc-detail" style="margin-top: 0.5rem; opacity: 0.88;"></div>
+  </div>
+
+  <p style="opacity: 0.7; font-size: 0.8rem; margin: 1rem 0 0;">
+    {{ i18n "solo_calc_note" | default "Runs entirely in your browser. Nothing is sent, nothing is stored, and the page never sees your figures." }}
+  </p>
+</div>
+
+<script>
+(function () {
+  var root = document.getElementById('solo-calc-{{ $mode }}');
+  if (!root) return;
+  var mode = root.dataset.mode;
+  var ins = root.querySelectorAll('.sc-in');
+  var verdict = root.querySelector('.sc-verdict');
+  var detail = root.querySelector('.sc-detail');
+  if (!ins.length || !verdict) return;
+
+  function val(k) {
+    var el = root.querySelector('.sc-in[data-k="' + k + '"]');
+    var n = el ? parseFloat(el.value) : 0;
+    return isFinite(n) && n >= 0 ? n : 0;
+  }
+  function money(n) {
+    return Math.round(n).toLocaleString('{{ if eq .Page.Lang "zh" }}zh-HK{{ else }}en-US{{ end }}');
+  }
+
+  function updateHire() {
+    var salary = val('salary');
+    var burden = val('burden') / 100;
+    var onetime = val('onetime');
+    var revenue = val('revenue');
+    var hours = val('hours');
+
+    var fullyLoaded = salary * (1 + burden);
+    var steadyMonthly = fullyLoaded / 12;
+    var firstYearMonthly = steadyMonthly + onetime / 12;
+    var revPerHour = hours > 0 ? (revenue / 4.33) / hours : 0;
+    var needed = steadyMonthly;
+
+    if (revenue <= 0 || hours <= 0) {
+      verdict.textContent = '{{ i18n "solo_calc_hire_needinput" | default "Enter your revenue and hours to see the break-even." }}';
+      detail.textContent = '';
+      return;
+    }
+
+    // Compare LIKE WITH LIKE: monthly revenue vs monthly cost of the hire.
+    // (An earlier version divided weekly revenue by monthly cost, which made
+    //  every verdict ~4.33x too pessimistic.)
+    var ratio = needed > 0 ? revenue / needed : Infinity;
+    var v, d;
+    if (ratio >= 1.5) {
+      v = '{{ i18n "solo_calc_hire_v_yes" | default "The hours clear the cost comfortably." }}';
+    } else if (ratio >= 1) {
+      v = '{{ i18n "solo_calc_hire_v_tight" | default "The hours just cover it — no margin for a slow month." }}';
+    } else {
+      v = '{{ i18n "solo_calc_hire_v_no" | default "The hours don\u2019t pay for the hire yet." }}';
+    }
+    // What the handed-over hours are worth per MONTH at the reader's own rate.
+    var handoverMonthly = revenue * (hours / 168);
+    d = 'Fully loaded: ' + money(fullyLoaded) + '/yr &middot; first year ' + money(firstYearMonthly) +
+        '/mo &middot; steady state ' + money(steadyMonthly) + '/mo. The hours you hand over are worth about ' +
+        money(handoverMonthly) + '/mo at your current revenue rate.';
+    verdict.textContent = v;
+    detail.innerHTML = d;
+  }
+
+  function updatePrice() {
+    var target = val('target');
+    var overhead = val('overhead');
+    var billable = val('billable');
+    var weeks = val('weeks');
+    var unbillable = val('unbillable');
+
+    var totalNeeded = target + overhead;
+    var billableHours = billable * weeks;
+    if (billableHours <= 0) {
+      verdict.textContent = '{{ i18n "solo_calc_price_needinput" | default "Enter your billable hours to see the floor." }}';
+      detail.textContent = '';
+      return;
+    }
+    var floor = totalNeeded / billableHours;
+    var totalHours = (billable + unbillable) * weeks;
+    var effective = totalHours > 0 ? totalNeeded / totalHours : 0;
+
+    verdict.textContent = '{{ i18n "solo_calc_price_v" | default "Your floor is" }} ' + money(floor) + '/h';
+    detail.innerHTML = 'That covers ' + money(totalNeeded) + ' over ' + billableHours +
+      ' billable hours. Across <em>all</em> your working hours (' + totalHours +
+      '), you are effectively earning ' + money(effective) + '/h &mdash; the gap between those two numbers is the part most people never price in.';
+  }
+
+  function update() { mode === 'hire' ? updateHire() : updatePrice(); }
+  ins.forEach(function (i) { i.addEventListener('input', update); });
+  update();
+})();
+</script>

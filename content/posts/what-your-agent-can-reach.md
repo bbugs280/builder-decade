@@ -85,6 +85,8 @@ The scores map to a priority order, not a panic list. A standing credential is t
 
 Neither requires a security team. Both require giving up a little convenience — which is the actual cost of this whole class of bug, and the reason it keeps happening.
 
+Containment is the security half of a wider shift in what a solo builder actually does all day: [The Supervisor Class](/posts/supervisor-class/) covers the move from writing code to directing it, [The Infinite Task List](/posts/infinite-task-list-ai-era/) covers why AI made the to-do list longer rather than shorter, and [Your AI Bill Is Rising Even Though Prices Dropped](/posts/ai-api-cost-creep/) covers the meter that moved while the rate card didn't.
+
 ## Sources
 
 - **Cloud Security Alliance — *AI Coding Agent Sandbox Escapes: The Trust Handoff Flaw* (research note, 2026-07-22).** — Pillar Security's "Week of Sandbox Escapes": seven issues across Cursor, Codex CLI, Gemini CLI and Antigravity; *"None of the seven disclosed issues broke the sandbox itself."* The framing that a sandbox is only as strong as the assumptions of everything downstream, plus the specific CVEs, CVSS scores and patched versions cited above. (Note: CSA flags this note as AI-assisted rapid research that has not been through CSA's official review process.)

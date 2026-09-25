@@ -55,6 +55,8 @@ cover:
 
 這不是降級。這是這個職業史上第一次，天花板是你的「思考」，而不是你的「產出」。
 
+指揮代理和信任你的測試環境是兩種不同的能力：〈[模擬器在騙你](/zh/posts/voice-app-on-device/)〉講只有真實硬體才會暴露的東西，〈[一個人做硬體](/zh/posts/building-hardware-solo/)〉則講大多數開發者直接跳過的那間工作室。
+
 ## 資料來源
 
 - **《Fortune》，"The supervisor class: how AI agents are remaking the developer"（2026 年 3 月）。** — 提出「監督者世代」框架：主要價值在於把專業拆成可重複使用的代理技能並指揮代理，從「語法的苦役」中解放，專注於高層次判斷。

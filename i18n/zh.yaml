@@ -87,3 +87,46 @@
   translation: 高。一個長期有效的憑證加上一條開放的外連路徑，正是 2026 年那些事故的形狀——完全不需要漏洞利用。
 - id: agent_reach_v4
   translation: 極高。讓那些事故得以發生的一切，同時都存在。打斷這個組合：縮小範圍、設定效期、加上允許清單。
+
+- id: solo_calc_hire_title
+  translation: 算你自己的損益兩平點
+- id: solo_calc_hire_intro
+  translation: 大部分獨立創辦人只算薪水。薪水是那個小的數字。把你自己的真實數字填進去——這裡的資料不會傳到任何地方，也不會被儲存。
+- id: solo_calc_hire_f1
+  translation: 你要付的年薪
+- id: solo_calc_hire_f2
+  translation: 僱主稅費與福利（佔薪資百分比）
+- id: solo_calc_hire_f3
+  translation: 一次性招聘成本（招募、設備、硬體）
+- id: solo_calc_hire_f4
+  translation: 你自己的月營收
+- id: solo_calc_hire_f5
+  translation: 每週你打算交出去的工作時數
+- id: solo_calc_hire_needinput
+  translation: 填入你的營收與時數，才會看到損益兩平點。
+- id: solo_calc_hire_v_yes
+  translation: 這些時數帶來的收入，輕鬆蓋過成本。
+- id: solo_calc_hire_v_tight
+  translation: 這些時數剛好打平——完全沒有留給淡季的餘裕。
+- id: solo_calc_hire_v_no
+  translation: 這些時數目前還養不起這個人。
+- id: solo_calc_price_title
+  translation: 找出你真正的地板價
+- id: solo_calc_price_intro
+  translation: 你的費率不是你希望賺多少，而是扣掉營運成本與非計費工時之後，真正剩下的。把你自己的數字填進去。
+- id: solo_calc_price_f1
+  translation: 你每年需要的實拿收入
+- id: solo_calc_price_f2
+  translation: 年度營運成本（工具、主機、保險）
+- id: solo_calc_price_f3
+  translation: 每週可計費時數
+- id: solo_calc_price_f4
+  translation: 每年工作週數
+- id: solo_calc_price_f5
+  translation: 每週非計費時數（行政、業務、客服）
+- id: solo_calc_price_needinput
+  translation: 填入你的可計費時數，才會看到地板價。
+- id: solo_calc_price_v
+  translation: 你的地板價是
+- id: solo_calc_note
+  translation: 這個計算器完全在你的瀏覽器裡運算——不發任何網路請求、不做儲存、這個區塊也沒有埋任何追蹤。你填的數字不會離開這個頁面。（網站本身在其他地方有標準的流量統計；這個方塊不會碰到它。）

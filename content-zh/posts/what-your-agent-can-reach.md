@@ -85,6 +85,8 @@ GitHub 是有防護的——預設唯讀 token，加上在張貼前掃描代理�
 
 這兩件事都不需要一支安全團隊。兩件都要求放棄一點便利——而那正是這整類漏洞的真正代價，也是它為何一再發生的原因。
 
+容器化只是更大轉變裡的「安全」那一半——一個獨立開發者現在每天到底在做什麼：〈[監督者世代](/zh/posts/supervisor-class/)〉講從「寫程式」變成「指揮程式」，〈[無限長的待辦清單](/zh/posts/infinite-task-list-ai-era/)〉講為什麼 AI 讓清單變長而不是變短，〈[AI 帳單在漲](/zh/posts/ai-api-cost-creep/)〉講價目表沒動、電錶卻動了的那件事。
+
 ## 資料來源
 
 - **雲端安全聯盟（Cloud Security Alliance）——《AI Coding Agent Sandbox Escapes: The Trust Handoff Flaw》（研究報告，2026-07-22）。** ——Pillar Security 的「沙箱逃逸之週」：橫跨 Cursor、Codex CLI、Gemini CLI 與 Antigravity 的七項問題；*「那七項已揭露的問題，沒有任何一項打破了沙箱本身。」* 以及「沙箱的強度取決於其下游所有東西的假設」這個框架，還有上文引用的具體 CVE、CVSS 分數與修補版本。（註：CSA 標示此報告為 AI 輔助的快速研究，未經 CSA 官方審查流程。）

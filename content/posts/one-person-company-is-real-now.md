@@ -100,6 +100,8 @@ Reading the two datasets together produces something more useful than "solo is w
 
 The one-person company is real now. The interesting question was never whether you're allowed to build one — it was whether what you build is the kind of thing that compounds.
 
+Two of the decisions that follow from that are practical rather than structural: [Leaving the Corporate Job to Build Solo](/posts/leaving-corporate-job-build-solo/) covers what actually happens in the first stretch, and [The Real Cost of Shipping Solo](/posts/cost-of-shipping-solo/) covers the bill nobody itemises.
+
 ---
 
 *Primary sources: [Stripe Atlas](https://stripe.com/blog/top-solo-founder-traits) (Q2 2026 formation share, decile dispersion, and the five traits — methodology: thousands of solo-founded Atlas startups incorporated 2022–2023 with 2+ years of revenue data); [Carta](https://fourweekmba.com/solo-founders-rise-from-23-7-to-36-3-ai-tools-enable-the-one-person-startup) (solo-founded share 2019–2025); [Eqvista](https://eqvista.com/solo-founder-fundraising) (formation-vs-funded ratio, updated 2026-08-18); Solo Founders Annual Report on Carta data (Series A median valuations, 75% personal-ownership differential). Every figure above is drawn from one of these; where they measure different populations, the post says so.*

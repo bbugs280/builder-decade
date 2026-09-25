@@ -51,6 +51,8 @@ Stripe Atlas 分析了數千家獨立創辦的新創公司後發現：前 10% �
 
 ---
 
+{{< solo-calc mode="price" >}}
+
 ## Sources
 
 - Stripe Atlas——《Solo founding is at an all-time high: Top performers have these traits in common》（Jesse Carey，2026 年 5 月 28 日）：前 10% 的 B2B 與 B2C 獨立開發者，採用常規收費模式的比例，分別比中位數群體高出 26 與 20 個百分點；第 24 個月時，中位數獨立 B2B 開發者的營收是中位數獨立 B2C 的四倍以上；前 10% 獨立開發者前六個月的營收是中位數的 61 倍（四年前為 34 倍）。

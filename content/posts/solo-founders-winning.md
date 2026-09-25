@@ -60,6 +60,8 @@ Twenty years ago, the burden was on the solo founder to justify why they weren't
 
 The stigma didn't get argued away. It got out-earned. And that's the most convincing thing a trend can do.
 
+What the formation data doesn't capture is the part that decides whether you last: [Execution Collapse](/posts/execution-collapse/) covers why solo builders rarely fail at building and often fail after launch, [Solo Founder Burnout](/posts/solo-founder-burnout/) covers why it hits harder when nobody's watching, and [One Year of Building](/posts/one-year-of-building/) separates what actually compounds from what doesn't.
+
 *Want the mechanism behind this — why one person can now ship what took a team? Read [Why One Person Can Now Ship What Took a Team](/posts/one-person-team/).*
 
 If the numbers above are the *outcome*, the decision that produced them is a different question — and it's the one most people get wrong. [Should You Take a Co-Founder?](/posts/solo-founder-vs-cofounder/) works through the actual decision rule, and if you're still deciding whether the route pays at all, [How to Price What You Sell](/posts/solo-saas-pricing/) covers the part that determines whether solo stays viable past the first year.

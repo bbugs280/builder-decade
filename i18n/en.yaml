@@ -87,3 +87,46 @@
   translation: High. A standing credential plus an open egress path is the exact shape of the 2026 breaches — no exploit required.
 - id: agent_reach_v4
   translation: Critical. Everything that made those incidents possible is present at once. Break the combination — scope it, expire it, allow-list it.
+
+- id: solo_calc_hire_title
+  translation: Run your own break-even
+- id: solo_calc_hire_intro
+  translation: Most solo founders decide on the salary. The salary is the small number. Put your real figures in — nothing here is sent anywhere or stored.
+- id: solo_calc_hire_f1
+  translation: Annual salary you'd pay
+- id: solo_calc_hire_f2
+  translation: Employer taxes + benefits (% of salary)
+- id: solo_calc_hire_f3
+  translation: One-off hiring cost (recruit, setup, hardware)
+- id: solo_calc_hire_f4
+  translation: Your own revenue per month
+- id: solo_calc_hire_f5
+  translation: Hours per week you'd hand over
+- id: solo_calc_hire_needinput
+  translation: Enter your revenue and hours to see the break-even.
+- id: solo_calc_hire_v_yes
+  translation: The hours clear the cost comfortably.
+- id: solo_calc_hire_v_tight
+  translation: The hours just cover it — no margin for a slow month.
+- id: solo_calc_hire_v_no
+  translation: The hours don't pay for the hire yet.
+- id: solo_calc_price_title
+  translation: Find your actual floor
+- id: solo_calc_price_intro
+  translation: Your rate isn't what you want to earn. It's what your overhead and your unbillable hours leave you with. Put your real figures in.
+- id: solo_calc_price_f1
+  translation: Take-home you need per year
+- id: solo_calc_price_f2
+  translation: Annual business costs (tools, hosting, insurance)
+- id: solo_calc_price_f3
+  translation: Billable hours per week
+- id: solo_calc_price_f4
+  translation: Weeks worked per year
+- id: solo_calc_price_f5
+  translation: Unbillable hours per week (admin, sales, support)
+- id: solo_calc_price_needinput
+  translation: Enter your billable hours to see the floor.
+- id: solo_calc_price_v
+  translation: Your floor is
+- id: solo_calc_note
+  translation: This calculator runs entirely in your browser — no network call, no storage, and no analytics on the widget. Your figures never leave the page. (The site itself carries standard analytics elsewhere; this box does not touch it.)

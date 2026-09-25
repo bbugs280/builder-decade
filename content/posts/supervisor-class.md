@@ -55,6 +55,8 @@ Writing code was the bottleneck for fifty years. It isn't anymore. Directing is 
 
 That's not a downgrade. It's the first time in the profession's history that the ceiling is your *thinking*, not your output.
 
+Directing an agent is a different skill from trusting your test environment: [Your Simulator Is Lying to You](/posts/voice-app-on-device/) covers what only shows up on real hardware, and [Building Hardware Solo](/posts/building-hardware-solo/) covers the maker room most builders skip entirely.
+
 ## Sources
 
 - **Fortune, "The supervisor class: how AI agents are remaking the developer" (March 2026).** — coined the "supervisor class" framing: developers whose primary value is breaking expertise into reusable agent skills and orchestrating agents, freed from "the drudgery of syntax" to focus on high-level judgment.

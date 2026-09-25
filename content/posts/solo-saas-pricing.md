@@ -51,6 +51,8 @@ Pricing is the most under-exercised of those choices, and it's entirely within y
 
 ---
 
+{{< solo-calc mode="price" >}}
+
 ## Sources
 
 - Stripe Atlas — "Solo founding is at an all-time high: Top performers have these traits in common" (Jesse Carey, May 28, 2026): top-decile B2B and B2C solo founders were 26 and 20 percentage points more likely to use a recurring billing model than their middle-decile peers; median solo B2B founder revenue was more than four times median solo B2C by month 24; top-decile solo founders earned 61× the revenue of median solo founders in their first six months (up from 34× four years prior).

@@ -64,6 +64,8 @@ If the task has a spec and a finish line, it's commodity — contract it and mov
 
 Your first hire should feel boring. Not a validator of your ambition — a lever you pull because the math says the machine is finally the limiting factor.
 
+{{< solo-calc mode="hire" >}}
+
 ## Sources
 
 - **Carta, *Solo Founders Report 2025* (Walker & Shad):** solo founders' median first hire at **399 days** vs 480 for multi-founder teams; solo share of new US startups 23.7% (2019) → 36.3% (H1 2025).
