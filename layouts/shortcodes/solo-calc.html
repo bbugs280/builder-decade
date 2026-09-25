@@ -88,6 +88,10 @@
     <div class="sc-detail" style="margin-top: 0.5rem; opacity: 0.88;"></div>
   </div>
 
+  <button type="button" class="sc-reset">
+    {{ i18n "solo_calc_reset" | default "Reset to defaults" }}
+  </button>
+
   <p style="opacity: 0.7; font-size: 0.8rem; margin: 1rem 0 0;">
     {{ i18n "solo_calc_note" | default "Runs entirely in your browser. Nothing is sent, nothing is stored, and the page never sees your figures." }}
   </p>
@@ -183,5 +187,17 @@
   function update() { mode === 'hire' ? updateHire() : updatePrice(); }
   ins.forEach(function (i) { i.addEventListener('input', update); });
   update();
+
+  // Reset to the defaults the shortcode shipped with (captured at load, so this
+  // survives any later HTML edit and needs no hardcoded numbers in the JS).
+  var resetBtn = root.querySelector('.sc-reset');
+  if (resetBtn) {
+    var defaults = [];
+    ins.forEach(function (i) { defaults.push(i.value); });
+    resetBtn.addEventListener('click', function () {
+      ins.forEach(function (i, n) { i.value = defaults[n]; });
+      update();
+    });
+  }
 })();
 </script>

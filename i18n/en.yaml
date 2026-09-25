@@ -88,6 +88,8 @@
 - id: agent_reach_v4
   translation: Critical. Everything that made those incidents possible is present at once. Break the combination — scope it, expire it, allow-list it.
 
+- id: solo_calc_reset
+  translation: Reset to defaults
 - id: solo_calc_hire_detail
   translation: "Fully loaded: {loaded}/yr · first year {first}/mo · steady state {steady}/mo. The hours you hand over are worth about {handover}/mo at your current revenue rate."
 - id: solo_calc_price_detail
