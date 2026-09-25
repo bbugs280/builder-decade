@@ -100,6 +100,8 @@ Stripe 的資料在這裡才真正有用，因為它量的是**離散度**，不
 
 一人公司現在是真的。但有趣的問題從來不是「你被允許一個人開公司嗎」——而是你建的東西，是不是那種會複利的東西。
 
+接下來兩個決定這條路的問題是實務性的，不是結構性的：〈[離開正職去獨立開發](/zh/posts/leaving-corporate-job-build-solo/)〉講的是頭一段時間真正會發生什麼，〈[獨立出貨的真實成本](/zh/posts/cost-of-shipping-solo/)〉講的是沒人替你列出來的那張帳單。
+
 ---
 
 *主要來源：[Stripe Atlas](https://stripe.com/blog/top-solo-founder-traits)（2026 Q2 成立佔比、十分位離散度、五項特質——方法：數千家 2022–2023 成立、具兩年以上營收資料的單人創辦 Atlas 公司）；[Carta](https://fourweekmba.com/solo-founders-rise-from-23-7-to-36-3-ai-tools-enable-the-one-person-startup)（2019–2025 單人創辦佔比）；[Eqvista](https://eqvista.com/solo-founder-fundraising)（成立對募資比率，2026-08-18 更新）；Solo Founders Annual Report（Carta 資料，A 輪估值中位數、個人持股 75% 差異）。以上每個數字都出自這些來源；當它們衡量不同族群時，本文會明說。*

@@ -5,7 +5,7 @@ imagery with amber/copper accents. NOT the navy/crimson gym-app look — this is
 a long-form human-tech reading site. Each prompt is self-contained (no text
 overlays — text is rendered by Hugo/CSS).
 
-⚠️ ETHNICITY RULE (Vincent, 2026-08): any subject who is a PERSON must be
+⚠️ ETHNICITY RULE (owner directive, 2026-08): any subject who is a PERSON must be
 drawn as ethnically ambiguous — plausibly Asian, Western, or mixed heritage.
 The audience spans markets (EN + ZH), so no single-ethnicity read. Always
 include phrasing like "mixed East Asian and Western heritage, ambiguous
