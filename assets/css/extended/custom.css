@@ -196,7 +196,10 @@ a:hover {
 
 .solo-calc .sc-row:last-child { border-bottom: 0; }
 
-.solo-calc .sc-row span {
+/* Label text only. MUST be `>` direct-child: .sc-fieldwrap and .sc-unit are
+   ALSO spans inside .sc-row, so a descendant selector would stretch them and
+   wrap the $ unit onto its own line above the field. */
+.solo-calc .sc-row > span:first-child {
     flex: 1 1 60%;
     font-size: 0.95rem;
 }
@@ -211,6 +214,8 @@ a:hover {
     align-items: center;
     gap: 0.35rem;
     flex: 0 0 auto;
+    flex-wrap: nowrap;   /* keep $ / input / unit on ONE line, never stacked */
+    white-space: nowrap;
 }
 
 /* Currency / unit markers — make a bare "60000" read as a money figure */
@@ -339,7 +344,7 @@ a:hover {
 
 /* ===== responsive: stack on small screens ===== */
 @media (max-width: 600px) {
-    .solo-calc .sc-row span {
+    .solo-calc .sc-row > span:first-child {
         flex: 1 1 100%;
     }
     .solo-calc .sc-in {
