@@ -88,6 +88,18 @@
 - id: agent_reach_v4
   translation: 極高。讓那些事故得以發生的一切，同時都存在。打斷這個組合：縮小範圍、設定效期、加上允許清單。
 
+- id: solo_calc_hire_detail
+  translation: "全額成本：每年 {loaded} · 第一年每月 {first} · 穩定期每月 {steady}。以你目前的營收速度，你交出去的這些時數大約值每月 {handover}。"
+- id: solo_calc_price_detail
+  translation: "這涵蓋 {hours} 個可計費小時、共 {needed}。若把你<em>全部</em>的工作時數（{total} 小時）算進去，你的實際時薪是 {effective}——這兩個數字之間的落差，就是多數人從來沒有計入的部分。"
+- id: solo_calc_badge
+  translation: 可即時試算——改動任何數字，下方結果立即更新
+- id: solo_calc_cur
+  translation: "$"
+- id: solo_calc_hrs
+  translation: 小時
+- id: solo_calc_wks
+  translation: 週
 - id: solo_calc_hire_title
   translation: 算你自己的損益兩平點
 - id: solo_calc_hire_intro

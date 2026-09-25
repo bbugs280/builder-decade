@@ -37,6 +37,21 @@
     --border: var(--line);
 }
 
+/* ⚠️ The dark counterpart of the mapping above is REQUIRED.
+   PaperMod sets its own --border under :root[data-theme=dark]; our plain
+   `:root` block above also matches the dark root and, being later in the
+   cascade, wins — which pins --border to the LIGHT --line value and means
+   any component using it never re-resolves on theme switch (the calculator
+   input border stayed #E8E2D8 in dark mode). Re-declaring the mapping under
+   the dark selector restores correct per-theme resolution. */
+:root[data-theme="dark"] {
+    --content: var(--cream);
+    --primary: var(--ink);
+    --secondary: var(--muted);
+    --entry: var(--surface);
+    --border: var(--line);
+}
+
 /* ===== Typography ===== */
 body {
     font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -145,6 +160,136 @@ a:hover {
 /* ===== Post meta (date, reading time) ===== */
 .post-meta {
     color: var(--muted);
+}
+
+/* ===== Terminal action: solo-business calculator (.solo-calc) =====
+   The shortcode ships its own inline layout styles, but PaperMod resets
+   `input` to border:0 / background:transparent, which made the fields render
+   as invisible text inside prose — the tool worked but read as a paragraph.
+   Everything below exists to make the fields LOOK tappable and the verdict
+   look like an OUTPUT rather than another sentence. Uses the brand palette
+   so it works in both light and dark mode. */
+
+.solo-calc {
+    /* longhands for the same var-in-shorthand reason as .sc-in below */
+    border-width: 2px !important;
+    border-style: solid !important;
+    border-color: var(--amber) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Label + field on one line, wrapping gracefully on narrow screens */
+.sc-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.sc-row span {
+    flex: 1 1 60%;
+    font-size: 0.95rem;
+}
+
+/* THE FIX: give the inputs a real box. PaperMod's reset removes all of this. */
+.solo-calc .sc-fieldwrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    flex: 0 0 auto;
+}
+
+/* Currency / unit markers — make a bare "60000" read as a money figure */
+.solo-calc .sc-unit {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+/* "Interactive" cue — signals tappability before the reader scrolls past */
+.solo-calc .sc-badge {
+    display: inline-block;
+    margin: 0 0 1rem;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--amber);
+    background: rgba(180, 85, 29, 0.09);
+    border-radius: 999px;
+}
+
+.solo-calc .sc-in {
+    flex: 0 0 auto;
+    width: 9rem;
+    max-width: 45%;
+    padding: 0.4rem 0.6rem;
+    font: inherit;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    color: var(--ink);
+    background: var(--cream);
+    /* NOTE: use longhands, not the `border` shorthand. Chrome fails to re-resolve
+       a var inside the shorthand on an element that also matches a
+       `border: 0px` reset rule — the dark-mode border silently kept the light
+       value. Longhands resolve correctly per theme (verified in a real browser). */
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: var(--border);
+    border-radius: 6px;
+    text-align: right;
+    appearance: auto;
+    -webkit-appearance: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.solo-calc .sc-in:hover {
+    border-color: var(--amber);
+}
+
+.solo-calc .sc-in:focus {
+    outline: none;
+    border-color: var(--amber);
+    box-shadow: 0 0 0 3px rgba(180, 85, 29, 0.18);
+}
+
+/* Kill the number-spinner clutter — the field is a value, not a stepper */
+.solo-calc .sc-in::-webkit-outer-spin-button,
+.solo-calc .sc-in::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Verdict output — should read as a result card, not body copy */
+.solo-calc .sc-out {
+    border-left: 4px solid var(--amber);
+}
+
+.solo-calc .sc-verdict {
+    display: block;
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.solo-calc .sc-detail {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* ===== responsive: stack on small screens ===== */
+@media (max-width: 600px) {
+    .sc-row span {
+        flex: 1 1 100%;
+    }
+    .solo-calc .sc-in {
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+    }
 }
 
 /* ===== responsive: stack on small screens ===== */
