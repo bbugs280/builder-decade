@@ -243,10 +243,11 @@ a:hover {
     font-variant-numeric: tabular-nums;
     font-weight: 600;
     color: var(--ink);
-    /* WHITE field on the CREAM page — the fill difference is what makes it
-       read as a text box rather than a bordered label. Transparent inputs
-       (PaperMod's default) were the core reason nobody knew these were editable. */
-    background: #FFFFFF;
+    /* FIELD FILL — the input sits inside a WHITE card (.solo-calc), not on the
+       cream page. Filling it white would give a delta of 0 against the card.
+       Use a slightly cool, visibly-non-card fill so the box reads as recessed.
+       (Verified: fill vs card is the comparison that matters — not vs page.) */
+    background: #F4F1EC;
     border-width: 1.5px;
     border-style: solid;
     border-color: var(--muted);        /* visible at rest, not a hairline */
@@ -255,8 +256,8 @@ a:hover {
     appearance: auto;
     -webkit-appearance: none;
     cursor: text;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);   /* inset = field, not label */
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);   /* recessed = field */
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 .solo-calc .sc-in:hover {
     border-color: var(--amber);
@@ -265,20 +266,22 @@ a:hover {
 .solo-calc .sc-in:focus {
     outline: none;
     border-color: var(--amber);
-    box-shadow: 0 0 0 3px rgba(180, 85, 29, 0.22);
-    background: #FFFFFF;
+    /* WCAG non-text contrast needs >=3:1. A 22%-alpha wash composited to
+       1.35:1 — effectively invisible. Use a solid ring at the accent colour. */
+    box-shadow: 0 0 0 2px var(--amber);
+    background: #FFFFFF;   /* on focus the field goes white = clearly active */
 }
 
-/* Dark mode: a white field would glare. Use the elevated surface instead —
-   still clearly lighter than the page background, so the "field" read holds. */
+/* Dark mode: a pure-white field would glare. Use a surface clearly lighter
+   than the card (#23211D) so the "recessed field" read survives. */
 :root[data-theme="dark"] .solo-calc .sc-in {
-    background: #2E2B26;
+    background: #1A1917;               /* darker than the card = recessed */
     border-color: var(--muted);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.35);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.45);
 }
 :root[data-theme="dark"] .solo-calc .sc-in:focus {
-    background: #2E2B26;
-    box-shadow: 0 0 0 3px rgba(224, 147, 94, 0.25);
+    background: #1A1917;
+    box-shadow: 0 0 0 2px var(--amber);
 }
 
 /* Kill the number-spinner clutter — the field is a value, not a stepper */
@@ -336,13 +339,20 @@ a:hover {
 
 /* ===== responsive: stack on small screens ===== */
 @media (max-width: 600px) {
-    .sc-row span {
+    .solo-calc .sc-row span {
         flex: 1 1 100%;
     }
     .solo-calc .sc-in {
         width: 100%;
         max-width: 100%;
         text-align: left;
+        /* iOS Safari auto-zooms the viewport when a focused input's font-size
+           is < 16px. 15.2px triggered that; pin to 16px on small screens. */
+        font-size: 16px;
+    }
+    .solo-calc .sc-fieldwrap {
+        flex: 1 1 100%;
+        justify-content: flex-start;
     }
 }
 
