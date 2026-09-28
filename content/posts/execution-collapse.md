@@ -2,7 +2,7 @@
 title: "Execution Collapse: You Don't Fail at Building, You Fail After Launch"
 translationKey: "execution-collapse"
 date: 2026-09-05T08:30:00+08:00
-lastmod: 2026-09-13T19:23:20+08:00
+lastmod: 2026-09-28T11:00:00+08:00
 draft: false
 tags: ["solo founder", "distribution", "launch", "execution collapse", "one person team", "product hunt"]
 description: "Execution stopped being the bottleneck. Here's what actually separates solo builders in 2026, once everyone can build the thing."
@@ -11,7 +11,6 @@ cover:
   alt: "A ship launched from a dock into empty fog, no one on the shore"
 ---
 
-# Execution Collapse: You Don't Fail at Building, You Fail After Launch
 
 A solo founder hit the Top 50 on Product Hunt last week. The launch went perfectly — hundreds of upvotes, real momentum, the kind of day most indie hackers dream about. Then they checked their signups.
 

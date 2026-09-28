@@ -2,7 +2,7 @@
 title: "Your Simulator Is Lying to You: What Shipping on Real Hardware Exposes"
 translationKey: "voice-app-on-device"
 date: 2026-09-10T08:00:00+08:00
-lastmod: 2026-09-13T19:23:20+08:00
+lastmod: 2026-09-28T11:00:00+08:00
 draft: false
 tags: ["on-device", "ios", "voice ai", "debugging", "simulator", "solo builder"]
 description: "A voice app that passes every simulator test can still crash on the phone. Here's where on-device bugs hide, from audio threads to Bluetooth routing."
@@ -11,7 +11,6 @@ cover:
   alt: "A phone lying on a workbench with a crack running across its screen, next to a glowing simulator on a laptop"
 ---
 
-# Your Simulator Is Lying to You
 
 The simulator said it worked. The phone crashed.
 

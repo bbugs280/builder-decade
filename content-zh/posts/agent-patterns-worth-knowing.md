@@ -2,7 +2,7 @@
 title: "三個值得認識的 Agent 模式（先別怪模型）"
 translationKey: "agent-patterns-worth-knowing"
 date: 2026-09-01T07:30:00+08:00
-lastmod: 2026-09-02T08:00:00+08:00
+lastmod: 2026-09-28T11:00:00+08:00
 draft: false
 tags: ["ai agents", "agentic patterns", "tool use", "routing", "reflection", "solo builder"]
 description: "當 agent 出錯時，本能是換更大的模型或把 prompt 寫得更用力。真正的問題往往出在你給它的模式上。這篇談路由、工具使用、反思何時才值得成本。"
@@ -11,7 +11,6 @@ cover:
   alt: "一條分歧成三條路徑的決策，而不是單一的直線"
 ---
 
-# 三個值得認識的 Agent 模式（先別怪模型）
 
 第一次 agent 搞砸時，你的本能是換更大的模型；第二次，是「把 prompt 寫得更用力」。兩者都錯過了重點。
 

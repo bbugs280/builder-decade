@@ -2,7 +2,7 @@
 title: "\"Done\" Is a Claim, Not a Fact: The Verification Ritual Every Solo Builder Needs"
 translationKey: "done-is-a-claim"
 date: 2026-09-06T08:30:00+08:00
-lastmod: 2026-09-13T19:23:20+08:00
+lastmod: 2026-09-28T11:00:00+08:00
 draft: false
 tags: ["solo builder", "ai agents", "verification", "trust", "agent reliability", "one person team"]
 description: "With AI agents, \"done\" starts meaning \"the agent says it's done.\" Here's the verification ritual that separates product from hallucination."
@@ -11,7 +11,6 @@ cover:
   alt: "A rubber stamp saying 'DONE' held over a workbench, with a magnifying glass beside it"
 ---
 
-# "Done" Is a Claim, Not a Fact
 
 The agent said the tests pass. The commit is pushed. The deploy finished. As far as the summary in your chat window is concerned, the feature is **done**.
 

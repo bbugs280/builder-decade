@@ -1,7 +1,7 @@
 ---
 title: "Don't Build Your Distribution on Rented Land: The AI Search Lesson"
 date: 2026-09-03T07:30:00+08:00
-lastmod: 2026-09-03T07:30:00+08:00
+lastmod: 2026-09-28T11:00:00+08:00
 draft: false
 translationKey: "rented-land-ai-search"
 tags: ["distribution", "AI search", "solo founder", "indie hacker", "community"]
@@ -11,7 +11,6 @@ cover:
     alt: "A wooden boardwalk path fading into shifting sand, distribution on unstable ground"
 ---
 
-# Don't Build Your Distribution on Rented Land: The AI Search Lesson
 
 There's a story every solo founder gets told somewhere along the way: go where the buyers already are. Post where the community gathers. Build your audience on the platform that's already huge, because that's where the traffic is.
 

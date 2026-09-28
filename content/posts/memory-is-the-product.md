@@ -2,7 +2,7 @@
 title: "Memory Is the Product: Why Your Agent Stack Is Worth More Than Your Model"
 translationKey: "memory-is-the-product"
 date: 2026-09-07T08:20:00+08:00
-lastmod: 2026-09-13T19:23:20+08:00
+lastmod: 2026-09-28T11:00:00+08:00
 draft: false
 tags: ["ai agents", "agent memory", "context", "rules", "trust", "solo builder", "one person team"]
 description: "The agent isn't the model. Memory, rules and trust rituals are the product. Here's why the smarter-bot upgrade won't fix your workflow."
@@ -11,7 +11,6 @@ cover:
   alt: "A small cabinet of index cards and rules glowing amber, with a generic robot model behind it fading into shadow"
 ---
 
-# Memory Is the Product
 
 Everyone building on AI now is asking the same question: *which model?* And it's the wrong question, because the model is the one part of your stack you don't own, can't keep, and will be forced to swap the moment a cheaper one ships.
 

@@ -2,7 +2,7 @@
 title: "3 Agent Patterns Worth Knowing (Before You Blame the Model)"
 translationKey: "agent-patterns-worth-knowing"
 date: 2026-09-01T07:30:00+08:00
-lastmod: 2026-09-02T08:00:00+08:00
+lastmod: 2026-09-28T11:00:00+08:00
 draft: false
 tags: ["ai agents", "agentic patterns", "tool use", "routing", "reflection", "solo builder"]
 description: "Three agent patterns worth knowing before you blame the model: routing, tool use, reflection. Diagnose the failure, not the pattern."
@@ -11,7 +11,6 @@ cover:
   alt: "A branching decision between three pathways, not one straight line"
 ---
 
-# 3 Agent Patterns Worth Knowing (Before You Blame the Model)
 
 The first time an agent blows it, the instinct is to reach for a bigger model. The second time, to "prompt harder." Both miss the point.
 

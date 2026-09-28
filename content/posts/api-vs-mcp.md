@@ -2,7 +2,7 @@
 title: "API vs MCP: When Your Agent Should Talk to the Provider Directly"
 translationKey: "api-vs-mcp"
 date: 2026-08-29
-lastmod: 2026-09-02T08:00:00+08:00
+lastmod: 2026-09-28T11:00:00+08:00
 draft: false
 tags: ["mcp", "ai agents", "integration", "build vs buy", "solo builder"]
 description: "API or MCP? They solve different problems and the choice shapes your whole integration. Here's how to tell which one you actually need."
@@ -11,7 +11,6 @@ cover:
   alt: "Two routes to the same endpoint — a direct wire versus a stacked adapter layer"
 ---
 
-# API vs MCP: When Your Agent Should Talk to the Provider Directly
 
 Model Context Protocol won. It's now "the boring infrastructure layer" — 78% of enterprise AI teams run MCP-backed agents in production, and it just got its biggest update ever, a fully stateless rewrite meant for "really big players" with tens of thousands of agents.
 

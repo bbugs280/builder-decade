@@ -1,7 +1,7 @@
 ---
 title: "When to Hire Your First Contractor (and When Not To)"
 date: 2026-08-30T07:00:00+08:00
-lastmod: 2026-09-02T08:00:00+08:00
+lastmod: 2026-09-28T11:00:00+08:00
 draft: false
 tags: ["solo founder", "hiring", "contractors", "first hire"]
 description: "Most 'hire your first contractor' advice comes from people who sell contractors. Here's the receipts-based case for when to actually spend."
@@ -10,7 +10,6 @@ cover:
     alt: "A single clean workbench with one tool handed off into open space, warm amber workshop light"
 ---
 
-# When to Hire Your First Contractor (and When Not To)
 
 Every blog that tells you to "hire your first contractor" is written by someone who profits when you do. The staffing agencies, the fractional-CXO marketplaces, the "done-for-you" studios — they all want the same transaction, and their advice bends toward it.
 

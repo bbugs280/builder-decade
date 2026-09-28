@@ -2,7 +2,7 @@
 title: "Your AI Agent Fails Boringly, and That's Good News"
 translationKey: "agents-fail-boringly"
 date: 2026-09-10T08:30:00+08:00
-lastmod: 2026-09-13T19:23:20+08:00
+lastmod: 2026-09-28T11:00:00+08:00
 draft: false
 tags: ["solo builder", "ai agents", "debugging", "logs", "agent reliability", "one person team"]
 description: "AI agent failures are rarely dramatic, they're mechanical: one missing bracket, one bad permission. The skill is reading the logs. Here's the discipline."
@@ -11,7 +11,6 @@ cover:
   alt: "A messy workbench with a single small bracket sitting on top of a printed technical log, a magnifying glass behind it"
 ---
 
-# Your AI Agent Fails Boringly, and That's Good News
 
 The agent reported success. The job "completed." Then the next step in your pipeline received nothing, and you spent an evening chasing the mystery.
 

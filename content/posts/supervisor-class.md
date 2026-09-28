@@ -2,7 +2,7 @@
 title: "The Supervisor Class: You Stop Writing Code, You Start Directing It"
 translationKey: "supervisor-class"
 date: 2026-09-05T08:00:00+08:00
-lastmod: 2026-09-13T19:23:20+08:00
+lastmod: 2026-09-28T11:00:00+08:00
 draft: false
 tags: ["solo builder", "ai agents", "supervisor class", "agent orchestration", "one person team"]
 description: "The supervisor class: your job shifts from doing the work to specifying, checking and owning it. Here's the discipline that requires."
@@ -11,7 +11,6 @@ cover:
   alt: "A single person directing several machines, not writing on each one"
 ---
 
-# The Supervisor Class: You Stop Writing Code, You Start Directing It
 
 There's a new job title forming, and it doesn't exist on any org chart. Fortune named it in March 2026: the **supervisor class** — developers whose primary value is no longer writing code but orchestrating the agents that write it for them.
 
