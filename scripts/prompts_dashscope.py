@@ -546,4 +546,26 @@ PROMPTS = {
         "lettering, no writing, no printed words anywhere in the frame, no "
         "watermark, no people, no hands"
     ),
+    # "domain-knowledge-turns-ai-into-value" (2026-10-01) — AI doesn't add
+    # business value by default; domain knowledge is the lever. Thesis: raw AI
+    # output is noise; the human's domain judgment is what turns it into the
+    # one signal that matters. Visual: a dense field of faint undifferentiated
+    # charts/waveforms on the left, a single clearly-chosen plain dial/card on
+    # the right, with a gap of empty bench between them suggesting selection.
+    # Still-life, no person/hands (avoids ethnicity + directionality).
+    "domain-knowledge-turns-ai-into-value": (
+        "Cinematic wide still life on a dark walnut workbench: a dense field of "
+        "dozens of near-identical faint charts, waveforms and unlabelled data "
+        "sheets spread across the left, all dim and undifferentiated, "
+        "overlapping and fading into shadow — raw undifferentiated output, none "
+        "of it standing out. On the right, one single plain object rises clearly "
+        "from the clutter: a single clean dial or card, unlabelled, lit warm and "
+        "sharp, the only item in the frame that reads as chosen. A gap of empty "
+        "bench separates the two sides, suggesting the act of selection that "
+        "nothing in the image itself depicts. Deep charcoal and warm "
+        "copper-amber palette, moody chiaroscuro, volumetric light, "
+        "photorealistic-illustrative, film grain, 1.91:1 composition, entirely "
+        "unlabelled plain objects with no lettering, no writing, no printed "
+        "words anywhere in the frame, no watermark, no people, no hands"
+    ),
 }
