@@ -23,6 +23,8 @@ The value was never in the output. The value was in the translation: taking a te
 
 That translation has a name — domain knowledge. It is what separates an AI that *produces* from a product that *matters*.
 
+GainCut's recovery feature is a clean case study. The underlying signal — heart rate variability — is a solved problem; the papers have been published for years. Rebuilding it with AI was never the win. The win was deciding what the tired person actually needed: not three overlapping waveforms and a chart, but a single go/no-go — green, lift; amber, easy day; red, rest. The AI did the research, the SwiftUI, the tests, the builds, the ten app-store rejections and their fixes. None of that was the value. The value was the translation, and the translation came from having lived the problem — not from the model.
+
 The point is not "don't use AI." It is *don't use AI blindly.* The people who get real value out of it are not the ones who delegate the most. They are the ones who walk in already knowing what is worth building, and use the AI to build it faster. The AI multiplies the reach of that judgment. It does not supply it.
 
 For a solo builder, that is the whole strategy in one line: spend your scarce hours getting close enough to a real problem — and the person who has it — that you can name the decision they are stuck on. That part nobody can automate away. Everything after it, an AI can carry.
