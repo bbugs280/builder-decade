@@ -1,11 +1,11 @@
 ---
-title: "How to Price a SaaS as a Solo Founder (A Decision Rule, Not a Guess)"
+title: "How a Solo Founder Should Price Their SaaS (Without Benchmarks)"
 translationKey: "solo-saas-pricing"
 date: 2026-08-27T00:00:00+08:00
-lastmod: 2026-09-02T08:00:00+08:00
+lastmod: 2026-10-01T12:00:00+08:00
 draft: false
 tags: ["solo founder", "saas pricing", "one-person company", "recurring revenue", "b2b"]
-description: "Pricing a solo SaaS is a decision, not a guess. Here's how to pick a number you can defend, and when to change it."
+description: "Pricing guides assume you have competitors to copy. A solo founder doesn't. Here's the decision rule that starts from value, not benchmarks."
 cover:
   image: "cover-solo-saas-pricing.png"
   alt: "A solo builder weighing a pricing decision between two options"

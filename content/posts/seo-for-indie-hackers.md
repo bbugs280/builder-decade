@@ -1,11 +1,11 @@
 ---
-title: "SEO for Indie Hackers: Rank for the Query That Pays, Skip the Rest"
+title: "SEO for Indie Hackers: One Query, One Page, No Content Team"
 translationKey: "seo-for-indie-hackers"
 date: 2026-08-29T00:00:00+08:00
-lastmod: 2026-09-02T08:00:00+08:00
+lastmod: 2026-10-01T12:00:00+08:00
 draft: false
 tags: ["solo builder", "seo", "organic traffic", "distribution", "long tail"]
-description: "Most SEO advice assumes a team and a year to burn. The solo version is narrower: win one high-intent query, then let the page compound. Here's how."
+description: "SEO advice assumes a content team and a year to burn. The solo version is one page that wins one query. Here's how to pick yours."
 cover:
   image: "cover-seo-for-indie-hackers.png"
   alt: "One query, one page, compounding traffic for the solo builder"
