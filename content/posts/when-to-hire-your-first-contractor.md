@@ -4,7 +4,7 @@ date: 2026-08-30T07:00:00+08:00
 lastmod: 2026-10-01T12:00:00+08:00
 draft: false
 tags: ["solo founder", "hiring", "contractors", "first hire"]
-description: "The hire-a-contractor advice out there is written by payroll companies. A solo founder's actual trigger is different — here's the receipts-based rule for when to spend."
+description: "Hire-a-contractor advice is written by payroll companies. A solo founder's real trigger is different — here's the receipts-based rule for when to spend."
 cover:
     image: "cover-first-contractor.png"
     alt: "A single clean workbench with one tool handed off into open space, warm amber workshop light"

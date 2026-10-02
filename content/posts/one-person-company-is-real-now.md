@@ -5,7 +5,7 @@ date: 2026-09-22T09:00:00+08:00
 lastmod: 2026-09-22T09:00:00+08:00
 draft: false
 tags: ["one person company", "solo founder", "solo builder", "one person business AI", "indie hacker", "startup funding"]
-description: "Forming a company alone got easy. Getting funded alone didn't. The two datasets measure the same population and disagree — here's what that gap means for you."
+description: "Forming a company alone got easy; getting funded alone didn't. The two datasets disagree — here's what that gap means for you."
 cover:
   image: "cover-one-person-company-is-real-now.png"
   alt: "The one-person company stopped being a thesis"
