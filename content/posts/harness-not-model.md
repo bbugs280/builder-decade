@@ -19,6 +19,10 @@ Here's what actually happened. Token prices fell roughly **600×** in six years.
 
 So if the model is a commodity, the model is not where the value is. The value moved one layer up.
 
+You can already see it happening. Look at what people are actually building now: **OpenHands**, an open-source software-engineering agent with the better part of a hundred thousand GitHub stars. **OpenClaw** (formerly Clawdbot), a personal agent runtime that wires the model into every channel you already use. **Hermes**, the self-improving agent that writes its own skills as it works. **DeepSeek Harness**, the plugin-first runtime that pulled in tens of thousands of stars within days of shipping. None of these won by having a smarter model — they all rent models. They won by owning the layer around the model.
+
+That layer is the harness.
+
 The **harness** is the part you actually own.
 
 The harness is everything that isn't the model. The tools. The context. The memory. The guardrails. The workflow. The loop that decides what the model sees, what it's allowed to do, and what happens to its output. The model reasons for a second. The harness is what keeps working all day.
