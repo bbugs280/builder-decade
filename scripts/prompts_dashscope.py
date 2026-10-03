@@ -568,4 +568,26 @@ PROMPTS = {
         "unlabelled plain objects with no lettering, no writing, no printed "
         "words anywhere in the frame, no watermark, no people, no hands"
     ),
+    # "harness-not-model" (2026-10-02) — the model is now a commodity you rent;
+    # the harness is the rig you actually build and own. Thesis: model = rented
+    # cable, harness = the machine you keep. Visual: a single thick plain cable
+    # draped loose and interchangeable at the left, and a substantial bespoke
+    # machine/rig of brass and steel built around it at the right — the same
+    # wire running through an apparatus worth owning. Still-life, no person/hands.
+    "harness-not-model": (
+        "Cinematic wide still life on a dark walnut workbench: at the far left, a "
+        "single plain thick cable lies loose and abandoned, dull and "
+        "interchangeable, one of many, nothing special about it — a rented "
+        "utility wire. It runs across the bench into the right side of the "
+        "frame, where it threads through a substantial, intricately-built brass "
+        "and copper machine — gears, dials, a solid cast housing, warm lamp "
+        "light pooling on its surfaces — a bespoke apparatus clearly worth "
+        "owning and maintaining. The contrast is the point: the same wire, one "
+        "end unremarkable and rented, the other end wired into something built "
+        "to last. Deep charcoal and warm copper-amber palette, moody "
+        "chiaroscuro, volumetric light, photorealistic-illustrative, film "
+        "grain, 1.91:1 composition, entirely unlabelled plain objects with no "
+        "lettering, no writing, no printed words anywhere in the frame, no "
+        "watermark, no people, no hands"
+    ),
 }
