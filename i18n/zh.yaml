@@ -144,3 +144,25 @@
   translation: 你的地板價是
 - id: solo_calc_note
   translation: 這個計算器完全在你的瀏覽器裡運算——不發任何網路請求、不做儲存、這個區塊也沒有埋任何追蹤。你填的數字不會離開這個頁面。（網站本身在其他地方有標準的流量統計；這個方塊不會碰到它。）
+- id: solo_calc_build_title
+  translation: 設定你的開發預算
+- id: solo_calc_build_intro
+  translation: 平價工具加上計量額度，才是你真正的每月成本。先訂下你允許的數字，再對照計量表實際讀到的數字。
+- id: solo_calc_build_f1
+  translation: 每月固定工具（伺服器、席位、SaaS）
+- id: solo_calc_build_f2
+  translation: 你設定的計量額度（每月硬上限）
+- id: solo_calc_build_f3
+  translation: 計量表上個月實際讀到的數字
+- id: solo_calc_build_f4
+  translation: 平均月營收（用來判斷燒錢速度）
+- id: solo_calc_build_needinput
+  translation: 填入你的月營收，才能判斷燒錢速度。
+- id: solo_calc_build_v_over
+  translation: 你的計量表超支了
+- id: solo_calc_build_v_under
+  translation: 你在預算內——額度還撐得住。
+- id: solo_calc_build_v_tight
+  translation: 你還在額度內，但離上限很近。
+- id: solo_calc_build_detail
+  translation: "預算每月 {bud} · 實際每月 {act} · 超支每月 {over}。你的總開發成本佔月營收的 {pct}%。"

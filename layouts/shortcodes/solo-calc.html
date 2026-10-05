@@ -1,7 +1,8 @@
 {{- /* Terminal action: solo-business decision calculator.
-      Two modes, chosen by the calling shortcode spec:
+      Three modes, chosen by the calling shortcode spec:
         {{< solo-calc mode="hire" >}}    → first-hire break-even
         {{< solo-calc mode="price" >}}   → pricing floor / effective rate
+        {{< solo-calc mode="build" >}}   → metered build budget / overage
 
       Client-side only — no server, nothing leaves the browser.
       Language-aware via i18n keys (solo_calc_*).
@@ -18,8 +19,10 @@
   <h2 style="margin-top: 0; font-size: 1.35rem;">
     {{ if eq $mode "hire" }}
       {{ i18n "solo_calc_hire_title" | default "Run your own break-even" }}
-    {{ else }}
+    {{ else if eq $mode "price" }}
       {{ i18n "solo_calc_price_title" | default "Find your actual floor" }}
+    {{ else }}
+      {{ i18n "solo_calc_build_title" | default "Set your build budget" }}
     {{ end }}
   </h2>
 
@@ -30,8 +33,10 @@
   <p style="opacity: 0.85; margin-bottom: 1.25rem;">
     {{ if eq $mode "hire" }}
       {{ i18n "solo_calc_hire_intro" | default "Most solo founders decide on the salary. The salary is the small number. Put your real figures in — nothing here is sent anywhere or stored." }}
-    {{ else }}
+    {{ else if eq $mode "price" }}
       {{ i18n "solo_calc_price_intro" | default "Your rate isn't what you want to earn. It's what your overhead and your unbillable hours leave you with. Put your real figures in." }}
+    {{ else }}
+      {{ i18n "solo_calc_build_intro" | default "Flat tools plus a metered allowance is your real monthly cost. Set the number you'll allow, then compare it to what the meter actually reads." }}
     {{ end }}
   </p>
 
@@ -56,6 +61,25 @@
     <label class="sc-row">
       <span>{{ i18n "solo_calc_hire_f5" | default "Hours per week you'd hand over" }}</span>
       <span class="sc-fieldwrap"><input type="number" class="sc-in" data-k="hours" value="40" min="0" step="1"><span class="sc-unit sc-unit-after">{{ i18n "solo_calc_hrs" | default "hrs" }}</span></span>
+    </label>
+  </div>
+  {{ else if eq $mode "build" }}
+  <div class="sc-fields">
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_build_f1" | default "Fixed monthly tools (server, seats, SaaS)" }}</span>
+      <span class="sc-fieldwrap"><span class="sc-unit">{{ i18n "solo_calc_cur" | default "$" }}</span><input type="number" class="sc-in" data-k="fixed" value="90" min="0" step="10"></span>
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_build_f2" | default "Metered allowance you set (a hard monthly cap)" }}</span>
+      <span class="sc-fieldwrap"><span class="sc-unit">{{ i18n "solo_calc_cur" | default "$" }}</span><input type="number" class="sc-in" data-k="allowance" value="120" min="0" step="10"></span>
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_build_f3" | default "What the meter actually read last month" }}</span>
+      <span class="sc-fieldwrap"><span class="sc-unit">{{ i18n "solo_calc_cur" | default "$" }}</span><input type="number" class="sc-in" data-k="actual" value="180" min="0" step="10"></span>
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_build_f4" | default "Average monthly revenue (to judge the burn)" }}</span>
+      <span class="sc-fieldwrap"><span class="sc-unit">{{ i18n "solo_calc_cur" | default "$" }}</span><input type="number" class="sc-in" data-k="mrev" value="3000" min="0" step="100"></span>
     </label>
   </div>
   {{ else }}
@@ -184,7 +208,41 @@
       .replace('{effective}', money(effective));
   }
 
-  function update() { mode === 'hire' ? updateHire() : updatePrice(); }
+  function updateBuild() {
+    var fixed = val('fixed');
+    var allowance = val('allowance');
+    var actual = val('actual');
+    var mrev = val('mrev');
+
+    var overage = actual > allowance ? actual - allowance : 0;
+    var totalActual = fixed + actual;
+    var totalBudgeted = fixed + allowance;
+
+    if (mrev <= 0) {
+      verdict.textContent = '{{ i18n "solo_calc_build_needinput" | default "Enter your monthly revenue to judge the burn." }}';
+      detail.textContent = '';
+      return;
+    }
+
+    var burnPct = (totalActual / mrev) * 100;
+    var v;
+    if (actual > allowance) {
+      v = '{{ i18n "solo_calc_build_v_over" | default "Your meter ran over by" }} ' + money(overage) + '/mo';
+    } else if (actual <= allowance * 0.75) {
+      v = '{{ i18n "solo_calc_build_v_under" | default "You're under budget — the allowance holds." }}';
+    } else {
+      v = '{{ i18n "solo_calc_build_v_tight" | default "You're inside the cap, but close to it." }}';
+    }
+    d = '{{ i18n "solo_calc_build_detail" | default "Budgeted {bud}/mo · actual {act}/mo · overage {over}/mo. Your total build is {pct}% of monthly revenue." }}'
+        .replace('{bud}', money(totalBudgeted))
+        .replace('{act}', money(totalActual))
+        .replace('{over}', money(overage))
+        .replace('{pct}', Math.round(burnPct));
+    verdict.textContent = v;
+    detail.innerHTML = d;
+  }
+
+  function update() { mode === 'hire' ? updateHire() : (mode === 'price' ? updatePrice() : updateBuild()); }
   ins.forEach(function (i) { i.addEventListener('input', update); });
   update();
 

@@ -144,3 +144,25 @@
   translation: Your floor is
 - id: solo_calc_note
   translation: This calculator runs entirely in your browser — no network call, no storage, and no analytics on the widget. Your figures never leave the page. (The site itself carries standard analytics elsewhere; this box does not touch it.)
+- id: solo_calc_build_title
+  translation: Set your build budget
+- id: solo_calc_build_intro
+  translation: Flat tools plus a metered allowance is your real monthly cost. Set the number you'll allow, then compare it to what the meter actually read.
+- id: solo_calc_build_f1
+  translation: Fixed monthly tools (server, seats, SaaS)
+- id: solo_calc_build_f2
+  translation: Metered allowance you set (a hard monthly cap)
+- id: solo_calc_build_f3
+  translation: What the meter actually read last month
+- id: solo_calc_build_f4
+  translation: Average monthly revenue (to judge the burn)
+- id: solo_calc_build_needinput
+  translation: Enter your monthly revenue to judge the burn.
+- id: solo_calc_build_v_over
+  translation: Your meter ran over by
+- id: solo_calc_build_v_under
+  translation: You're under budget — the allowance holds.
+- id: solo_calc_build_v_tight
+  translation: You're inside the cap, but close to it.
+- id: solo_calc_build_detail
+  translation: "Budgeted {bud}/mo · actual {act}/mo · overage {over}/mo. Your total build is {pct}% of monthly revenue."

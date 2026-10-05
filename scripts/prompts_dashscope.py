@@ -590,4 +590,26 @@ PROMPTS = {
         "lettering, no writing, no printed words anywhere in the frame, no "
         "watermark, no people, no hands"
     ),
+    # "metered-build" (2026-10-05) — flat-rate builds are over; the cost base is
+    # now a meter. Thesis: an old flat price-tag/ledger (the flat rate) lies
+    # discarded below a live analog meter whose needle is climbing. Budgeting
+    # the meter, not the menu. Still-life, no person/hands (avoids ethnicity +
+    # directionality); distinct from ai-api-cost-creep by the DISCARDED flat tag
+    # + a budget dial set by hand, foregrounding the "set a number" act.
+    "metered-build": (
+        "Cinematic still life on a dark walnut workbench in a warm maker's "
+        "workshop: at center, a single old brass analog meter stands upright, "
+        "its needle climbing toward a warm amber-red zone, glowing faintly, "
+        "beside it a small hand-set budget dial or brass adjustment wheel that "
+        "someone has turned to a deliberate position, its amber needle pointing "
+        "at a chosen mark. Below the meter, a flat printed price-tag or a "
+        "minimal flat-rate price card lies discarded and faded, half in shadow, "
+        "clearly the old way now set aside — the flat price abandoned while the "
+        "live meter keeps counting. A coiled cable and a few coin-like tokens "
+        "scatter nearby. Deep charcoal and warm copper-amber palette, moody "
+        "chiaroscuro, volumetric light, photorealistic-illustrative, film "
+        "grain, 1.91:1 composition, entirely unlabelled plain objects with no "
+        "lettering, no writing, no printed words anywhere in the frame, no "
+        "watermark, no people, no hands"
+    ),
 }
