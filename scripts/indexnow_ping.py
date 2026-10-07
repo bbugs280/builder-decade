@@ -19,7 +19,7 @@ IndexNow is a crawl HINT, not a command — 200/202 means accepted, not indexed.
 import sys, json, os, urllib.request, urllib.error, re, glob
 
 HOST = "builderdecade.com"
-KEY = "224d20b3478a4e27ba7e145b0ab2ae34"
+KEY = "7544e52888da4e97b8e7921a794bd6d4"
 KEY_LOCATION = "https://%s/%s.txt" % (HOST, KEY)
 ENDPOINT = "https://api.indexnow.org/indexnow"
 
