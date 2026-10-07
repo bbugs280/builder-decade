@@ -70,6 +70,8 @@ params:
     ga4ID: "G-ZB8DJRZJ3X"                       # Builder Decade GA4 property
     adsensePublisherID: "ca-pub-4696981239521155"  # shared AdSense account (matches ads.txt pub-4696981239521155)
     googleSiteVerification: ""
+    bingSiteVerification: ""                   # Bing Webmaster Tools (msvalidate.01 content value)
+    indexNowKey: "224d20b3478a4e27ba7e145b0ab2ae34"  # IndexNow key (file at /<key>.txt)
 
   env: production
 
