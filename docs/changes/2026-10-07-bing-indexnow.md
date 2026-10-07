@@ -36,3 +36,22 @@ IndexNow notifies Bing/Yandex/Seznam/Naver only. Google uses sitemap + Search Co
 
 ## Rollback
 - Tag `rollback-pre-bing-2026-10-07`.
+
+---
+
+## ⚠️ Post-deploy finding (2026-10-07, live CI run)
+
+```
+builderdecade  IndexNow HTTP 403  UserForbiddedToAccessSite
+traindecade    IndexNow HTTP 202  (soft accept — see caveat)
+```
+
+The key file is served correctly (HTTP 200, byte-identical to traindecade's format).
+**The 403 is not a file problem — it is domain-verification state at Bing.**
+Until the site is verified in **Bing Webmaster Tools**, IndexNow rejects this host.
+
+⚠️ **`202` is NOT proof of success either** — the endpoint returns 202 for any
+well-formed key and validates asynchronously, silently discarding failures.
+
+**Action (Vincent, 2 min):** verify BOTH sites in Bing Webmaster Tools (import from
+GSC = fastest path). The CI wiring is correct but inert until then.
