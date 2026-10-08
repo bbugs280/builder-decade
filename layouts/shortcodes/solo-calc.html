@@ -3,6 +3,7 @@
         {{< solo-calc mode="hire" >}}    → first-hire break-even
         {{< solo-calc mode="price" >}}   → pricing floor / effective rate
         {{< solo-calc mode="build" >}}   → metered build budget / overage
+        {{< solo-calc mode="scope" >}}   → should I hand this to the agent?
 
       Client-side only — no server, nothing leaves the browser.
       Language-aware via i18n keys (solo_calc_*).
@@ -21,6 +22,8 @@
       {{ i18n "solo_calc_hire_title" | default "Run your own break-even" }}
     {{ else if eq $mode "price" }}
       {{ i18n "solo_calc_price_title" | default "Find your actual floor" }}
+    {{ else if eq $mode "scope" }}
+      {{ i18n "solo_calc_scope_title" | default "Score the task before you hand it over" }}
     {{ else }}
       {{ i18n "solo_calc_build_title" | default "Set your build budget" }}
     {{ end }}
@@ -35,6 +38,8 @@
       {{ i18n "solo_calc_hire_intro" | default "Most solo founders decide on the salary. The salary is the small number. Put your real figures in — nothing here is sent anywhere or stored." }}
     {{ else if eq $mode "price" }}
       {{ i18n "solo_calc_price_intro" | default "Your rate isn't what you want to earn. It's what your overhead and your unbillable hours leave you with. Put your real figures in." }}
+    {{ else if eq $mode "scope" }}
+      {{ i18n "solo_calc_scope_intro" | default "What you may hand an agent unattended is decided by the task, not by how good the model is. Score three things — reversibility, blast radius, and the cost of being wrong — and read the band." }}
     {{ else }}
       {{ i18n "solo_calc_build_intro" | default "Flat tools plus a metered allowance is your real monthly cost. Set the number you'll allow, then compare it to what the meter actually reads." }}
     {{ end }}
@@ -61,6 +66,33 @@
     <label class="sc-row">
       <span>{{ i18n "solo_calc_hire_f5" | default "Hours per week you'd hand over" }}</span>
       <span class="sc-fieldwrap"><input type="number" class="sc-in" data-k="hours" value="40" min="0" step="1"><span class="sc-unit sc-unit-after">{{ i18n "solo_calc_hrs" | default "hrs" }}</span></span>
+    </label>
+  </div>
+  {{ else if eq $mode "scope" }}
+  <div class="sc-fields">
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_scope_f1" | default "If the agent gets this wrong, can you undo it?" }}</span>
+      <span class="sc-fieldwrap"><select class="sc-in" data-k="reversible">
+        <option value="0">{{ i18n "solo_calc_scope_rev0" | default "One click — a commit revert, a draft, a file" }}</option>
+        <option value="1" selected>{{ i18n "solo_calc_scope_rev1" | default "Recoverable, but it costs hours" }}</option>
+        <option value="2">{{ i18n "solo_calc_scope_rev2" | default "Irreversible — sent, paid, deleted, published" }}</option>
+      </select></span>
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_scope_f2" | default "Who does a mistake land on?" }}</span>
+      <span class="sc-fieldwrap"><select class="sc-in" data-k="blast">
+        <option value="0">{{ i18n "solo_calc_scope_bl0" | default "Only me, only locally" }}</option>
+        <option value="1" selected>{{ i18n "solo_calc_scope_bl1" | default "My own business or my own money" }}</option>
+        <option value="2">{{ i18n "solo_calc_scope_bl2" | default "Someone else — a client, a user, the public" }}</option>
+      </select></span>
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_scope_f3" | default "How bad is being wrong?" }}</span>
+      <span class="sc-fieldwrap"><select class="sc-in" data-k="stakes">
+        <option value="0">{{ i18n "solo_calc_scope_st0" | default "Trivial — wasted time" }}</option>
+        <option value="1" selected>{{ i18n "solo_calc_scope_st1" | default "Money, a deadline, trust" }}</option>
+        <option value="2">{{ i18n "solo_calc_scope_st2" | default "Legal, safety, security, reputation" }}</option>
+      </select></span>
     </label>
   </div>
   {{ else if eq $mode "build" }}
@@ -242,8 +274,45 @@
     detail.innerHTML = d;
   }
 
-  function update() { mode === 'hire' ? updateHire() : (mode === 'price' ? updatePrice() : updateBuild()); }
-  ins.forEach(function (i) { i.addEventListener('input', update); });
+  function updateScope() {
+    var rev = val('reversible');
+    var blast = val('blast');
+    var stakes = val('stakes');
+
+    // Highest axis sets the grade (blast-radius × reversibility × stakes),
+    // then a minimum floor: an irreversible action that lands on someone
+    // else can never be G0/G1, whatever the other axes say.
+    var grade = Math.max(rev, blast, stakes);
+    if (rev >= 2 && blast >= 1) grade = 3;
+
+    var v, d;
+    if (grade >= 3) {
+      v = '{{ i18n "solo_calc_scope_v_g3" | default "Never unattended. Prevent it, don\u2019t review it." }}';
+      d = '{{ i18n "solo_calc_scope_d_g3" | default "A confirmation prompt is not a safety net here — it does not make you a good error-catcher, and by the time you see the mistake it has already landed. Make it impossible (revoke the credential, remove the tool) or make it reversible. If you neither can, do it by hand." }}';
+    } else if (grade === 2) {
+      v = '{{ i18n "solo_calc_scope_v_g2" | default "Gate it — the agent proposes, you fire." }}';
+      d = '{{ i18n "solo_calc_scope_d_g2" | default "The agent can do all the thinking and none of the committing. Let it assemble the action, show you what will happen and how it got there, and make the last step yours. Cheap for you, and it removes the whole class of \u201cit acted beyond what I authorised.\u201d" }}';
+    } else if (grade === 1) {
+      v = '{{ i18n "solo_calc_scope_v_g1" | default "Let it run — but keep the receipt." }}';
+      d = '{{ i18n "solo_calc_scope_d_g1" | default "Low blast radius, recoverable. Give it the task and a way to undo it. The discipline here is not permission, it is the log: you still have to be able to see what it did, or you are trusting a claim." }}';
+    } else {
+      v = '{{ i18n "solo_calc_scope_v_g0" | default "Hand it over. This is what the agent is for." }}';
+      d = '{{ i18n "solo_calc_scope_d_g0" | default "Read-only, local, trivial. Every hour you spend supervising work at this grade is an hour you did not spend on the parts only you can do." }}';
+    }
+    verdict.textContent = v;
+    detail.innerHTML = d;
+  }
+
+  function update() {
+    if (mode === 'hire') updateHire();
+    else if (mode === 'price') updatePrice();
+    else if (mode === 'scope') updateScope();
+    else updateBuild();
+  }
+  ins.forEach(function (i) {
+    i.addEventListener('input', update);
+    i.addEventListener('change', update);
+  });
   update();
 
   // Reset to the defaults the shortcode shipped with (captured at load, so this

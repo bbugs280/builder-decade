@@ -2,6 +2,7 @@
 title: "Your Agent Doesn't Need to Be Hacked. It Needs to Be Trusted."
 translationKey: "what-your-agent-can-reach"
 date: 2026-09-21T18:00:00+08:00
+lastmod: 2026-10-08T08:00:00+08:00
 draft: false
 tags: ["ai agents", "security", "solo builder", "sandbox", "developer tools"]
 description: "Seven 2026 sandbox escapes, no exploit in any of them. The vulnerability is the trust you extend after the agent writes something — here's the check."
@@ -86,6 +87,8 @@ The scores map to a priority order, not a panic list. A standing credential is t
 Neither requires a security team. Both require giving up a little convenience — which is the actual cost of this whole class of bug, and the reason it keeps happening.
 
 Containment is the security half of a wider shift in what a solo builder actually does all day: [The Supervisor Class](/posts/supervisor-class/) covers the move from writing code to directing it, [The Infinite Task List](/posts/infinite-task-list-ai-era/) covers why AI made the to-do list longer rather than shorter, and [Your AI Bill Is Rising Even Though Prices Dropped](/posts/ai-api-cost-creep/) covers the meter that moved while the rate card didn't.
+
+Containment limits *reach*; it doesn't by itself decide what the agent may *do*. That's a separate call, made per action: [which answers are you allowed to act on?](/posts/trust-scope-reversibility/) — sorted by reversibility and blast radius, not by trust in the model.
 
 ## Sources
 

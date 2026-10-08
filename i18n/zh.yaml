@@ -166,3 +166,48 @@
   translation: 你還在額度內，但離上限很近。
 - id: solo_calc_build_detail
   translation: "預算每月 {bud} · 實際每月 {act} · 超支每月 {over}。你的總開發成本佔月營收的 {pct}%。"
+
+- id: solo_calc_scope_title
+  translation: 交出去之前，先替這個任務評分
+- id: solo_calc_scope_intro
+  translation: "什麼可以放手交給 agent 自己跑，取決於任務本身，而不是模型有多強。替三件事評分——可逆性、影響範圍、以及出錯的代價——再看它落在哪一級。"
+- id: solo_calc_scope_f1
+  translation: 如果 agent 做錯了，你撤得回來嗎？
+- id: solo_calc_scope_rev0
+  translation: 一鍵就能還原——revert 一個 commit、一份草稿、一個檔案
+- id: solo_calc_scope_rev1
+  translation: 救得回來，但要花上好幾個小時
+- id: solo_calc_scope_rev2
+  translation: 無法逆轉——已送出、已付款、已刪除、已發布
+- id: solo_calc_scope_f2
+  translation: 出錯會落到誰頭上？
+- id: solo_calc_scope_bl0
+  translation: 只有我自己，而且只在本機
+- id: solo_calc_scope_bl1
+  translation: 我自己的生意、我自己的錢
+- id: solo_calc_scope_bl2
+  translation: 別人——客戶、使用者、公眾
+- id: solo_calc_scope_f3
+  translation: 錯得有多嚴重？
+- id: solo_calc_scope_st0
+  translation: 微不足道——只是浪費了時間
+- id: solo_calc_scope_st1
+  translation: 金錢、期限、信任
+- id: solo_calc_scope_st2
+  translation: 法律、安全、資安、名譽
+- id: solo_calc_scope_v_g0
+  translation: 直接交出去。這正是 agent 存在的意義。
+- id: solo_calc_scope_d_g0
+  translation: "唯讀、本機、無關緊要。你在這一級任務上花的每一小時監督，都是沒花在「只有你能做」的那些事上的一小時。"
+- id: solo_calc_scope_v_g1
+  translation: 讓它跑——但要留收據。
+- id: solo_calc_scope_d_g1
+  translation: "影響範圍小、可還原。把任務交給它，同時給它一條退路。這一級的紀律不是「准不准」，而是那份紀錄：你還是得看得見它做了什麼，否則你信的只是它的一面之詞。"
+- id: solo_calc_scope_v_g2
+  translation: 設一道閘——agent 提案，你扣板機。
+- id: solo_calc_scope_d_g2
+  translation: "agent 可以做完全部的思考，卻不碰最後那一下。讓它把動作組好、告訴你按下去會發生什麼、以及它是怎麼走到這裡的，然後把最後一步留給你自己。對你來說很便宜，卻能整類消除「它做了我沒授權的事」。"
+- id: solo_calc_scope_v_g3
+  translation: 絕不讓它自己跑。要防範，不是靠覆核。
+- id: solo_calc_scope_d_g3
+  translation: "在這一級，一個確認彈窗不是安全網——它不會讓你變成一個好的抓錯者，而等你看到那個錯誤時，它早就落地了。要嘛讓它根本做不到（撤掉憑證、拿掉那個工具），要嘛讓它可逆。兩者都做不到，就自己動手做。"

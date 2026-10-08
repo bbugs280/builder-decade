@@ -2,6 +2,7 @@
 title: "Your Agent Trusts Everything You Connected It To"
 translationKey: "mcp-security-solo-builder"
 date: 2026-09-20T08:00:00+08:00
+lastmod: 2026-10-08T08:00:00+08:00
 draft: false
 tags: ["mcp", "ai agents", "solo builder", "security", "developer tools"]
 description: "You pasted an MCP server in from a blog post. It holds your files and your keys. Here's the 10-minute check before you connect the next one."
@@ -76,6 +77,8 @@ This is the same discipline pointed one layer down. That one asks *did it do the
 A related distinction worth holding: [What Agents Can't Do]({{< ref "/posts/what-agents-cant-do" >}}) covers the capability ceiling, and [API vs MCP]({{< ref "/posts/api-vs-mcp" >}}) covers the transport decision. Neither is about safety. Transport being standardised says nothing about whether what travels over it is trustworthy.
 
 And it's worth separating this from the step that comes next: this post is about **what you connect** — the tool descriptions you trusted at setup. [Your Agent Doesn't Need to Be Hacked](/posts/what-your-agent-can-reach/) is about **what the agent can do once it's connected** — the standing access you granted, and what it can write that something else will later trust. Two different failure modes, two different checks.
+
+The third question, once access is settled, is scope: not *can* it reach this, but [*should this action ever run without me?*](/posts/trust-scope-reversibility/) — sorted by reversibility and blast radius rather than by how much you trust the agent.
 
 ## What to do today
 

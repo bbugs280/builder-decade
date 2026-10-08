@@ -2,7 +2,7 @@
 title: "\"Done\" Is a Claim, Not a Fact: The Verification Ritual Every Solo Builder Needs"
 translationKey: "done-is-a-claim"
 date: 2026-09-06T08:30:00+08:00
-lastmod: 2026-09-28T11:00:00+08:00
+lastmod: 2026-10-08T08:00:00+08:00
 draft: false
 tags: ["solo builder", "ai agents", "verification", "trust", "agent reliability", "one person team"]
 description: "With AI agents, \"done\" starts meaning \"the agent says it's done.\" Here's the verification ritual that separates product from hallucination."
@@ -61,6 +61,8 @@ An agent you've verified once is worth ten you've believed ten times. When you k
 "Done" is never an announcement the agent makes. It's a conclusion *you* reach — after you've run it, read the number, and seen it with your own eyes.
 
 Verification is a habit with a long tail: once you're checking output, the next questions are what the agent can *reach* ([Your Agent Trusts Everything You Connected It To](/posts/mcp-security-solo-builder/)), how its failures actually present ([Why Agents Fail Boringly](/posts/agents-fail-boringly/)), and which of its patterns you can hand off at all ([3 Agent Patterns Worth Knowing](/posts/agent-patterns-worth-knowing/)).
+
+And there's a question one layer up from verification: not *"is this output true?"* but [*"which outputs was I ever allowed to act on unattended?"*](/posts/trust-scope-reversibility/) — the scope of delegated authority, decided by reversibility rather than by how good the model is.
 
 ## Sources
 

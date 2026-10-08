@@ -166,3 +166,48 @@
   translation: You're inside the cap, but close to it.
 - id: solo_calc_build_detail
   translation: "Budgeted {bud}/mo · actual {act}/mo · overage {over}/mo. Your total build is {pct}% of monthly revenue."
+
+- id: solo_calc_scope_title
+  translation: Score the task before you hand it over
+- id: solo_calc_scope_intro
+  translation: "What you may hand an agent unattended is decided by the task, not by how good the model is. Score three things — reversibility, blast radius, and the cost of being wrong — and read the band."
+- id: solo_calc_scope_f1
+  translation: If the agent gets this wrong, can you undo it?
+- id: solo_calc_scope_rev0
+  translation: One click — a commit revert, a draft, a file
+- id: solo_calc_scope_rev1
+  translation: Recoverable, but it costs hours
+- id: solo_calc_scope_rev2
+  translation: Irreversible — sent, paid, deleted, published
+- id: solo_calc_scope_f2
+  translation: Who does a mistake land on?
+- id: solo_calc_scope_bl0
+  translation: Only me, only locally
+- id: solo_calc_scope_bl1
+  translation: My own business or my own money
+- id: solo_calc_scope_bl2
+  translation: Someone else — a client, a user, the public
+- id: solo_calc_scope_f3
+  translation: How bad is being wrong?
+- id: solo_calc_scope_st0
+  translation: Trivial — wasted time
+- id: solo_calc_scope_st1
+  translation: Money, a deadline, trust
+- id: solo_calc_scope_st2
+  translation: Legal, safety, security, reputation
+- id: solo_calc_scope_v_g0
+  translation: Hand it over. This is what the agent is for.
+- id: solo_calc_scope_d_g0
+  translation: "Read-only, local, trivial. Every hour you spend supervising work at this grade is an hour you did not spend on the parts only you can do."
+- id: solo_calc_scope_v_g1
+  translation: Let it run — but keep the receipt.
+- id: solo_calc_scope_d_g1
+  translation: "Low blast radius, recoverable. Give it the task and a way to undo it. The discipline here is not permission, it is the log: you still have to be able to see what it did, or you are trusting a claim."
+- id: solo_calc_scope_v_g2
+  translation: Gate it — the agent proposes, you fire.
+- id: solo_calc_scope_d_g2
+  translation: "The agent can do all the thinking and none of the committing. Let it assemble the action, show you what will happen and how it got there, and make the last step yours. Cheap for you, and it removes the whole class of \u201cit acted beyond what I authorised.\u201d"
+- id: solo_calc_scope_v_g3
+  translation: Never unattended. Prevent it, don't review it.
+- id: solo_calc_scope_d_g3
+  translation: "A confirmation prompt is not a safety net here — it does not make you a good error-catcher, and by the time you see the mistake it has already landed. Make it impossible (revoke the credential, remove the tool) or make it reversible. If you can do neither, do it by hand."

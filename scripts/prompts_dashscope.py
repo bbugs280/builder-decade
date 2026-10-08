@@ -596,6 +596,30 @@ PROMPTS = {
     # the meter, not the menu. Still-life, no person/hands (avoids ethnicity +
     # directionality); distinct from ai-api-cost-creep by the DISCARDED flat tag
     # + a budget dial set by hand, foregrounding the "set a number" act.
+    # Trust scope / reversibility — the fence question. Thesis: what you may
+    # hand an agent is decided by the TASK (reversibility × blast radius ×
+    # stakes), not the model. Still-life, no people (house style): a single
+    # heavy brass knife-switch / breaker lever on a dark workbench, one side
+    # of a hard dividing line lit warm amber (safe side) and the other side
+    # cold and dim (the irreversible side). The lever is caught mid-decision.
+    # No lettering anywhere.
+    "trust-scope-reversibility": (
+        "Cinematic still life on a dark walnut workbench in a warm maker's "
+        "workshop: at center, a heavy industrial brass knife-switch or breaker "
+        "lever mounted on a worn metal plate, its handle caught mid-motion at "
+        "the top of its throw, not yet fully committed. A hard straight "
+        "dividing line runs across the bench beneath it — the left side of the "
+        "bench is bathed in warm amber light, calm and settled; the right side "
+        "beyond the line falls into cold dim shadow, faintly blue, and holds a "
+        "few small irreversible-looking objects half-lost in the dark: a sealed "
+        "envelope, a single coin, a small brass padlock sitting closed. A "
+        "folded pair of work gloves rests abandoned on the lit side. Deep "
+        "charcoal and warm copper-amber palette with a cold blue shadow, moody "
+        "chiaroscuro, volumetric light, photorealistic-illustrative, film "
+        "grain, 1.91:1 composition, entirely unlabelled plain objects with no "
+        "lettering, no writing, no printed words anywhere in the frame, no "
+        "watermark, no people, no hands"
+    ),
     "metered-build": (
         "Cinematic still life on a dark walnut workbench in a warm maker's "
         "workshop: at center, a single old brass analog meter stands upright, "
