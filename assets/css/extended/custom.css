@@ -239,10 +239,16 @@ a:hover {
     border-radius: 999px;
 }
 
+/* ⚠️ `max-width: 45%` resolves against .sc-fieldwrap (flex: 0 0 auto), NOT the
+   card — and .sc-fieldwrap's own width comes from this element's `width: 9rem`.
+   That's circular: 45% × 144px = 65px. Fine for <input type="number"> (a
+   5-digit figure fits), but a <select> cannot shrink below its widest option,
+   so scope-mode long option text clipped to "One c" / "My ow" / "Mone".
+   Fix: drop the % cap; cap with a px value that fits the card instead. */
 .solo-calc .sc-in {
     flex: 0 0 auto;
     width: 9rem;
-    max-width: 45%;
+    max-width: 100%;
     padding: 0.4rem 0.6rem;
     font: inherit;
     font-variant-numeric: tabular-nums;
@@ -266,6 +272,43 @@ a:hover {
 }
 .solo-calc .sc-in:hover {
     border-color: var(--amber);
+}
+
+/* ===== scope mode: selects, not number inputs =====
+   The three scope fields are <select>s whose option text is long
+   ("One click — a commit revert, a draft, a file" ≈ 390px). A select renders
+   at its widest option, so it needs a real share of the row — and the numbers
+   come out of a fixed list, so no tabular-nums / right-align. Left-align the
+   selected option the way a dropdown reads; pad right for the native arrow.
+
+   ⚠️ Also override the base `flex: 1 1 60%` on the label: with a long <select>
+   on the same row, a 60% label basis grabs ~660px of a 668px row and starves
+   the select, re-clipping the option text. In scope rows the SELECT is the
+   wide element, so let it size to content and let the label take the slack.
+
+   ⚠️ And the fieldwrap must GROW. Base .sc-fieldwrap is `flex: 0 0 auto`, so
+   the wrapper hugs the select's content width — and `max-width: 100%` on the
+   select then resolves against that same hug. Circular again: the select can
+   never be wider than itself + the arrow gutter, so the longest option clipped
+   by ~21px. `flex: 1 1 auto` breaks the loop; the select then fills the row. */
+.solo-calc:has(.sc-in[data-k="reversible"]) .sc-row > span:first-child {
+    flex: 0 1 auto;
+}
+.solo-calc:has(.sc-in[data-k="reversible"]) .sc-fieldwrap {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+.solo-calc .sc-in[data-k="reversible"],
+.solo-calc .sc-in[data-k="blast"],
+.solo-calc .sc-in[data-k="stakes"] {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    font-variant-numeric: normal;
+    font-weight: 500;
+    text-align: left;
+    padding-right: 2rem;   /* clear the native dropdown arrow */
+    cursor: pointer;
 }
 
 .solo-calc .sc-in:focus {
@@ -354,6 +397,15 @@ a:hover {
         /* iOS Safari auto-zooms the viewport when a focused input's font-size
            is < 16px. 15.2px triggered that; pin to 16px on small screens. */
         font-size: 16px;
+    }
+    /* scope selects: 21rem is wider than a phone — let them fill the row.
+       (min-width must be cleared too or it overflows the viewport.) */
+    .solo-calc .sc-in[data-k="reversible"],
+    .solo-calc .sc-in[data-k="blast"],
+    .solo-calc .sc-in[data-k="stakes"] {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
     }
     .solo-calc .sc-fieldwrap {
         flex: 1 1 100%;
