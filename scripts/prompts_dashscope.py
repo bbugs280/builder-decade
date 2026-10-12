@@ -636,4 +636,28 @@ PROMPTS = {
         "lettering, no writing, no printed words anywhere in the frame, no "
         "watermark, no people, no hands"
     ),
+    # "Everyone Shipping the Same AI Is the Risk" — the sameness/correlation
+    # thesis. Still-life, no people (house style): a long table of many
+    # identical small machines all facing the same way, all showing the same
+    # blank dial reading, one per position. The point is that they are
+    # indistinguishable — no single one stands apart. No lettering anywhere.
+    "decisions-are-correlating": (
+        "Cinematic still life on a long dark walnut workbench in a warm "
+        "maker's workshop: a long row of many small identical sealed brass "
+        "vials or squat glass jars, each capping a plain unmarked disc of "
+        "brass, every single one an exact indistinguishable copy of the "
+        "next, arranged shoulder to shoulder along the bench and receding "
+        "into warm amber lamplight and soft haze at the far end. Beside the "
+        "row lies a single small unmarked brass token, a plain blank "
+        "featureless metal disc with nothing stamped on either face. Deep "
+        "charcoal and warm copper-amber palette, moody chiaroscuro, "
+        "volumetric light, photorealistic-illustrative, film grain, 1.91:1 "
+        "composition. These are plain sealed vessels and blank discs — "
+        "nothing measured, nothing displayed. Absolutely no dials, no "
+        "gauges, no clocks, no watch faces, no needles, no numerals, no "
+        "numbers, no tick marks, no indices, no engraved or stamped or "
+        "printed markings of any kind on any object, no lettering, no "
+        "writing, no printed words anywhere in the frame, no background "
+        "signage, posters or paper labels, no watermark, no people, no hands"
+    ),
 }
