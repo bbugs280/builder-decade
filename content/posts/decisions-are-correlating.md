@@ -39,7 +39,7 @@ The risk isn't decided. The risk is *unmeasured*.
 
 Most advice about differentiation is about standing out — the moat, the positioning, the "be different so you win." This reframes it. When everyone ships on the same models, the sameness stops being a *marketing* problem and becomes a *safety* problem — for you, and for whatever you're part of.
 
-Your leverage was never going to be the model. It's the things you own that the shared model doesn't: your data, your rules, your specific problem, your taste. That's what `harness-not-model` means by "you rent the brain, you build the rig." But there's a second, less obvious reason to own your context.
+Your leverage was never going to be the model. It's the things you own that the shared model doesn't: your data, your rules, your specific problem, your taste. That's what [harness-not-model](/posts/harness-not-model/) means by "you rent the brain, you build the rig." But there's a second, less obvious reason to own your context.
 
 **Owned context is what makes your output not-a-copy.** When you train on *your* users, *your* failures, *your* niche's edge cases, you produce decisions that are genuinely your own. They won't correlate with the other builders on your street the way the out-of-the-box answers do. You stop being one more echo of the same model.
 
