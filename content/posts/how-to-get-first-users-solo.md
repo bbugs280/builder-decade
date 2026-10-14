@@ -2,7 +2,7 @@
 title: "How to Get Your First Users as a Solo Builder (Quiet Leverage, Not Cold Outreach)"
 translationKey: "how-to-get-first-users-solo"
 date: 2026-08-26T00:00:00+08:00
-lastmod: 2026-09-02T08:00:00+08:00
+lastmod: 2026-10-14T09:30:00+08:00
 draft: false
 tags: ["solo builder", "distribution", "first users", "marketing", "build in public"]
 description: "The hardest part of building alone isn't shipping — it's getting anyone to use it. A distribution playbook built for introverts, not cold outreach."
@@ -47,6 +47,30 @@ Pick **one** channel and commit to it for months. Ten to thirty real posts, not 
 
 Depth also does something practical for introverts: it makes the social part *predictable*. One community, whose norms you learn once, whose people recognize you. That's a drastically lower emotional cost than cold-reaching strangers forever.
 
+## What the first hundred users actually cost
+
+Everything above is what to *do*. This is what it *returns* — because the tactics are only credible if you know the arithmetic behind them.
+
+Start with where first customers come from. A 2026 analysis of **290 founders' revenue write-ups**, sorted by how they found customer number one, found the first channel split cleanly by outcome:
+
+```
+first channel     founders past $10k     founders under $1k
+communities       2  of 9                30 of 68
+outreach          4  of 9                 7 of 68
+```
+
+Read that carefully, because it contains both the argument for this playbook and the honest caveat against it. **Under $1k, community-first is the overwhelming pattern — 30 of 68.** That is the quiet-leverage thesis showing up in real data: writing in public where buyers already gather is how most solo builders get their first users. No outreach required, exactly as the playbook says.
+
+But the pattern inverts above $10k: **4 of 9 founders there started with outreach, not community.** So community-first is the right *default* and not the only path — the honest reading is that communities get you started and outreach is what a minority use to get big. Two caveats the source itself states, and they matter: it is **self-reported**, and it is **pulled from Reddit**, so Reddit is overrepresented. Treat the direction as real and the magnitude as soft. Nine founders is a thin sample.
+
+One finding in that same dataset is unusually clean, though. **Not one consumer founder, at any revenue level, started with outreach.** Every consumer app that got going did it through communities or the app stores. If you're building for consumers, the cold-DM advice isn't merely unpleasant for an introvert — it's a channel with no observed wins.
+
+The second number is the reason to be patient with one channel instead of spraying five. Marketplaces and platforms behave like a lottery, not a channel: in one extract of ~3,200 actors from a plugin marketplace, **the top 100 absorbed roughly 80% of all usage.** Being *on* the platform buys you almost nothing. Being in the top slice buys you most of the market — and the top slice is reached by the same deep-presence work as everything else here.
+
+Finally, the reason distribution is the binding constraint and not a nice-to-have. Among startups incorporated through Stripe Atlas, **20% now land their first paying customer within 30 days of incorporation, up from 8% in 2020** — and the median time to first payment fell from 38 to 34 days year over year. Building and charging got dramatically faster. What did not speed up is getting anyone to *care*. That gap is the entire reason this page exists: the build half of the problem has been solved by tooling, and the distribution half is still done at human speed, one honest post at a time.
+
+None of this changes the tactics above. It tells you what to expect from them: a slow start concentrated in communities, a long flat stretch on one channel, and a payoff that is concentrated in the few who stay. **The number that predicts your outcome is not how many channels you tried. It's whether you're still posting on one of them in month six.**
+
 ## The quiet leverage loop
 
 Put the three together and you get a self-reinforcing system:
@@ -68,5 +92,7 @@ A note on *where* those first users should come from, since it's the part that o
 ## Sources
 
 - Carta — Solo Founders Report 2025: the solo-founded share of new US startups rose from 23.7% (2019) to 36.3% (H1 2025), and the persistence of solo founders is downstream of consistent low-cost iteration rather than single big bets — the same logic that makes "go deep on one channel" work.
-- Stripe Atlas — Startups in 2025 Year in Review: 20% of startups charged their first customer within 30 days (up from 8% in 2020) — the collapsed time-to-first-dollar that makes *distribution*, not building, the binding constraint.
+- Stripe Atlas — Startups in 2025 Year in Review: 20% of startups charged their first customer within 30 days (up from 8% in 2020), and median time to first payment fell from 38 to 34 days year over year — the collapsed time-to-first-dollar that makes *distribution*, not building, the binding constraint.
+- Indie Hackers — analysis of 290 founders' publicly posted revenue milestones, grouped by first-customer channel: 30 of 68 under-$10k founders reported communities as their first channel against 7 of 68 for outreach; 4 of 9 past $10k reported outreach against 2 of 9 for communities; no consumer founder at any revenue level reported outreach as a first channel. The source states its own limits — the data is **self-reported and drawn from Reddit**, so Reddit is overrepresented and the past-$10k group is a sample of nine. The community-vs-outreach direction is the finding; the magnitudes are not precise.
+- Indie Hackers — one commenter's extract of ~3,200 actors from a plugin marketplace, in which the top 100 accounted for roughly 80% of all usage. An anecdotal single-platform extract, not a benchmark; cited because the concentration it shows is the reason a platform listing is not a distribution channel on its own.
 - The "build in public" compounding case and the "artifact, not pitch" community norm are drawn from the observable behavior of solo builders in public communities (r/SideProject, Indie Hackers, X build-in-public) rather than a single citable study — treat them as observed pattern, not measured effect.
