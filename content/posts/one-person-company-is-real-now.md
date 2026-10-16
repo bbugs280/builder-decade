@@ -2,7 +2,7 @@
 title: "The One-Person Company Stopped Being a Thesis"
 translationKey: "one-person-company-is-real-now"
 date: 2026-09-22T09:00:00+08:00
-lastmod: 2026-09-22T09:00:00+08:00
+lastmod: 2026-10-16T08:00:00+08:00
 draft: false
 tags: ["one person company", "solo founder", "solo builder", "one person business AI", "indie hacker", "startup funding"]
 description: "Forming a company alone got easy; getting funded alone didn't. The two datasets disagree — here's what that gap means for you."
@@ -100,7 +100,7 @@ Reading the two datasets together produces something more useful than "solo is w
 
 The one-person company is real now. The interesting question was never whether you're allowed to build one — it was whether what you build is the kind of thing that compounds.
 
-Two of the decisions that follow from that are practical rather than structural: [Leaving the Corporate Job to Build Solo](/posts/leaving-corporate-job-build-solo/) covers what actually happens in the first stretch, and [The Real Cost of Shipping Solo](/posts/cost-of-shipping-solo/) covers the bill nobody itemises.
+Two of the decisions that follow from that are practical rather than structural: [Leaving the Corporate Job to Build Solo](/posts/leaving-corporate-job-build-solo/) covers what actually happens in the first stretch, and [The Real Cost of Shipping Solo](/posts/cost-of-shipping-solo/) covers the bill nobody itemises. And when the one-person shape starts outgrowing its one person, [the numbers behind the first hire](/posts/first-hire-timing-numbers/) are the next calculation.
 
 ---
 

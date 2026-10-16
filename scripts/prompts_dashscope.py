@@ -660,4 +660,21 @@ PROMPTS = {
         "writing, no printed words anywhere in the frame, no background "
         "signage, posters or paper labels, no watermark, no people, no hands"
     ),
+    # First-hire timing post — the unfilled second seat at the workbench.
+    # Pass 1 accepted: no people (ethnicity rule moot), no lettering on objects,
+    # warm amber/copper palette. Note DashScope rendered ONE empty chair rather
+    # than two seats — vision still reads it as "a seat awaiting its occupant /
+    # an unfilled place", which is exactly the thesis, so no regen needed.
+    "first-hire-timing-numbers": (
+        "Cinematic still life on a warm dark wooden workbench against a deep "
+        "charcoal background: a single empty wooden chair pulled up to one end of "
+        "the long workbench, and beside the chair a small neat stack of blank "
+        "unmarked papers and a simple plain unlabelled pen, arranged with "
+        "deliberate care as if a second seat is about to be filled. Warm soft "
+        "directional light rakes across the workbench from the left, amber and "
+        "copper tones, moody chiaroscuro, volumetric light rays, deep shadows "
+        "pooling in the background, photorealistic-illustrative, subtle film "
+        "grain, 16:9 composition, calm quiet and considered, an empty second place "
+        "at the bench, no people, no text, no lettering, no watermarks"
+    ),
 }
