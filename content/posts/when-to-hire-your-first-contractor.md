@@ -1,7 +1,7 @@
 ---
 title: "When to Hire Your First Contractor as a Solo Founder"
 date: 2026-08-30T07:00:00+08:00
-lastmod: 2026-10-01T12:00:00+08:00
+lastmod: 2026-10-16T07:30:00+08:00
 draft: false
 tags: ["solo founder", "hiring", "contractors", "first hire"]
 description: "Hire-a-contractor advice is written by payroll companies. A solo founder's real trigger is different — here's the receipts-based rule for when to spend."
@@ -59,7 +59,7 @@ Both mistakes come from the same place: treating hiring as an identity decision 
 
 **Contract the commodity; keep the compounding.**
 
-If the task has a spec and a finish line, it's commodity — contract it and move on. If the task *is* the product, or the judgment that builds the moat, keep it in-house even when it's slow. The solo advantage isn't that you do everything yourself. It's that you know exactly which things are worth doing yourself, and everything else is negotiable.
+If the task has a spec and a finish line, it's commodity — contract it and move on. If the task *is* the product, or the judgment that builds the moat, keep it in-house even when it's slow. The solo advantage isn't that you do everything yourself. It's that you know exactly which things are worth doing yourself, and everything else is negotiable. Which is really the same question as [where the value comes from in the first place](/posts/domain-knowledge-turns-ai-into-value/) — the part AI can't supply is the part you can't hire away.
 
 Your first hire should feel boring. Not a validator of your ambition — a lever you pull because the math says the machine is finally the limiting factor.
 

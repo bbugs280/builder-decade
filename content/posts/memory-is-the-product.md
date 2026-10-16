@@ -2,7 +2,7 @@
 title: "Memory Is the Product: Why Your Agent Stack Is Worth More Than Your Model"
 translationKey: "memory-is-the-product"
 date: 2026-09-07T08:20:00+08:00
-lastmod: 2026-09-28T11:00:00+08:00
+lastmod: 2026-10-16T07:30:00+08:00
 draft: false
 tags: ["ai agents", "agent memory", "context", "rules", "trust", "solo builder", "one person team"]
 description: "The agent isn't the model. Memory, rules and trust rituals are the product. Here's why the smarter-bot upgrade won't fix your workflow."
@@ -53,6 +53,8 @@ Stop asking "which model should I use?" — you'll ask it again next quarter, fo
 Start asking: *what does my agent know that a fresh model doesn't?* If the answer is "nothing," you don't have an agent — you have a very expensive autocomplete. If the answer is a real body of decisions, rules, and logged outcomes, then you've built the thing that actually compounds.
 
 The model is the engine you rent. The memory is the machine you're building. One depreciates the day you buy it. The other is worth more every week it runs.
+
+And there's a reason that matters beyond your own margin: when everyone rents the same engine, the outputs converge. [At market scale, that sameness stops being a business problem and becomes a systemic one](/posts/decisions-are-correlating/) — differentiation isn't just a moat, it's what keeps the whole thing stable.
 
 ## Sources
 

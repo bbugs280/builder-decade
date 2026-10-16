@@ -2,7 +2,7 @@
 title: "The AI Model Is Out. The Harness Is In."
 translationKey: "harness-not-model"
 date: 2026-10-02T08:00:00+08:00
-lastmod: 2026-10-02T08:00:00+08:00
+lastmod: 2026-10-16T07:30:00+08:00
 draft: false
 tags: ["agent harness", "ai model commodity", "solo builder", "llm", "build in the ai era", "agent framework"]
 description: "The AI model is out — a commodity you rent and swap at will. The harness is the part you actually own. Here's why that's where the real work is now."
@@ -33,6 +33,6 @@ And here's the part most people miss — while the model got cheaper, the *harne
 
 That's the shift worth paying attention to in 2026. For years the question was *"which model?"* The question that actually predicts whether your build ships is *"which harness?"* — and whether you treat the harness as the craft, instead of the model.
 
-For a solo builder this is roughly all good news. You were never going to win the model race. But the harness is a thing one person can build, own, and keep improving — and nobody can rent it away from you. You rent the brain. You build the rig.
+For a solo builder this is roughly all good news. You were never going to win the model race. But the harness is a clean example of the same split that runs through your whole cost base: the model is a [meter you rent and watch](/posts/metered-build/), while the rig is the part you own and keep. One of those you can build on; the other you just pay for.
 
 If the model is out, the harness is in. That's the next thing to get good at.

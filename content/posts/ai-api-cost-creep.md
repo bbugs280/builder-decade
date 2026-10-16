@@ -1,7 +1,7 @@
 ---
 title: "Your AI Bill Is Rising Even Though Prices Dropped"
 date: 2026-09-04T07:30:00+08:00
-lastmod: 2026-09-04T07:30:00+08:00
+lastmod: 2026-10-16T07:30:00+08:00
 draft: false
 tags: ["ai cost", "solo founder", "agent api cost", "token economics", "cost of goods"]
 description: "Your AI bill is rising even though prices dropped. The rate card didn't move, the meter did. Here's how to match tasks to the cheapest capable model."
@@ -68,6 +68,8 @@ The price collapse is real, and it's a gift: it's what makes one person able to 
 The builders who treat their token spend like the cost of goods it actually is will be the ones still shipping profitably when the conversation has moved from "what can it do" to "what does it cost, and can I see the meter."
 
 That's the whole game now. Not watching the rate card. Watching the meter.
+
+The next step is turning that discipline into a budget: [setting the number *before* you write code, and treating a solo build like something that runs on a meter](/posts/metered-build/) rather than a flat monthly plan.
 
 ## Sources
 
