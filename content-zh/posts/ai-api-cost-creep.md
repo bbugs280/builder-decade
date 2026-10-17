@@ -71,6 +71,8 @@ agent 打破了這個假設。同一個高層目標——「修好失敗的測�
 
 下一步，是把這套紀律變成一筆預算：[在你寫下第一行程式碼之前先把數字訂下來，把獨立開發的專案當成一個跑在計量表上的東西](/zh/posts/metered-build/)，而不是一個固定月費方案。
 
+而當計量表看得見之後，問題就從「花多少錢」變成「佔營業額多少」——[一家一年在 AI 上花一百萬美金、同時做三百萬美金生意的一人公司](/zh/posts/ai-cost-of-goods/)，就是這個比例最有用的參考，因為它是目前唯一一個兩個數字都公開的案例。
+
 ## 資料來源
 
 - **Rebecca Bellan，〈The Token Bill Comes Due: Inside the Industry Scramble to Manage AI's Runaway Costs〉，TechCrunch，2026 年 6 月 5 日。** —— Uber 在四月花光 2026 年 AI 預算；微軟撤銷 Claude Code 授權；Priceline 的 Cursor 續約貴了 4–5 倍；一名工程師單月燒掉約 $40,000；每名開發者 token 消耗量九個月內上升 18.6 倍；高盛預估全球 token 用量至 2030 年成長 24 倍。

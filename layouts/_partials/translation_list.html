@@ -1,0 +1,28 @@
+{{- /* SITE OVERRIDE of themes/PaperMod/layouts/_partials/translation_list.html
+       Reason: PaperMod's i18n/zh.yaml ships Simplified "语言"; Hugo 0.165 resolves
+       theme i18n over site i18n, so override the partial and hardcode for ZH.
+       Verified by tests/check_zh_traditional_theme.py.
+       Keep in sync with upstream if PaperMod's translation_list.html changes. */ -}}
+{{- if .IsTranslated -}}
+    {{- if (ne .Layout "search") }}
+        {{- if or (.Param "author") (.Param "ShowReadingTime") (not .Date.IsZero) }}
+            {{- printf "&nbsp;|&nbsp;" | safeHTML -}}
+        {{- end -}}
+    {{- end -}}
+    {{- $tLabel := i18n "translations" | default "Translations" -}}
+    {{- if eq site.Language.Lang "zh" -}}{{- $tLabel = "語言" -}}{{- end -}}
+    <span>{{- $tLabel }}:</span>
+    <ul class="i18n_list">
+        {{- range .Translations }}
+        <li>
+            <a href="{{ .Permalink }}">
+                {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
+                {{- .Language.LanguageName | emojify -}}
+                {{- else }}
+                {{- .Lang | title -}}
+                {{- end -}}
+            </a>
+        </li>
+        {{- end }}
+    </ul>
+{{- end -}}

@@ -211,3 +211,29 @@
   translation: Never unattended. Prevent it, don't review it.
 - id: solo_calc_scope_d_g3
   translation: "A confirmation prompt is not a safety net here — it does not make you a good error-catcher, and by the time you see the mistake it has already landed. Make it impossible (revoke the credential, remove the tool) or make it reversible. If you can do neither, do it by hand."
+- id: solo_calc_cogs_title
+  translation: Your AI spend as a share of revenue
+- id: solo_calc_cogs_intro
+  translation: "AI spend is a cost of goods, so the only number that means anything is its share of revenue. Put your real figures in — nothing here is sent anywhere or stored."
+- id: solo_calc_cogs_f1
+  translation: AI spend last month (all models, all tools)
+- id: solo_calc_cogs_f2
+  translation: Revenue last month
+- id: solo_calc_cogs_f3
+  translation: Other cost of goods (hosting, APIs, payment fees)
+- id: solo_calc_cogs_needrev
+  translation: Enter your monthly revenue to see the share.
+- id: solo_calc_cogs_v_tiny
+  translation: AI is a rounding error here. Your cost base is something else.
+- id: solo_calc_cogs_v_lean
+  translation: Lean — AI is a line item, not the business model.
+- id: solo_calc_cogs_v_normal
+  translation: In the normal band — this is manufacturing economics, and they work.
+- id: solo_calc_cogs_v_heavy
+  translation: Heavy. Every dollar of revenue is carrying a real AI cost — check it is buying revenue, not motion.
+- id: solo_calc_cogs_v_critical
+  translation: Above half your revenue. At this ratio the question is not efficiency, it is whether the spend is producing anything sold.
+- id: solo_calc_cogs_v_neg
+  translation: Your cost of goods exceeds revenue. This is not a margin question — you are losing money on every sale.
+- id: solo_calc_cogs_detail
+  translation: "AI is {aiPct} of revenue. All up (including other cost of goods) that is {totPct}, leaving {grossPct} gross — {gross}/mo. The $1M/$3M one-person company runs {bench} AI cost of goods."

@@ -71,6 +71,8 @@ That's the whole game now. Not watching the rate card. Watching the meter.
 
 The next step is turning that discipline into a budget: [setting the number *before* you write code, and treating a solo build like something that runs on a meter](/posts/metered-build/) rather than a flat monthly plan.
 
+And once the meter is visible, the question changes from *what does it cost* to *what share of revenue is it* — [a one-person company reportedly spending $1M a year on AI while making $3M](/posts/ai-cost-of-goods/) is the useful benchmark for that ratio, because it is the only published case where both numbers exist.
+
 ## Sources
 
 - **Rebecca Bellan, "The Token Bill Comes Due: Inside the Industry Scramble to Manage AI's Runaway Costs," TechCrunch, June 5, 2026.** — Uber's 2026 AI budget exhausted by April; Microsoft revoking Claude Code licenses; Priceline's Cursor renewal 4–5× more expensive; one engineer at ~$40,000 in a month; per-developer token consumption +18.6× in nine months; Goldman Sachs projecting 24× global token growth by 2030.

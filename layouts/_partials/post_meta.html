@@ -1,0 +1,36 @@
+{{- /* SITE OVERRIDE of themes/PaperMod/layouts/_partials/post_meta.html
+       Reason: PaperMod's themes/PaperMod/i18n/zh.yaml ships Simplified Chinese
+       ("1 分钟"), and Hugo 0.165 resolves theme i18n OVER site i18n for these
+       keys — so a site-level i18n/zh.yaml override is inert. Partial lookup DOES
+       respect site-over-theme precedence, so we override here instead.
+       Verified: tests/check_zh_traditional_theme.py fails without this.
+       Keep in sync with upstream if PaperMod's post_meta.html changes. */ -}}
+{{- $scratch := newScratch }}
+
+{{- if not .Date.IsZero -}}
+    {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default ":date_long" site.Params.DateFormat)))) }}
+{{- end }}
+
+{{- if (.Param "ShowReadingTime") -}}
+    {{- $readLabel := i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime) -}}
+    {{- if eq site.Language.Lang "zh" -}}
+        {{- $readLabel = printf "%d 分鐘" .ReadingTime -}}
+    {{- end -}}
+    {{- $scratch.Add "meta" (slice (printf "<span>%s</span>" $readLabel)) }}
+{{- end }}
+
+{{- if (.Param "ShowWordCount") -}}
+    {{- $scratch.Add "meta" (slice (printf "<span>%s</span>" (i18n "words" .WordCount | default (printf "%d words" .WordCount)))) }}
+{{- end }}
+
+{{- if not (.Param "hideAuthor") -}}
+    {{- with (partial "author.html" .) }}
+        {{- $scratch.Add "meta" (slice (printf "<span>%s</span>" .)) }}
+    {{- end }}
+{{- end }}
+
+{{/* Combine all meta information into a single string with separators and render it as HTML.*/}}
+
+{{- with ($scratch.Get "meta") }}
+    {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+{{- end -}}

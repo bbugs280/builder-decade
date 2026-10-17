@@ -24,6 +24,8 @@
       {{ i18n "solo_calc_price_title" | default "Find your actual floor" }}
     {{ else if eq $mode "scope" }}
       {{ i18n "solo_calc_scope_title" | default "Score the task before you hand it over" }}
+    {{ else if eq $mode "cogs" }}
+      {{ i18n "solo_calc_cogs_title" | default "Your AI spend as a share of revenue" }}
     {{ else }}
       {{ i18n "solo_calc_build_title" | default "Set your build budget" }}
     {{ end }}
@@ -40,6 +42,8 @@
       {{ i18n "solo_calc_price_intro" | default "Your rate isn't what you want to earn. It's what your overhead and your unbillable hours leave you with. Put your real figures in." }}
     {{ else if eq $mode "scope" }}
       {{ i18n "solo_calc_scope_intro" | default "What you may hand an agent unattended is decided by the task, not by how good the model is. Score three things — reversibility, blast radius, and the cost of being wrong — and read the band." }}
+    {{ else if eq $mode "cogs" }}
+      {{ i18n "solo_calc_cogs_intro" | default "AI spend is a cost of goods, so the only number that means anything is its share of revenue. Put your real figures in — nothing here is sent anywhere or stored." }}
     {{ else }}
       {{ i18n "solo_calc_build_intro" | default "Flat tools plus a metered allowance is your real monthly cost. Set the number you'll allow, then compare it to what the meter actually reads." }}
     {{ end }}
@@ -93,6 +97,21 @@
         <option value="1" selected>{{ i18n "solo_calc_scope_st1" | default "Money, a deadline, trust" }}</option>
         <option value="2">{{ i18n "solo_calc_scope_st2" | default "Legal, safety, security, reputation" }}</option>
       </select></span>
+    </label>
+  </div>
+  {{ else if eq $mode "cogs" }}
+  <div class="sc-fields">
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_cogs_f1" | default "AI spend last month (all models, all tools)" }}</span>
+      <span class="sc-fieldwrap"><span class="sc-unit">{{ i18n "solo_calc_cur" | default "$" }}</span><input type="number" class="sc-in" data-k="aispend" value="300" min="0" step="10"></span>
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_cogs_f2" | default "Revenue last month" }}</span>
+      <span class="sc-fieldwrap"><span class="sc-unit">{{ i18n "solo_calc_cur" | default "$" }}</span><input type="number" class="sc-in" data-k="rev" value="3000" min="0" step="100"></span>
+    </label>
+    <label class="sc-row">
+      <span>{{ i18n "solo_calc_cogs_f3" | default "Other cost of goods (hosting, APIs, payment fees)" }}</span>
+      <span class="sc-fieldwrap"><span class="sc-unit">{{ i18n "solo_calc_cur" | default "$" }}</span><input type="number" class="sc-in" data-k="othercogs" value="150" min="0" step="10"></span>
     </label>
   </div>
   {{ else if eq $mode "build" }}
@@ -303,10 +322,73 @@
     detail.innerHTML = d;
   }
 
+  function updateCogs() {
+    var aispend = val('aispend');
+    var rev = val('rev');
+    var othercogs = val('othercogs');
+
+    if (rev <= 0) {
+      verdict.textContent = '{{ i18n "solo_calc_cogs_needrev" | default "Enter your monthly revenue to see the share." }}';
+      detail.textContent = '';
+      return;
+    }
+
+    var aiPct = (aispend / rev) * 100;
+    var totalCogs = aispend + othercogs;
+    var totalPct = (totalCogs / rev) * 100;
+    var gross = rev - totalCogs;
+    var grossPct = (gross / rev) * 100;
+
+    // The story's benchmark: $1M spend / $3M revenue = 33.3% AI COGS.
+    // ⚠️ Compare with a small tolerance: 1000/3000 = 33.333... > 33.3, so a bare
+    // `<=` puts the BENCHMARK CASE ITSELF in the "heavy" band. The benchmark must
+    // read as "normal" — it is the reference point, not a warning.
+    //
+    // ⚠️ The band is driven by TOTAL cost of goods, not AI spend alone. An earlier
+    // version banded on aiPct only, so $1M/$3M revenue with $900k of other COGS was
+    // told "this is manufacturing economics, and they work" while the detail line
+    // underneath reported 63.3% total COGS and 36.7% gross. The verdict and the
+    // detail were judging different numbers. Total COGS is the honest input to a
+    // verdict about whether the cost base is healthy.
+    var BENCH = 33.3;
+    var EPS = 0.1;
+    var v, d;
+    if (totalPct <= 5) {
+      v = '{{ i18n "solo_calc_cogs_v_tiny" | default "AI is a rounding error here. Your cost base is something else." }}';
+    } else if (totalPct <= 15) {
+      v = '{{ i18n "solo_calc_cogs_v_lean" | default "Lean — AI is a line item, not the business model." }}';
+    } else if (totalPct <= BENCH + EPS) {
+      v = '{{ i18n "solo_calc_cogs_v_normal" | default "In the normal band — this is manufacturing economics, and they work." }}';
+    } else if (totalPct <= 50) {
+      v = '{{ i18n "solo_calc_cogs_v_heavy" | default "Heavy. Every dollar of revenue is carrying a real AI cost — check it is buying revenue, not motion." }}';
+    } else {
+      v = '{{ i18n "solo_calc_cogs_v_critical" | default "Above half your revenue. At this ratio the question is not efficiency, it is whether the spend is producing anything sold." }}';
+    }
+
+    // Guard: other costs can exceed revenue outright. A negative gross is not a
+    // ratio to be banded — say it plainly instead of letting a minus sign carry it.
+    if (gross < 0) {
+      v = '{{ i18n "solo_calc_cogs_v_neg" | default "Your cost of goods exceeds revenue. This is not a margin question — you are losing money on every sale." }}';
+    }
+
+    d = '{{ i18n "solo_calc_cogs_detail" | default "AI is {aiPct} of revenue. All up (including other cost of goods) that is {totPct}, leaving {grossPct} gross — {gross}/mo. The $1M/$3M one-person company runs {bench} AI cost of goods." }}'
+        // ⚠️ Display rounds to 1dp but the band compares full precision, so at a
+        // boundary the reader sees "15.0%" next to a LEAN→NORMAL flip they can't
+        // explain. 2dp keeps the visible number on the same side as the verdict.
+        .replace('{aiPct}', aiPct.toFixed(2) + '%')
+        .replace('{totPct}', totalPct.toFixed(2) + '%')
+        .replace('{grossPct}', grossPct.toFixed(2) + '%')
+        .replace('{gross}', money(gross))
+        .replace('{bench}', BENCH.toFixed(1) + '%');
+    verdict.textContent = v;
+    detail.innerHTML = d;
+  }
+
   function update() {
     if (mode === 'hire') updateHire();
     else if (mode === 'price') updatePrice();
     else if (mode === 'scope') updateScope();
+    else if (mode === 'cogs') updateCogs();
     else updateBuild();
   }
   ins.forEach(function (i) {

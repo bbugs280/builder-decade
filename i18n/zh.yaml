@@ -211,3 +211,38 @@
   translation: 絕不讓它自己跑。要防範，不是靠覆核。
 - id: solo_calc_scope_d_g3
   translation: "在這一級，一個確認彈窗不是安全網——它不會讓你變成一個好的抓錯者，而等你看到那個錯誤時，它早就落地了。要嘛讓它根本做不到（撤掉憑證、拿掉那個工具），要嘛讓它可逆。兩者都做不到，就自己動手做。"
+- id: solo_calc_cogs_title
+  translation: 你的 AI 支出佔營業額多少
+- id: solo_calc_cogs_intro
+  translation: "AI 支出就是銷貨成本，所以唯一有意義的數字，是它佔營業額多少。填入你的真實數字——這裡所有內容都不會傳送出去，也不會儲存。"
+- id: solo_calc_cogs_f1
+  translation: 上個月 AI 支出（所有模型、所有工具）
+- id: solo_calc_cogs_f2
+  translation: 上個月營業額
+- id: solo_calc_cogs_f3
+  translation: 其他銷貨成本（主機、API、手續費）
+- id: solo_calc_cogs_needrev
+  translation: 填入你的每月營業額，即可看到比例。
+- id: solo_calc_cogs_v_tiny
+  translation: AI 在這裡只是四捨五入的誤差。你的成本基礎是別的東西。
+- id: solo_calc_cogs_v_lean
+  translation: 精瘦——AI 只是一個科目，不是商業模式。
+- id: solo_calc_cogs_v_normal
+  translation: 在正常區間——這是製造業的經濟學，而它行得通。
+- id: solo_calc_cogs_v_heavy
+  translation: 偏重。每一元營業額都背負著真實的 AI 成本——要檢查它是在買營業額，還是在買動作。
+- id: solo_calc_cogs_v_critical
+  translation: 超過營業額一半。到了這個比例，問題不是效率，而是這筆錢有沒有產出任何賣得出去的東西。
+- id: solo_calc_cogs_v_neg
+  translation: 你的銷貨成本超過營業額。這不是毛利的問題——你每賣出一筆都在虧錢。
+- id: solo_calc_cogs_detail
+  translation: "AI 佔營業額 {aiPct}。連同其他銷貨成本合計是 {totPct}，剩下毛利 {grossPct}——即每月 {gross}。那家一百萬／三百萬的一人公司，AI 銷貨成本是 {bench}。"
+
+# NOTE: theme-chrome strings (read_time / prev_page / next_page / toc /
+# translations / home / edit_post / code_copy / code_copied) are NOT overridden
+# here. Hugo 0.165 resolves theme i18n OVER site i18n for these keys — verified
+# empirically: with a site override present and the theme reverted, the build
+# still rendered the theme's Simplified "1 分钟". The fix lives in site-level
+# LAYOUT overrides instead (layouts/_partials/post_meta.html, translation_list.html,
+# footer.html, breadcrumbs.html, post_nav_links.html, layouts/list.html), where
+# site-over-theme precedence DOES hold. See tests/check_zh_traditional_theme.py.
