@@ -1,10 +1,10 @@
 ---
-title: "當 AI 供應商停掉那個模型：一人開發者的退場成本"
+title: "當 AI 供應商停掉那個模型：如何計算退場成本"
 translationKey: "ai-vendor-exit-cost"
 date: 2026-10-19T09:00:00+08:00
-lastmod: 2026-10-19T09:00:00+08:00
+lastmod: 2026-10-19T20:00:00+08:00
 draft: false
-tags: ["AI API", "供應商鎖定", "模型退役", "一人開發", "技術債", "退場成本"]
+tags: ["AI API", "供應商鎖定", "模型退役", "退場成本", "技術債", "端點下架"]
 description: "一個模型端點退役，就能讓已上線的產品一夜失效。租用大腦之前，先把退場成本算清楚。"
 cover:
   image: "cover-ai-vendor-exit-cost.png"

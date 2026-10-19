@@ -1,11 +1,11 @@
 ---
-title: "The Day Your AI Vendor Shuts Down: Exit Cost for Solo Builders"
+title: "The Day Your AI Vendor Shuts Down: How to Price Exit Cost"
 translationKey: "ai-vendor-exit-cost"
 date: 2026-10-19T09:00:00+08:00
-lastmod: 2026-10-19T09:00:00+08:00
+lastmod: 2026-10-19T20:00:00+08:00
 draft: false
-tags: ["ai api", "vendor lock-in", "deprecation", "solo builder", "technical debt", "model retirement"]
-description: "One retired model endpoint can break a shipped app overnight. Here's how to price the exit before you rent the brain."
+tags: ["ai api", "vendor lock-in", "deprecation", "exit cost", "technical debt", "model retirement"]
+description: "One retired model endpoint can break a shipped app overnight. Price the exit before you rent the brain."
 cover:
   image: "cover-ai-vendor-exit-cost.png"
   alt: "A workshop shelf of blank unlabelled crates, one slot empty where a component used to sit"
