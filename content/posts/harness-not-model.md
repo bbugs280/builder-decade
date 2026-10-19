@@ -36,3 +36,6 @@ That's the shift worth paying attention to in 2026. For years the question was *
 For a solo builder this is roughly all good news. You were never going to win the model race. But the harness is a clean example of the same split that runs through your whole cost base: the model is a [meter you rent and watch](/posts/metered-build/), while the rig is the part you own and keep. One of those you can build on; the other you just pay for.
 
 If the model is out, the harness is in. That's the next thing to get good at.
+
+One thing that follows from it, and is easy to skip: owning the harness does not make the brain yours. When a model endpoint is retired, the harness is exactly what has to carry the change — so it is worth [pricing that exit before you rent](/posts/ai-vendor-exit-cost/), while it still costs an afternoon.
+
