@@ -39,3 +39,5 @@ If the model is out, the harness is in. That's the next thing to get good at.
 
 One thing that follows from it, and is easy to skip: owning the harness does not make the brain yours. When a model endpoint is retired, the harness is exactly what has to carry the change — so it is worth [pricing that exit before you rent](/posts/ai-vendor-exit-cost/), while it still costs an afternoon.
 
+And there is now a newer question sitting one layer up. If the harness is the part you own, what happens when someone ships the harness *and* the judgement as a service — deciding what deserves your attention before you ever look? That is the boundary this post drew, and it has since been crossed: [when AI makes the call on what needs your attention](/posts/agent-decides-attention/).
+

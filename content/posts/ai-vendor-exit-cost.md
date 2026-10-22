@@ -75,3 +75,5 @@ None of this is a reason not to build on an API. The alternative — train and s
 The point is narrower and more useful: **the model being a commodity does not make your dependency on it cheap.** Commodity pricing and exit cost are independent variables. A vendor can cut prices by 90% and still retire the exact endpoint your product runs on. The bill you optimise and the bill that ends your product are different bills.
 
 So price the exit at build time, while it costs an afternoon. It is the one piece of this stack you can actually de-risk, because the failure is not exotic — it is scheduled, and it will arrive whether or not you planned for it.
+
+There is a harder version of this problem, and it does not announce itself with a 404. When the layer you rent is not a model but the *judgement* about what deserves your attention, the failure arrives as silence: [when AI makes the call on what needs your attention](/posts/agent-decides-attention/).
