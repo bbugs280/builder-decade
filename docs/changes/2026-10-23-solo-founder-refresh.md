@@ -59,8 +59,30 @@ The section does three things:
    comparable**, rather than presenting agreement.
 2. **Carries the counter-argument in full** — the 53%-more-revenue-by-month-24 figure is stated as
    a blockquote and named as "the strongest argument against everything above". Not buried.
-3. **Resolves it on the reader's own measure** — comparable rounds, 75% more ownership. If winning
-   is month-24 revenue, teams win; if it is what you walk away with, solo is the better trade.
+3. **Resolves it on the reader's own measure** — comparable rounds, and ownership at exit. If
+   winning is month-24 revenue, teams win; if it is what you walk away with, solo is the better
+   trade.
+
+## ⚠️ Three defects the build-tester gate caught — all fixed before push
+
+```
+W-1  75% ownership figure WAS restated in the new section, ~600 words after the
+     myth section already stated it. My first commit message claimed it had not
+     been re-added — that claim was false. The new section now REFERENCES the
+     earlier comparison instead of repeating the number.
+
+W-2  ZH Sources section was never updated. The ZH page cited Stripe's 63% and
+     the $54.9M/$53.6M round medians while its certainty note still read
+     "以上數字皆出自 Carta 的一手報告". A page citing sources it does not list.
+     Both ZH bullets added; certainty note reworded to match EN.
+
+W-3  "C  corp" — a double space in the ZH body, surviving into the minified HTML.
+```
+
+**Why W-2 matters more than its size suggests:** the EN and ZH twins had diverged in *evidence*,
+not just wording. An EN-only source list on a bilingual page means the ZH reader is asked to trust
+a number that the page's own footer disclaims. When one language cites something, the other must
+list it.
 
 ## Gate
 

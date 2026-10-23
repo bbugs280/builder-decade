@@ -49,7 +49,7 @@ The gap is not a contradiction. Many founders incorporate alone and only decide 
 That number is real and it is from the same source. But revenue at month 24 is not the same thing as a founder outcome, and the same report is explicit about why:
 
 - **Rounds are comparable.** Series A medians land at **$54.9M vs $53.6M** — nearly identical, with only slightly lower figures at Seed and Series B.
-- **Ownership is not.** Across the Carta dataset, solo founders hold **75% more personal ownership at exit** than the lead founder of a multi-founder company.
+- **Ownership is not.** Across the Carta dataset, the lead founder of a multi-founder company ends up with substantially less of it (that comparison is set out earlier — what matters here is that the gap survives *at comparable round sizes*).
 
 Comparable funding on the way up. Considerably more of the company at the end. If your measure of "winning" is revenue at month 24, teams win. If it is what you personally walk away with, solo is not the compromise — it is the better trade.
 
