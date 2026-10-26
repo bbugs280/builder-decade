@@ -2,7 +2,7 @@
 title: "Painting 3D Prints: Where a Plastic Toy Becomes an Object People Keep"
 translationKey: "painting-finishing-3d-prints"
 date: 2026-10-26T07:00:00+08:00
-lastmod: 2026-10-26T07:00:00+08:00
+lastmod: 2026-10-26T18:00:00+08:00
 draft: false
 tags: ["3d printing", "painting 3d prints", "finishing 3d prints", "primer", "sanding", "airbrush", "resin safety", "hardware", "solo builder", "art"]
 description: "The printer is a roughing tool. Everything that makes a printed object worth owning happens in the twenty minutes after it comes off the plate."
@@ -40,6 +40,18 @@ Two things that make this bearable rather than miserable:
 **Wet sand from 400 up.** Less dust, and the paper doesn't clog. Dry-sanding fine grits on plastic is how you spend an evening being annoyed.
 
 **Primer is a diagnostic, not a coat.** A flat grey filler primer does something a sanded surface can't: it makes every remaining defect visible under raking light. You're not painting yet. You're *inspecting*. Prime, look, sand again, prime again. Formlabs makes the same point — the flat finish is the whole value, because it shows you what your fingers can't feel. Two to three light coats, and only after the surface is already as good as you can get it.
+
+## Working from finished pieces rather than theory
+
+I want to show this concretely rather than describe it abstractly, because the difference between a generic finishing guide and a useful one is whether you can point at the object at the end.
+
+I make finished pieces under [@vincenty3d](https://www.instagram.com/vincenty3d/) — mostly pop-culture subjects built on sculpted and printed forms, then painted. Two of them illustrate the two different problems finishing actually solves.
+
+**Worldbreaker** (*"The Lasting Effects of Destructive Policies"*) is a sculpture carrying an argument. The subject is a political one, and the piece only works if the sculpture reads as deliberate — a heavy, finished object making a statement. If the surface still shows layer lines and a flat plastic sheen, the viewer reads "someone's hobby project" instead of "a work about policy." The finishing is doing the persuasive work. A rough print would have killed the message before anyone read it.
+
+**Vader Poppy** is the opposite test. It's a Pop Mart doll crossed with Darth Vader — deliberately cute, deliberately absurd, and meant to be *liked* at a glance. Toy-adjacent pieces are the ones where finishing discipline shows up most brutally, because the audience already knows what a good collectible feels like in the hand. A collector has held a real figure. The gloss level, the crispness of the edges, the depth in the dark parts — that's the entire comparison, and it happens in about two seconds. There is no version of that piece where "good enough" reads as good.
+
+The practical point from both: **the finishing brief changes with the audience, not with the printer.** Same machine, same plastic, same sandpaper sequence. A sculpture aimed at an argument needs a matte, unified, gallery-ish surface. A toy aimed at desire needs gloss and depth and clean separations. If you finish everything the same way, you'll be wrong on at least one of them.
 
 ## The step where it becomes a product
 
@@ -88,4 +100,4 @@ If you want the other half of this — building the physical object and the elec
 - **NIOSH (2025).** *Safe Desktop Vat Photopolymerization 3-D Printing.* CDC / National Institute for Occupational Safety and Health. — Uncured resin contains acrylates that can cause asthma or dermatitis; printing releases particles and gases not contained by the cover; curing generates inhalable particles and gases; sanding generates dust containing cured and uncured resin particles; use gloves rated against acrylates and isopropyl alcohol and change them frequently; once curing is complete, surface resin is usually fully cured and dermatitis risk is significantly reduced.
 - **Formlabs.** *How to Prime and Paint 3D Printed Parts.* — Primer's flat neutral grey is used to highlight surface imperfections before painting; FDM layer lines may require sanding the whole model; fine-grit (>600) reworking after priming.
 
-*Honest note on this post: the finishing sequence above is the standard workshop practice described in the sources cited, not a measured comparison of outcomes. The resin safety section is drawn from NIOSH guidance and is the one part of this post you should treat as a hard requirement rather than a suggestion.*
+*Honest note on this post: the grit sequence is the standard workshop practice described in the sources cited, not a measured comparison of outcomes. The two pieces named above are my own finished work and are cited as examples of the finishing brief, not as controlled tests of any technique. The resin safety section is drawn from NIOSH guidance and is the one part of this post you should treat as a hard requirement rather than a suggestion.*
