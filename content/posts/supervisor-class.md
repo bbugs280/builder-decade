@@ -54,7 +54,7 @@ Writing code was the bottleneck for fifty years. It isn't anymore. Directing is 
 
 That's not a downgrade. It's the first time in the profession's history that the ceiling is your *thinking*, not your output.
 
-Directing an agent is a different skill from trusting your test environment: [Your Simulator Is Lying to You](/posts/voice-app-on-device/) covers what only shows up on real hardware, and [Building Hardware Solo](/posts/building-hardware-solo/) covers the maker room most builders skip entirely.
+Directing an agent is a different skill from trusting your test environment: [Your Simulator Is Lying to You](/posts/voice-app-on-device/) covers what only shows up on real hardware, and [Building Hardware Solo](/posts/building-hardware-solo/) covers the maker room most builders skip entirely. If you get as far as printing the enclosure, [finishing it properly](/posts/painting-finishing-3d-prints/) is where the object stops looking like a prototype.
 
 ## Sources
 

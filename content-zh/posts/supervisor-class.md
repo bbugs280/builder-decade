@@ -54,7 +54,7 @@ cover:
 
 這不是降級。這是這個職業史上第一次，天花板是你的「思考」，而不是你的「產出」。
 
-指揮代理和信任你的測試環境是兩種不同的能力：〈[模擬器在騙你](/zh/posts/voice-app-on-device/)〉講只有真實硬體才會暴露的東西，〈[一個人做硬體](/zh/posts/building-hardware-solo/)〉則講大多數開發者直接跳過的那間工作室。
+指揮代理和信任你的測試環境是兩種不同的能力：〈[模擬器在騙你](/zh/posts/voice-app-on-device/)〉講只有真實硬體才會暴露的東西，〈[一個人做硬體](/zh/posts/building-hardware-solo/)〉則講大多數開發者直接跳過的那間工作室如果你做到列印外殼那一步，[把它好好收尾](/zh/posts/painting-finishing-3d-prints/)才是讓物件不再像原型的地方。
 
 ## 資料來源
 

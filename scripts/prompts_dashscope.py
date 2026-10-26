@@ -141,6 +141,16 @@ PROMPTS = {
         "text, no watermark"
     ),
     # "Building hardware solo" — a single maker's bench, physical device
+    "painting-finishing-3d-prints": (
+        "A maker's paint and finishing bench at night, a small painted figurine standing "
+        "on a turntable under a bright adjustable desk lamp, surrounded by tiny paint pots, "
+        "a fine brush resting in a jar, sheets of wet sandpaper and a grey-primed unpainted "
+        "twin figure beside it for comparison, the painted one visibly richer and more "
+        "finished than the raw one, soft dust in the lamp beam, conveying the quiet "
+        "transformative craft of turning a plastic print into an object worth keeping. "
+        "Deep charcoal and copper amber atmosphere, cinematic chiaroscuro, volumetric light, "
+        "photorealistic, macro detail, moody, no people, no text, no watermark"
+    ),
     "building-hardware-solo": (
         "A solitary maker's electronics workbench at night, a single device "
         "half-assembled amid a microcontroller, wires, a multimeter and a "

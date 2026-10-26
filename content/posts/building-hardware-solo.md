@@ -54,6 +54,8 @@ A physical device is the strongest possible proof of the core thesis: one person
 
 The hardware room is quieter than the software room. That's the opportunity. While everyone is arguing about which coding agent to use, a small number of builders are on the bench, assembling things that exist in the physical world — and that's a category the crowds haven't flooded yet.
 
+**One thing this post skips, because it deserves its own:** the moment the print comes off the plate is when the real value work starts. Sanding, priming, painting and clear-coating is what turns extruded plastic into an object someone keeps — and it's where the margin is. That's [the finishing post](/posts/painting-finishing-3d-prints/).
+
 *This is the maker room in [the decade plan](/posts/welcome/) — the same cost collapse as [shipping solo in software](/posts/one-person-team/), playing out one bench at a time.*
 
 ---
