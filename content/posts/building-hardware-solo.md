@@ -2,7 +2,7 @@
 title: "Building Hardware Solo: The Maker Room Most Builders Skip"
 translationKey: "building-hardware-solo"
 date: 2026-08-23T00:00:00+08:00
-lastmod: 2026-09-02T08:00:00+08:00
+lastmod: 2026-10-30T08:45:00+08:00
 draft: false
 tags: ["hardware", "maker", "solo builder", "electronics", "physical products"]
 description: "The cost collapse hit hardware too. One maker with cheap microcontrollers, AI-assisted CAD and on-demand fabrication can now build what took a team."
@@ -55,6 +55,8 @@ A physical device is the strongest possible proof of the core thesis: one person
 The hardware room is quieter than the software room. That's the opportunity. While everyone is arguing about which coding agent to use, a small number of builders are on the bench, assembling things that exist in the physical world — and that's a category the crowds haven't flooded yet.
 
 **One thing this post skips, because it deserves its own:** the moment the print comes off the plate is when the real value work starts. Sanding, priming, painting and clear-coating is what turns extruded plastic into an object someone keeps — and it's where the margin is. That's [the finishing post](/posts/painting-finishing-3d-prints/).
+
+And before any of that, the question of whether the machine pays for itself at all is worth doing properly: [the laser payback math](/posts/laser-payback-math/).
 
 *This is the maker room in [the decade plan](/posts/welcome/) — the same cost collapse as [shipping solo in software](/posts/one-person-team/), playing out one bench at a time.*
 

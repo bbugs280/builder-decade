@@ -687,4 +687,23 @@ PROMPTS = {
         "grain, 16:9 composition, calm quiet and considered, an empty second place "
         "at the bench, no people, no text, no lettering, no watermarks"
     ),
+    # Laser payback post — the machine vs the stack of finished goods it must sell.
+    # Thesis image: capacity (a machine, a tall stack of identical finished boards)
+    # against the unglamorous reality of a small pile of actual orders. No numbers
+    # rendered anywhere — the post carries the arithmetic, the cover carries the idea.
+    "laser-payback-math": (
+        "Cinematic still life on a warm dark wooden workbench against a deep "
+        "charcoal background: a small desktop laser engraving machine at one end, "
+        "its amber work light glowing, and at the other end two stacks of finished "
+        "engraved wooden boards — one tall and even stack of plain identical boards, "
+        "and beside it a much smaller, shorter stack of only two or three boards "
+        "slightly askew. A plain unlabelled notepad and a simple pencil lie between "
+        "the two stacks, closed and untouched. Warm soft directional light rakes "
+        "across the workbench from the left, amber and copper tones, moody "
+        "chiaroscuro, volumetric light rays, fine sawdust drifting in the light, "
+        "deep shadows pooling in the background, photorealistic-illustrative, "
+        "subtle film grain, 16:9 composition, the contrast between capacity and "
+        "demand, no people, no hands, no text, no lettering, no numerals, no "
+        "printed words anywhere in the frame, no gauges, no charts, no watermark"
+    ),
 }

@@ -2,7 +2,7 @@
 title: "Painting 3D Prints: Where a Plastic Toy Becomes an Object People Keep"
 translationKey: "painting-finishing-3d-prints"
 date: 2026-10-26T07:00:00+08:00
-lastmod: 2026-10-26T18:00:00+08:00
+lastmod: 2026-10-30T08:45:00+08:00
 draft: false
 tags: ["3d printing", "painting 3d prints", "finishing 3d prints", "primer", "sanding", "airbrush", "resin safety", "hardware", "solo builder", "art"]
 description: "The printer is a roughing tool. Everything that makes a printed object worth owning happens in the twenty minutes after it comes off the plate."
@@ -94,6 +94,8 @@ Two things, and they're both about money rather than craftsmanship.
 That's the argument for treating art × hardware as a real lane rather than a hobby: **the skill isn't in the machine, and the margin isn't either.**
 
 If you want the other half of this — building the physical object and the electronics inside it — that's [the hardware post](/posts/building-hardware-solo/). This one is specifically about the last twenty minutes.
+
+And if the reason you are reading this is that you are thinking of buying a machine to sell finished pieces, the cost side of that decision is in [the laser payback post](/posts/laser-payback-math/) — the same arithmetic a machine seller runs, with a real sales volume in it.
 
 ## Sources
 
