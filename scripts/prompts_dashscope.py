@@ -670,6 +670,30 @@ PROMPTS = {
         "writing, no printed words anywhere in the frame, no background "
         "signage, posters or paper labels, no watermark, no people, no hands"
     ),
+    # Digital-to-physical pipeline post — the two worlds on one bench.
+    # Thesis image: a laptop (the software end, where the work is cheap and
+    # reversible) physically connected by a cable to a half-machined metal
+    # part (the physical end, where every cut is paid for). The cable IS the
+    # pipeline the post argues is missing. No screens lit with content, no
+    # numerals anywhere, no charts — the post carries the argument, the cover
+    # carries the idea of two domains joined by one line.
+    "digital-to-physical-pipeline": (
+        "Cinematic still life on a warm dark wooden workbench against a deep "
+        "charcoal background: at the left end an open laptop seen from behind "
+        "at an angle, its screen dark and unlit, and at the right end a "
+        "half-machined metal bracket held in a small plain bench vise, its cut "
+        "edges bright and freshly worked, fine metal shavings scattered beneath "
+        "it. A single plain black cable runs from the side of the laptop across "
+        "the workbench to the vise, connecting the two ends. A simple pair of "
+        "calipers lies closed near the vise, plain and unlabelled. Warm soft "
+        "directional light rakes across the workbench from the left, amber and "
+        "copper tones, moody chiaroscuro, volumetric light rays, deep shadows "
+        "pooling in the background, photorealistic-illustrative, subtle film "
+        "grain, 16:9 composition, two worlds joined by one line, no people, no "
+        "hands, no text, no lettering, no numerals, no printed words anywhere "
+        "in the frame, no gauges, no dials, no clocks, no screens displaying "
+        "content, no charts, no watermark"
+    ),
     # First-hire timing post — the unfilled second seat at the workbench.
     # Pass 1 accepted: no people (ethnicity rule moot), no lettering on objects,
     # warm amber/copper palette. Note DashScope rendered ONE empty chair rather
