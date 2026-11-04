@@ -730,4 +730,30 @@ PROMPTS = {
         "demand, no people, no hands, no text, no lettering, no numerals, no "
         "printed words anywhere in the frame, no gauges, no charts, no watermark"
     ),
+    # Printed enclosure tolerances post — the fit, inspected by hand.
+    # Thesis image: a printed enclosure opened on the bench with the two metal
+    # interfaces that carry the whole argument — a heat-set brass insert (the
+    # joint that survives reopening) and a closed caliper laid across the part
+    # (the measurement that decides fit). No numerals on the caliper face, no
+    # text anywhere; the post carries the numbers, the cover carries the act
+    # of checking a dimension.
+    "printed-enclosure-tolerances": (
+        "Cinematic still life on a warm dark wooden workbench against a deep "
+        "charcoal background: a small matte black 3D-printed plastic enclosure, "
+        "its lid set open beside it, the two halves lying flat with visible "
+        "printed layer lines on the inside walls and a few small brass heat-set "
+        "threaded inserts set into shallow bosses along the inner edge. A "
+        "soldering iron rests point-up in a small plain stand at the back, its "
+        "tip still warm with a faint glow. A simple pair of metal calipers lies "
+        "closed across the open half of the enclosure, its jaws touching the "
+        "part, its face plain and unmarked. A few loose machine screws sit in a "
+        "small shallow dish nearby. Warm soft directional light rakes across the "
+        "workbench from the left, amber and copper tones, moody chiaroscuro, "
+        "volumetric light rays, deep shadows pooling in the background, "
+        "photorealistic-illustrative, subtle film grain, 16:9 composition, close "
+        "and deliberate, measuring a fit, no people, no hands, no text, no "
+        "lettering, no numerals, no printed words anywhere in the frame, no "
+        "readable numbers on the caliper, no gauges, no dials, no charts, no "
+        "screens, no watermark"
+    ),
 }
