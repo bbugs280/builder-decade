@@ -60,6 +60,8 @@ The hardware room is quieter than the software room. That's the opportunity. Whi
 
 And before any of that, the question of whether the machine pays for itself at all is worth doing properly: [the laser payback math](/posts/laser-payback-math/).
 
+The thing this post deliberately does not cover is the one that ends most first hardware businesses, and it has nothing to do with the bench: [hardware pays before it earns](/posts/ai-hardware-isnt-sold-it-moves/), and the gap between paying and earning is where the money runs out.
+
 *This is the maker room in [the decade plan](/posts/welcome/) — the same cost collapse as [shipping solo in software](/posts/one-person-team/), playing out one bench at a time.*
 
 ---

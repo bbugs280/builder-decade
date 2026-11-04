@@ -756,4 +756,24 @@ PROMPTS = {
         "readable numbers on the caliper, no gauges, no dials, no charts, no "
         "screens, no watermark"
     ),
+    # Hardware cash-flow post — inventory is cash, sitting still.
+    # Thesis image: sealed stock stacked and waiting, unpaid, in cold light.
+    # The warmth of the workshop is deliberately absent — this is the money
+    # problem, not the making problem. No text, no invoices with legible
+    # writing, no numerals on the laptop screen.
+    "ai-hardware-isnt-sold-it-moves": (
+        "Cinematic still life on a cold grey concrete warehouse floor: a neat "
+        "stack of eight plain sealed brown cardboard shipping boxes, stacked "
+        "two wide and four high, edges crisp, no labels and no printing on any "
+        "face. An open laptop sits on the floor beside the stack, its screen "
+        "dark and blank. A single plain white unmarked paper envelope rests on "
+        "top of the stack, slightly askew. Dust motes drift in a hard shaft of "
+        "cold white overhead light falling from the upper left, "
+        "low-key lighting, long shadows stretching away across the concrete, "
+        "deep charcoal background fading to black, photorealistic-illustrative, "
+        "subtle film grain, 16:9 composition, still and patient, goods waiting "
+        "to be sold, no people, no hands, no text, no lettering, no numerals, "
+        "no printed words anywhere in the frame, no readable labels, no logos, "
+        "no charts, no screens with content, no watermark"
+    ),
 }
