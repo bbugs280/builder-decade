@@ -2,7 +2,7 @@
 title: "Does a Laser Engraver Pay for Itself? The Payback Math, Checked"
 translationKey: "laser-payback-math"
 date: 2026-10-30T08:45:00+08:00
-lastmod: 2026-10-30T08:45:00+08:00
+lastmod: 2026-11-04T10:30:00+08:00
 draft: false
 tags: ["laser engraver", "xtool", "etsy", "payback period", "roi", "3d printing", "hardware", "side business", "solo builder", "art"]
 description: "Laser sellers publish payback periods under two months. Here is the same formula with the sales volume that real craft sellers actually get."
@@ -98,6 +98,8 @@ Do not price the decision off a payback period someone else computed. Price it o
 Then take your number, not theirs, and divide.
 
 The formula was never the problem. The 35 boards a week was, and only you know your own figure.
+
+If you are still at the stage where the machine question is premature — no product, no first sale, a folder of models and nothing built — the thing to read first is not a spreadsheet. It's [the digital-to-physical pipeline](/posts/digital-to-physical-pipeline/): why software skills stall on real products, and what converts a model into a part.
 
 ## Sources
 

@@ -2,7 +2,7 @@
 title: "Building Hardware Solo: The Maker Room Most Builders Skip"
 translationKey: "building-hardware-solo"
 date: 2026-08-23T00:00:00+08:00
-lastmod: 2026-10-30T08:45:00+08:00
+lastmod: 2026-11-04T10:30:00+08:00
 draft: false
 tags: ["hardware", "maker", "solo builder", "electronics", "physical products"]
 description: "The cost collapse hit hardware too. One maker with cheap microcontrollers, AI-assisted CAD and on-demand fabrication can now build what took a team."
@@ -36,6 +36,8 @@ None of this makes hardware *easy*. It makes it *possible*, which is different �
 **2. The failure is physical and final.** A software bug is a log line. A hardware bug is a puff of smoke and a part you have to order again. The cost of "I'll just try it" is real and sometimes literal.
 
 **3. The last 10% is brutal in ways software isn't.** Enclosures, mounting, cable routing, heat, power — the unglamorous physical details that software never has, and that don't show up in any demo.
+
+That third cost is not a skill gap, and it is worth naming precisely: software trains you to decide by iterating, and a bench punishes that habit. The crossover stall — why good software builders end up with a folder of good models and nothing in their hands — is [its own post](/posts/digital-to-physical-pipeline/).
 
 ## Why it's worth it anyway
 
