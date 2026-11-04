@@ -95,6 +95,8 @@ Do not price the decision off a payback period someone else computed. Price it o
 
 **What is the machine actually replacing?** If it replaces an outsourced cutter with a two-week turnaround, the value is real and measurable. If it replaces nothing at all, you are buying capacity ahead of demand, and that is a bet on you selling, not a calculation.
 
+**And will the thing you cut actually fit something?** A machine that holds tight tolerances on sheet is only half the job — the parts still have to mate with a printed case, and [the numbers for that](/posts/printed-enclosure-tolerances/) are a separate set you will need either way.
+
 Then take your number, not theirs, and divide.
 
 The formula was never the problem. The 35 boards a week was, and only you know your own figure.

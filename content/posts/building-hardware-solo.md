@@ -35,7 +35,7 @@ None of this makes hardware *easy*. It makes it *possible*, which is different �
 
 **2. The failure is physical and final.** A software bug is a log line. A hardware bug is a puff of smoke and a part you have to order again. The cost of "I'll just try it" is real and sometimes literal.
 
-**3. The last 10% is brutal in ways software isn't.** Enclosures, mounting, cable routing, heat, power — the unglamorous physical details that software never has, and that don't show up in any demo.
+**3. The last 10% is brutal in ways software isn't.** Enclosures, mounting, cable routing, heat, power — the unglamorous physical details that software never has, and that don't show up in any demo. The enclosure is where this bites first, and it is the one part of the build where a number you got wrong is a reprint rather than a revert: [the tolerances nobody selling you a tool will give you](/posts/printed-enclosure-tolerances/) are the numbers that decide whether the part fits.
 
 That third cost is not a skill gap, and it is worth naming precisely: software trains you to decide by iterating, and a bench punishes that habit. The crossover stall — why good software builders end up with a folder of good models and nothing in their hands — is [its own post](/posts/digital-to-physical-pipeline/).
 

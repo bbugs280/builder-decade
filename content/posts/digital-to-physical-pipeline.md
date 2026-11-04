@@ -2,7 +2,7 @@
 title: "The Digital-to-Physical Pipeline: Why Your Software Skills Stall on Real Products"
 translationKey: "digital-to-physical-pipeline"
 date: 2026-11-02T00:00:00+08:00
-lastmod: 2026-11-02T08:00:00+08:00
+lastmod: 2026-11-04T09:45:00+08:00
 draft: false
 tags: ["hardware", "maker", "solo builder", "manufacturing", "physical products"]
 description: "Software teaches you to ship the moment it compiles. Physical products don't work that way — and that gap, not skill, is what stops most builders crossing over."
@@ -37,7 +37,7 @@ A physical product moves through six stages. Software skips four of them entirel
 
 **2. Geometry** — a model that is *manufacturable*, not merely drawable. Beginner CAD produces shapes; the bench needs shapes a specific process can actually cut.
 
-**3. Tolerance** — how wrong each dimension is allowed to be. Software has no analogue. A number is exact or it's a bug. A physical dimension is never exact; it has a range, and the range is a cost decision.
+**3. Tolerance** — how wrong each dimension is allowed to be. Software has no analogue. A number is exact or it's a bug. A physical dimension is never exact; it has a range, and the range is a cost decision. This stage is where most of the awkwardness of "printing a case" actually lives, so the worked numbers are [here](/posts/printed-enclosure-tolerances/).
 
 **4. Process** — which machine, which shop, which order of operations. This decides cost more than design does.
 
