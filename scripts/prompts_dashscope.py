@@ -776,4 +776,25 @@ PROMPTS = {
         "no printed words anywhere in the frame, no readable labels, no logos, "
         "no charts, no screens with content, no watermark"
     ),
+    # The chip decision: a bare board on a warm bench, the "brain" chosen
+    # before the shell exists. Deliberately the OPPOSITE warmth of the
+    # cash-flow cover — this is the making problem, early and undecided.
+    # ⚠️ No numerals: no chip markings, no silkscreen text, no caliper readout.
+    "choosing-the-brain-of-a-physical-product": (
+        "Cinematic close still life on a warm wooden workshop bench: a single "
+        "small bare green-black circuit board lying flat, populated with a "
+        "few blank unmarked chips and fine copper traces, no legible "
+        "markings of any kind on any component. A brass-rimmed magnifying "
+        "glass rests beside it at an angle, its lens catching a soft amber "
+        "highlight. A scattering of loose electronic components — a handful "
+        "of tiny capacitors, a coiled ribbon cable, two bare metal pins — "
+        "sits just out of focus to the right. Warm amber lamplight rakes in "
+        "from the upper left at a low angle, long soft shadows, glowing dust "
+        "motes suspended in the beam, deep charcoal background falling away "
+        "to black, shallow depth of field, photorealistic-illustrative, "
+        "subtle film grain, 16:9 composition, quiet and considered, an "
+        "object waiting for a decision, no people, no hands, no text, no "
+        "lettering, no numerals, no silkscreen printing, no printed words "
+        "anywhere in the frame, no readable labels, no logos, no watermark"
+    ),
 }

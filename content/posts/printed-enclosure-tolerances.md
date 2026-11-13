@@ -39,6 +39,8 @@ Heat-set inserts need a boss with enough wall to contain the melting plastic as 
 
 **Allow 0.5 mm of component clearance** around tall components on the board so the enclosure wall does not press on them. Pressing is not just a fit problem — pressure on a component over time is a stress path and a way to crack a joint later, after the thing has been shipped.
 
+⚠️ The board you are fitting this enclosure around is itself a decision, and it comes first. [Which chip goes on it](/posts/choosing-the-brain-of-a-physical-product/) sets your board area, your power budget, and whether you even need the battery door you are about to design a boss for.
+
 ## The printed hole problem
 
 **A printed hole comes out smaller than you modelled it.** Not by a fixed amount — it is a function of the geometry, the material's shrink, and the direction of the curve. A hole modelled at 3.0 mm may print at 2.7 to 2.9 mm. Circular holes printed on FDM also come out slightly non-circular, because the slicer lays down straight segments.

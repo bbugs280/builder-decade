@@ -19,7 +19,7 @@ This is the "room" most builders skip — and it's where the leverage is now wid
 
 ## What actually changed on the bench
 
-**The brain got cheap.** A microcontroller with Wi-Fi and Bluetooth — enough to run a real device, talk to a phone, and drive sensors — costs less than a takeout meal. The "compute" that used to require a team to source and integrate is now a component you solder in an afternoon.
+**The brain got cheap.** A microcontroller with Wi-Fi and Bluetooth — enough to run a real device, talk to a phone, and drive sensors — costs less than a takeout meal. The "compute" that used to require a team to source and integrate is now a component you solder in an afternoon. Cheap is not the same as *chosen*, though — [picking which chip goes in the thing](/posts/choosing-the-brain-of-a-physical-product/) is its own decision, and it is the one your enclosure dimensions and battery life hang off.
 
 **The design got assisted.** AI tools can now generate and iterate on CAD models, circuit layouts, and enclosures the way coding agents generate software. The expert gate that used to demand years of mechanical or electrical engineering is now a conversational one — you describe the thing, read the output with suspicion, iterate.
 
