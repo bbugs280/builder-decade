@@ -780,6 +780,18 @@ PROMPTS = {
     # before the shell exists. Deliberately the OPPOSITE warmth of the
     # cash-flow cover — this is the making problem, early and undecided.
     # ⚠️ No numerals: no chip markings, no silkscreen text, no caliper readout.
+    "solopreneur-vs-solo-founder": (
+        "A close, low-angle still life on a dark scarred wooden workbench. Two "
+        "smooth river stones lie flat side by side, one pale grey and freshly wet, "
+        "the other dark slate and dry — same size, same shape, different histories. "
+        "A single plain wooden stick rests between them, its surface bare and worn "
+        "smooth. Warm amber lamplight rakes in from the upper left at a low angle, "
+        "long soft shadows, glowing dust motes suspended in the beam, deep charcoal "
+        "background falling away to black, shallow depth of field, "
+        "photorealistic-illustrative, subtle film grain, 16:9 composition, quiet and "
+        "considered, two identical things awaiting a choice, no people, no hands, "
+        "no text, no lettering, no numerals, no logos, no watermark"
+    ),
     "choosing-the-brain-of-a-physical-product": (
         "Cinematic close still life on a warm wooden workshop bench: a single "
         "small bare green-black circuit board lying flat, populated with a "
