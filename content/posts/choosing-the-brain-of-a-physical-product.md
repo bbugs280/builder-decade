@@ -84,3 +84,7 @@ If you want the short version:
 Four rows, and every one of them is a decision you can reverse at prototype stage for the price of a board. **That is the actual insight: this decision is cheap early and expensive late.** A dev board for each candidate costs less than one hour of your time. Buy all four, spend a weekend proving the one binding constraint on the real silicon, and the spec table stops mattering.
 
 The enclosure you print later depends on this. Print it in the wrong order and you will print it twice.
+
+---
+
+*If the part you're actually stuck on is not the board but the business around it, two posts go further. [Why One Person Can Now Ship What Took a Team](/posts/one-person-team/) is the mechanism behind building a physical product alone, and [Solopreneur or Solo Founder](/posts/solopreneur-vs-solo-founder/) is the naming question — because the word you pick before you ship quietly decides who takes you seriously afterwards.*

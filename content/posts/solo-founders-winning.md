@@ -66,6 +66,8 @@ What the formation data doesn't capture is the part that decides whether you las
 
 If the numbers above are the *outcome*, the decision that produced them is a different question — and it's the one most people get wrong. [Should You Take a Co-Founder?](/posts/solo-founder-vs-cofounder/) works through the actual decision rule, and if you're still deciding whether the route pays at all, [How to Price What You Sell](/posts/solo-saas-pricing/) covers the part that determines whether solo stays viable past the first year.
 
+One more question sits underneath all of these, and almost nobody asks it before they answer it: what do you actually call yourself? [Solopreneur or Solo Founder](/posts/solopreneur-vs-solo-founder/) is a ten-minute read on why the two words are not synonyms, and why the one you pick quietly sets a ceiling you never agreed to.
+
 There's also a claim that rides along with this trend and doesn't survive contact with the data: that solo founders still can't get funded, usually sourced to one misread statistic. [The One-Person Company Stopped Being a Thesis](/posts/one-person-company-is-real-now/) pulls the two datasets that measure the same population and disagree — and explains why the gate never actually closed.
 
 ---

@@ -69,3 +69,7 @@ I use **solo builder** in writing about the work, because it's true and it commi
 The word was never the achievement. But it is the first thing anyone reads, and it sets what they expect next.
 
 Choose it on purpose, then go build the thing that makes it true.
+
+---
+
+*Two related decisions sit right next to this one. [Should You Take a Co-Founder?](/posts/solo-founder-vs-cofounder/) is the person-shaped question — whether the second name on the cap table is worth the transaction cost. And [Solo Founders Are Winning — Here's What Changed](/posts/solo-founders-winning/) is the receipts: what actually changed for people who went alone, and why the stigma died before the data arrived.*
