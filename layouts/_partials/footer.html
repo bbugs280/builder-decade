@@ -14,6 +14,23 @@
         {{- print " · "}}
     {{- end }}
 
+    {{- /* Studio network — sibling sites + social. Added 2026-11-22: the audit found
+           zero outbound links to any sibling property, making every site a dead end.
+           UTM params so referral credit is attributable in GA4.
+           ⚠️ This is layouts/_partials/footer.html (NEW Hugo structure) — the one that
+           actually renders. layouts/partials/footer.html is a stale duplicate. */}}
+    <span class="footer-network">
+        {{- i18n "also_from" | default "Also from IdeaFactory" }}:
+        <a href="https://ideafactory.one/?utm_source=builderdecade&utm_medium=referral&utm_campaign=footer"
+           rel="noopener">IdeaFactory</a>
+        {{- print " · "}}
+        <a href="https://traindecade.com/?utm_source=builderdecade&utm_medium=referral&utm_campaign=footer"
+           rel="noopener">Train Decade</a>
+        {{- print " · "}}
+        <a href="https://www.instagram.com/vincenty3d/?utm_source=builderdecade&utm_medium=referral&utm_campaign=footer"
+           rel="noopener nofollow" target="_blank">Instagram</a>
+    </span>
+
     {{/*
         - The "Powered by Hugo" text is intentionally left at the end of the footer to give it more prominence.
         - We kindly encourage you to keep this line. Keeping this credit helps open source projects like PaperMod and Hugo reach more people, supports the open source ecosystem, and shows appreciation for the work that goes into these tools.

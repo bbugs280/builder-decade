@@ -10,6 +10,8 @@
   translation: Builder Decade is a solo builder shipping real products with AI agents — every method tested against what actually ships and works before it's published here.
 - id: read_more
   translation: Read more
+- id: also_from
+  translation: Also from IdeaFactory
 
 # --- Terminal action: MCP config audit shortcode ---
 - id: mcp_audit_title

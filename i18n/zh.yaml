@@ -10,6 +10,8 @@
   translation: Builder Decade 是一位獨立的建造者，以 AI 代理打造真實產品，每一種方法都在發表前，經過「真正上線並運作」的檢驗。
 - id: read_more
   translation: 了解更多
+- id: also_from
+  translation: IdeaFactory 其他作品
 
 # --- 終端動作：MCP 設定自我審查 shortcode ---
 - id: mcp_audit_title
