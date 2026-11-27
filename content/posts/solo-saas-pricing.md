@@ -2,7 +2,7 @@
 title: "How a Solo Founder Should Price Their SaaS (Without Benchmarks)"
 translationKey: "solo-saas-pricing"
 date: 2026-08-27T00:00:00+08:00
-lastmod: 2026-10-01T12:00:00+08:00
+lastmod: 2026-11-27T09:48:10+08:00
 draft: false
 tags: ["solo founder", "saas pricing", "one-person company", "recurring revenue", "b2b"]
 description: "Pricing guides assume you have competitors to copy. A solo founder doesn't. Here's the decision rule that starts from value, not benchmarks."
@@ -46,6 +46,8 @@ Pricing a solo SaaS isn't one question. It's three, in strict order:
 The top decile of solo founders earns **61 times the revenue of the median solo founder** in their first six months — and that gap is *widening*, up from 34× four years ago. That's not because the winners are ten times more talented. It's because they make a small set of structural choices — recurring billing, B2B, global from day one — that compound, while everyone else defaults to the path of least resistance.
 
 Pricing is the most under-exercised of those choices, and it's entirely within your control. You don't need a pricing consultant, a cohort analysis, or three months of A/B tests. You need to stop pricing by feel and start pricing by *what you're actually selling*: an outcome someone stops losing sleep over once they pay for it.
+
+The same logic runs the other direction when you're the buyer. If you're weighing [whether to pay for a SaaS template](/posts/saas-template-worth-paying-for/), the sticker price is not the cost — the code you inherit and never read is.
 
 *This is the money node of the solo-builder map — after [shipping first](/posts/one-person-team/) and [getting users](/posts/how-to-get-first-users-solo/), here's how you actually get paid. For the decision rule on what to build versus buy, see [reuse vs rebuild](/posts/reuse-vs-rebuild/).*
 

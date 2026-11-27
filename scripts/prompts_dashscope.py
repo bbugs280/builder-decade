@@ -806,7 +806,22 @@ PROMPTS = {
         "to black, shallow depth of field, photorealistic-illustrative, "
         "subtle film grain, 16:9 composition, quiet and considered, an "
         "object waiting for a decision, no people, no hands, no text, no "
-        "lettering, no numerals, no silkscreen printing, no printed words "
+        "no lettering, no numerals, no silkscreen printing, no printed words "
         "anywhere in the frame, no readable labels, no logos, no watermark"
+    ),
+    "saas-template-worth-paying-for": (
+        "Cinematic still life on a warm wooden workshop bench: on the left, a "
+        "neat factory kit of pre-cut wooden parts still held in its shrink "
+        "wrap, every piece identical and machine-finished; on the right, a "
+        "loose hand-cut stack of raw timber boards with visible grain, pencil "
+        "marks and one rough sawn edge. The kit sits square and tidy, the "
+        "hand-cut stack leans unevenly against it. Warm amber lamplight rakes "
+        "in from the upper left at a low angle, long soft shadows, glowing "
+        "dust motes suspended in the beam, deep charcoal background falling "
+        "away to black, shallow depth of field, photorealistic-illustrative, "
+        "subtle film grain, 16:9 composition, the clean kit and the rough "
+        "material weighing against each other, no people, no hands, no text, "
+        "no lettering, no numerals, no printed words anywhere in the frame, "
+        "no readable labels, no logos, no watermark"
     ),
 }

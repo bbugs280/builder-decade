@@ -2,7 +2,7 @@
 title: "Reuse vs Rebuild: The Custody Rule for Solo Builders"
 translationKey: "reuse-vs-rebuild"
 date: 2026-08-25T00:00:00+08:00
-lastmod: 2026-09-02T08:00:00+08:00
+lastmod: 2026-11-27T09:48:10+08:00
 draft: false
 tags: ["solo founder", "build vs buy", "one-person company", "cost of ownership", "dependency"]
 description: "Reuse or rebuild? The instinct to write it yourself feels productive and is usually the expensive choice. A decision rule for solo builders."
@@ -48,6 +48,8 @@ The decision isn't "build or buy" as an identity — "I'm a builder" or "I only 
 The villain in this frame isn't SaaS, and it isn't open source. It's **not-built-here syndrome** — the sunk-time habit of rebuilding undifferentiated plumbing because rebuilding now *feels* like progress and owning it *feels* like control. A solo builder's scarcest resource isn't money. It's attention, spread across a maintenance surface that only ever grows. Every hour spent re-implementing something a $20/month tool already does is an hour not spent on the moat.
 
 The test is uncomfortable but simple: **if you stopped working on this one thing entirely, would it hurt the business, or would it hurt your ego?** Commodity work usually only wounds the latter.
+
+Buying is not the safe side of this decision either. A bought starter kit is still code you own and must read — [whether a SaaS template is worth paying for](/posts/saas-template-worth-paying-for/) is the same question one level down.
 
 ## The solo-builder version of the rule
 
