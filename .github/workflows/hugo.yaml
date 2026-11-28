@@ -103,12 +103,16 @@ jobs:
           if echo "$HDRS" | grep -qi '^server: github.com'; then echo "❌ still GitHub Pages"; exit 1; fi
 
           echo "== EN post =="
-          curl -sS https://builderdecade.com/posts/saas-template-worth-paying-for/ \
-            | grep -qi '<title>' || { echo "❌ EN post missing title"; exit 1; }
+          # ⚠️ Do NOT pipe curl into `grep -q`. grep exits on first match, closing
+          # the pipe; curl then dies with "Failed writing body" (exit 23), and
+          # `set -e` fails the job on a site that is perfectly healthy. Measured
+          # 2026-11-28 on the first Cloudflare deploy. Capture first, then test.
+          EN_BODY=$(curl -sS --max-time 60 https://builderdecade.com/posts/saas-template-worth-paying-for/)
+          echo "$EN_BODY" | grep -qi '<title>' || { echo "❌ EN post missing title"; exit 1; }
 
           echo "== ZH twin =="
-          curl -sS https://builderdecade.com/zh/posts/saas-template-worth-paying-for/ \
-            | grep -qi '<title>' || { echo "❌ ZH post missing title"; exit 1; }
+          ZH_BODY=$(curl -sS --max-time 60 https://builderdecade.com/zh/posts/saas-template-worth-paying-for/)
+          echo "$ZH_BODY" | grep -qi '<title>' || { echo "❌ ZH post missing title"; exit 1; }
 
           echo "✅ live, on Cloudflare, both trees serving"
 
