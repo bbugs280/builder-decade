@@ -29,3 +29,4 @@ __pycache__/
 .hugo_build.lock
 github-pages/
 scripts/linkedin-api-vs-mcp-draft.md
+.wrangler/
